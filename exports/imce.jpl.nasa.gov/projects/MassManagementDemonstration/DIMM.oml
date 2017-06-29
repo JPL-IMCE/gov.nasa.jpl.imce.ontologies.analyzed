@@ -1,0 +1,1646 @@
+@oml:MD_RESOURCE_URL="mdel://_18_0_6_f21035f_1493916673132_935047_60417?projectID=ID_6_21_17_8_58_58_AM_2a1f8801_15cba376a89_3c97_cae_tw_jpl_nasa_gov_127_0_0_1&serverType=teamwork&projectBranch=Version+3+-+NX+Import&projectVersion=0&projectName=IMCE+Mass+Management+Demonstration&elementName=Package+DIMM&metaType=Package&elementQName=02+DIMM+Project%3A%3ADIMM"
+@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493916673132_935047_60417"
+partial descriptionBox <http://imce.jpl.nasa.gov/projects/MassManagementDemonstration/DIMM> {
+
+	extends <http://imce.jpl.nasa.gov/foundation/project/project-bundle>
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_151304_52798"
+	conceptInstance(ACS_Subsystem is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_992620_52801"
+	ACS_Subsystem . mass-management:basicMass = 5.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_863941_52804"
+	ACS_Subsystem . mass-management:massGrowthAllowance = 0.12
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_752598_52937"
+	conceptInstance(Avionics_Radiator is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_383612_52940"
+	Avionics_Radiator . mass-management:basicMass = 3.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_40030_52943"
+	Avionics_Radiator . mass-management:massGrowthAllowance = 0.05
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_514665_52846"
+	conceptInstance(Battery is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_259663_52849"
+	Battery . mass-management:basicMass = 2.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_369213_52852"
+	Battery . mass-management:massGrowthAllowance = 0.1
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_341414_52811"
+	conceptInstance(CDS_Subsystem is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_515688_52814"
+	CDS_Subsystem . mass-management:basicMass = 0.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_840043_52817"
+	CDS_Subsystem . mass-management:massGrowthAllowance = 0.1
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291648_87706_52773"
+	conceptInstance(IMCEDemo is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_474752_52968"
+	reifiedRelationshipInstance(IMCEDemo_spacecraft is-a base:Contains)
+
+	domain(IMCEDemo_spacecraft)=IMCEDemo
+
+	range(IMCEDemo_spacecraft)=Spacecraft
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_336991_52981"
+	reifiedRelationshipInstance(IMCEDemo_instrument_Subsystem is-a base:Contains)
+
+	domain(IMCEDemo_instrument_Subsystem)=IMCEDemo
+
+	range(IMCEDemo_instrument_Subsystem)=Instrument_Subsystem
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_691577_52971"
+	conceptInstance(Instrument_Subsystem is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_886458_52974"
+	Instrument_Subsystem . mass-management:basicMass = 5.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_849392_52977"
+	Instrument_Subsystem . mass-management:massGrowthAllowance = 0.4
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924201_214157_52723"
+	conceptInstance(KNCM4X0_7_021115 is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924201_716201_52728"
+	KNCM4X0_7_021115 . mass-management:basicMass = 8.763093718881308E-4
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924155_1585_52368"
+	conceptInstance(KNM5x0_5_021115 is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924156_216078_52373"
+	KNM5x0_5_021115 . mass-management:basicMass = 0.0020537067129122993
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_66667_52911"
+	conceptInstance(Louvers is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_688383_52914"
+	Louvers . mass-management:basicMass = 3.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_633738_52917"
+	Louvers . mass-management:massGrowthAllowance = 0.15
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924044_546239_52084"
+	conceptInstance(MLH_MMP_CHK_Basic_Box_021115 is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924082_320072_52089"
+	MLH_MMP_CHK_Basic_Box_021115 . mass-management:basicMass = 0.9977138922019226
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002923794_77551_51657"
+	conceptInstance(MLH_MMP_CHK_Instrument_Asm_021115 is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002923858_835064_51663"
+	MLH_MMP_CHK_Instrument_Asm_021115 . mass-management:basicMass = 4.2694167755925285
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002923985_185859_51801"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Instrument_Asm_021115_NA0069_040016_021115 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Instrument_Asm_021115_NA0069_040016_021115)=MLH_MMP_CHK_Instrument_Asm_021115
+
+	range(MLH_MMP_CHK_Instrument_Asm_021115_NA0069_040016_021115)=NA0069_040016_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924020_577416_51943"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Instrument_Asm_021115_ST12259_040_021115 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Instrument_Asm_021115_ST12259_040_021115)=MLH_MMP_CHK_Instrument_Asm_021115
+
+	range(MLH_MMP_CHK_Instrument_Asm_021115_ST12259_040_021115)=st12259_040_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924033_409996_52014"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Instrument_Asm_021115_ST12259_040_021115_1 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Instrument_Asm_021115_ST12259_040_021115_1)=MLH_MMP_CHK_Instrument_Asm_021115
+
+	range(MLH_MMP_CHK_Instrument_Asm_021115_ST12259_040_021115_1)=st12259_040_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924095_727538_52156"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Instrument_Asm_021115_MLH_MMP_CHK_BASIC_BOX_021115 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Instrument_Asm_021115_MLH_MMP_CHK_BASIC_BOX_021115)=MLH_MMP_CHK_Instrument_Asm_021115
+
+	range(MLH_MMP_CHK_Instrument_Asm_021115_MLH_MMP_CHK_BASIC_BOX_021115)=MLH_MMP_CHK_Basic_Box_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924107_443166_52227"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Instrument_Asm_021115_NA0069_040016_021115_1 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Instrument_Asm_021115_NA0069_040016_021115_1)=MLH_MMP_CHK_Instrument_Asm_021115
+
+	range(MLH_MMP_CHK_Instrument_Asm_021115_NA0069_040016_021115_1)=NA0069_040016_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924345_35657_53221"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Instrument_Asm_021115_MLH_MMP_CHK_PANEL_2_021115 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Instrument_Asm_021115_MLH_MMP_CHK_PANEL_2_021115)=MLH_MMP_CHK_Instrument_Asm_021115
+
+	range(MLH_MMP_CHK_Instrument_Asm_021115_MLH_MMP_CHK_PANEL_2_021115)=MLH_MMP_CHK_Panel_2_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924355_286603_53292"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Instrument_Asm_021115_NA0069_040016_021115_2 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Instrument_Asm_021115_NA0069_040016_021115_2)=MLH_MMP_CHK_Instrument_Asm_021115
+
+	range(MLH_MMP_CHK_Instrument_Asm_021115_NA0069_040016_021115_2)=NA0069_040016_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924365_105604_53363"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Instrument_Asm_021115_ST12259_040_021115_2 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Instrument_Asm_021115_ST12259_040_021115_2)=MLH_MMP_CHK_Instrument_Asm_021115
+
+	range(MLH_MMP_CHK_Instrument_Asm_021115_ST12259_040_021115_2)=st12259_040_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924383_887228_53434"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Instrument_Asm_021115_ST12259_040_021115_3 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Instrument_Asm_021115_ST12259_040_021115_3)=MLH_MMP_CHK_Instrument_Asm_021115
+
+	range(MLH_MMP_CHK_Instrument_Asm_021115_ST12259_040_021115_3)=st12259_040_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924394_677908_53505"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Instrument_Asm_021115_NA0069_040016_021115_3 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Instrument_Asm_021115_NA0069_040016_021115_3)=MLH_MMP_CHK_Instrument_Asm_021115
+
+	range(MLH_MMP_CHK_Instrument_Asm_021115_NA0069_040016_021115_3)=NA0069_040016_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002934769_826895_54677"
+	conceptInstance(MLH_MMP_CHK_Instrument_Harness_021115 is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002934772_764173_54682"
+	MLH_MMP_CHK_Instrument_Harness_021115 . mass-management:basicMass = 0.07926977316172498
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924225_150282_52865"
+	conceptInstance(MLH_MMP_CHK_Panel_2_101_021115 is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924286_40984_52870"
+	MLH_MMP_CHK_Panel_2_101_021115 . mass-management:basicMass = 3.2489667185345597
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924120_6084_52297"
+	conceptInstance(MLH_MMP_CHK_Panel_2_021115 is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924137_155244_52302"
+	MLH_MMP_CHK_Panel_2_021115 . mass-management:basicMass = 3.2606867828737616
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924167_336929_52440"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Panel_2_021115_KNM5X0_5_021115 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Panel_2_021115_KNM5X0_5_021115)=MLH_MMP_CHK_Panel_2_021115
+
+	range(MLH_MMP_CHK_Panel_2_021115_KNM5X0_5_021115)=KNM5x0_5_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924175_24459_52511"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Panel_2_021115_KNM5X0_5_021115_1 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Panel_2_021115_KNM5X0_5_021115_1)=MLH_MMP_CHK_Panel_2_021115
+
+	range(MLH_MMP_CHK_Panel_2_021115_KNM5X0_5_021115_1)=KNM5x0_5_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924184_103383_52582"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Panel_2_021115_KNM5X0_5_021115_2 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Panel_2_021115_KNM5X0_5_021115_2)=MLH_MMP_CHK_Panel_2_021115
+
+	range(MLH_MMP_CHK_Panel_2_021115_KNM5X0_5_021115_2)=KNM5x0_5_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924193_571019_52653"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Panel_2_021115_KNM5X0_5_021115_3 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Panel_2_021115_KNM5X0_5_021115_3)=MLH_MMP_CHK_Panel_2_021115
+
+	range(MLH_MMP_CHK_Panel_2_021115_KNM5X0_5_021115_3)=KNM5x0_5_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924211_509479_52795"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Panel_2_021115_KNCM4X0_7_021115 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Panel_2_021115_KNCM4X0_7_021115)=MLH_MMP_CHK_Panel_2_021115
+
+	range(MLH_MMP_CHK_Panel_2_021115_KNCM4X0_7_021115)=KNCM4X0_7_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924303_198293_52937"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Panel_2_021115_MLH_MMP_CHK_PANEL_2_101_021115 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Panel_2_021115_MLH_MMP_CHK_PANEL_2_101_021115)=MLH_MMP_CHK_Panel_2_021115
+
+	range(MLH_MMP_CHK_Panel_2_021115_MLH_MMP_CHK_PANEL_2_101_021115)=MLH_MMP_CHK_Panel_2_101_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924313_504427_53008"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Panel_2_021115_KNCM4X0_7_021115_1 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Panel_2_021115_KNCM4X0_7_021115_1)=MLH_MMP_CHK_Panel_2_021115
+
+	range(MLH_MMP_CHK_Panel_2_021115_KNCM4X0_7_021115_1)=KNCM4X0_7_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924323_752187_53079"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Panel_2_021115_KNCM4X0_7_021115_2 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Panel_2_021115_KNCM4X0_7_021115_2)=MLH_MMP_CHK_Panel_2_021115
+
+	range(MLH_MMP_CHK_Panel_2_021115_KNCM4X0_7_021115_2)=KNCM4X0_7_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924332_255412_53150"
+	reifiedRelationshipInstance(MLH_MMP_CHK_Panel_2_021115_KNCM4X0_7_021115_3 is-a base:Contains)
+
+	domain(MLH_MMP_CHK_Panel_2_021115_KNCM4X0_7_021115_3)=MLH_MMP_CHK_Panel_2_021115
+
+	range(MLH_MMP_CHK_Panel_2_021115_KNCM4X0_7_021115_3)=KNCM4X0_7_021115
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_729973_52898"
+	conceptInstance(MLI is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_429252_52901"
+	MLI . mass-management:basicMass = 1.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_46609_52904"
+	MLI . mass-management:massGrowthAllowance = 0.1
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_831459_52824"
+	conceptInstance(Mechanical_Subsystem is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_354274_52827"
+	Mechanical_Subsystem . mass-management:basicMass = 15.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_653784_52830"
+	Mechanical_Subsystem . mass-management:massGrowthAllowance = 0.1
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002923971_458438_51729"
+	conceptInstance(NA0069_040016_021115 is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002923973_661401_51734"
+	NA0069_040016_021115 . mass-management:basicMass = 0.002492363265876033
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_125719_52924"
+	conceptInstance(PPU_Radiator is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_367207_52927"
+	PPU_Radiator . mass-management:basicMass = 4.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_204035_52930"
+	PPU_Radiator . mass-management:massGrowthAllowance = 0.12
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_871336_52837"
+	conceptInstance(Power_Subsystem is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_775377_52840"
+	Power_Subsystem . mass-management:basicMass = 0.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_249358_52843"
+	Power_Subsystem . mass-management:massGrowthAllowance = 0.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_280068_52856"
+	reifiedRelationshipInstance(Power_Subsystem_battery is-a base:Contains)
+
+	domain(Power_Subsystem_battery)=Power_Subsystem
+
+	range(Power_Subsystem_battery)=Battery
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_130822_52869"
+	reifiedRelationshipInstance(Power_Subsystem_solar_Array is-a base:Contains)
+
+	domain(Power_Subsystem_solar_Array)=Power_Subsystem
+
+	range(Power_Subsystem_solar_Array)=Solar_Array
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_350447_52876"
+	conceptInstance(Propulsion_Subsystem is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_598180_52879"
+	Propulsion_Subsystem . mass-management:basicMass = 2.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_257436_52882"
+	Propulsion_Subsystem . mass-management:massGrowthAllowance = 0.15
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_217660_52950"
+	conceptInstance(Shielding is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_4172_52953"
+	Shielding . mass-management:basicMass = 4.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_419381_52956"
+	Shielding . mass-management:massGrowthAllowance = 0.05
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_297778_52859"
+	conceptInstance(Solar_Array is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_557190_52862"
+	Solar_Array . mass-management:basicMass = 12.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_238644_52865"
+	Solar_Array . mass-management:massGrowthAllowance = 0.1
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_410703_52776"
+	conceptInstance(Spacecraft is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_76387_52779"
+	Spacecraft . mass-management:basicMass = 0.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_988262_52782"
+	Spacecraft . mass-management:massGrowthAllowance = 0.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_813057_52795"
+	reifiedRelationshipInstance(Spacecraft_telecom_Subsystem is-a base:Contains)
+
+	domain(Spacecraft_telecom_Subsystem)=Spacecraft
+
+	range(Spacecraft_telecom_Subsystem)=Telecom_Subsystem
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_983959_52808"
+	reifiedRelationshipInstance(Spacecraft_aCS_Subsystem is-a base:Contains)
+
+	domain(Spacecraft_aCS_Subsystem)=Spacecraft
+
+	range(Spacecraft_aCS_Subsystem)=ACS_Subsystem
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_636171_52821"
+	reifiedRelationshipInstance(Spacecraft_cDS_Subsystem is-a base:Contains)
+
+	domain(Spacecraft_cDS_Subsystem)=Spacecraft
+
+	range(Spacecraft_cDS_Subsystem)=CDS_Subsystem
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_476914_52834"
+	reifiedRelationshipInstance(Spacecraft_mechanical_Subsystem is-a base:Contains)
+
+	domain(Spacecraft_mechanical_Subsystem)=Spacecraft
+
+	range(Spacecraft_mechanical_Subsystem)=Mechanical_Subsystem
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_294189_52873"
+	reifiedRelationshipInstance(Spacecraft_power_Subsystem is-a base:Contains)
+
+	domain(Spacecraft_power_Subsystem)=Spacecraft
+
+	range(Spacecraft_power_Subsystem)=Power_Subsystem
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_73109_52886"
+	reifiedRelationshipInstance(Spacecraft_propulsion_Subsystem is-a base:Contains)
+
+	domain(Spacecraft_propulsion_Subsystem)=Spacecraft
+
+	range(Spacecraft_propulsion_Subsystem)=Propulsion_Subsystem
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_554203_52964"
+	reifiedRelationshipInstance(Spacecraft_thermal_Subsystem is-a base:Contains)
+
+	domain(Spacecraft_thermal_Subsystem)=Spacecraft
+
+	range(Spacecraft_thermal_Subsystem)=Thermal_Subsystem
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_679266_52785"
+	conceptInstance(Telecom_Subsystem is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_279547_52788"
+	Telecom_Subsystem . mass-management:basicMass = 6.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291663_792473_52791"
+	Telecom_Subsystem . mass-management:massGrowthAllowance = 0.1
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_190357_52889"
+	conceptInstance(Thermal_Subsystem is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_329589_52892"
+	Thermal_Subsystem . mass-management:basicMass = 0.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_470283_52895"
+	Thermal_Subsystem . mass-management:massGrowthAllowance = 0.0
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291679_326325_52908"
+	reifiedRelationshipInstance(Thermal_Subsystem_mLI is-a base:Contains)
+
+	domain(Thermal_Subsystem_mLI)=Thermal_Subsystem
+
+	range(Thermal_Subsystem_mLI)=MLI
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_166297_52921"
+	reifiedRelationshipInstance(Thermal_Subsystem_louvers is-a base:Contains)
+
+	domain(Thermal_Subsystem_louvers)=Thermal_Subsystem
+
+	range(Thermal_Subsystem_louvers)=Louvers
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_359429_52934"
+	reifiedRelationshipInstance(Thermal_Subsystem_pPU_Radiator is-a base:Contains)
+
+	domain(Thermal_Subsystem_pPU_Radiator)=Thermal_Subsystem
+
+	range(Thermal_Subsystem_pPU_Radiator)=PPU_Radiator
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_257110_52947"
+	reifiedRelationshipInstance(Thermal_Subsystem_avionics_Radiator is-a base:Contains)
+
+	domain(Thermal_Subsystem_avionics_Radiator)=Thermal_Subsystem
+
+	range(Thermal_Subsystem_avionics_Radiator)=Avionics_Radiator
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1497999291695_368628_52960"
+	reifiedRelationshipInstance(Thermal_Subsystem_shielding is-a base:Contains)
+
+	domain(Thermal_Subsystem_shielding)=Thermal_Subsystem
+
+	range(Thermal_Subsystem_shielding)=Shielding
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054141_476312_221544"
+	conceptInstance(WBS_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054145_211296_221548"
+	conceptInstance(WBS_01_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054143_15243_221546"
+	conceptInstance(WBS_01_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054139_238336_221543"
+	conceptInstance(WBS_01_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054142_408859_221545"
+	conceptInstance(WBS_01_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054152_216121_221556"
+	conceptInstance(WBS_01_04_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054150_882930_221554"
+	conceptInstance(WBS_01_04_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054144_914570_221547"
+	conceptInstance(WBS_01_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054146_422032_221549"
+	conceptInstance(WBS_01_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054147_701057_221551"
+	conceptInstance(WBS_01_06_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054153_599712_221557"
+	conceptInstance(WBS_01_06_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054149_441445_221553"
+	conceptInstance(WBS_01_06_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054148_823556_221552"
+	conceptInstance(WBS_01_06_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054151_456359_221555"
+	conceptInstance(WBS_01_06_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054146_844848_221550"
+	conceptInstance(WBS_01_RE is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054156_331397_221560"
+	conceptInstance(WBS_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054154_95793_221558"
+	conceptInstance(WBS_02_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054166_171759_221571"
+	conceptInstance(WBS_02_01_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054156_430035_221561"
+	conceptInstance(WBS_02_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054161_383108_221566"
+	conceptInstance(WBS_02_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054164_720914_221569"
+	conceptInstance(WBS_02_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054170_372903_221576"
+	conceptInstance(WBS_02_04_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054166_359880_221572"
+	conceptInstance(WBS_02_04_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054169_455420_221575"
+	conceptInstance(WBS_02_04_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054165_704252_221570"
+	conceptInstance(WBS_02_04_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054159_688752_221564"
+	conceptInstance(WBS_02_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054172_632932_221578"
+	conceptInstance(WBS_02_05_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054173_497162_221579"
+	conceptInstance(WBS_02_05_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054168_446083_221574"
+	conceptInstance(WBS_02_05_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054162_390037_221567"
+	conceptInstance(WBS_02_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054167_129584_221573"
+	conceptInstance(WBS_02_06_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054171_11391_221577"
+	conceptInstance(WBS_02_06_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054157_211649_221562"
+	conceptInstance(WBS_02_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054163_330495_221568"
+	conceptInstance(WBS_02_08 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054160_717227_221565"
+	conceptInstance(WBS_02_09 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054158_539003_221563"
+	conceptInstance(WBS_02_10 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054155_401115_221559"
+	conceptInstance(WBS_02_11 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054179_173250_221586"
+	conceptInstance(WBS_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054177_835367_221584"
+	conceptInstance(WBS_03_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054175_372476_221582"
+	conceptInstance(WBS_03_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054198_996757_221605"
+	conceptInstance(WBS_03_02_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054186_368761_221593"
+	conceptInstance(WBS_03_02_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054176_898267_221583"
+	conceptInstance(WBS_03_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054200_401648_221608"
+	conceptInstance(WBS_03_03_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054203_583459_221611"
+	conceptInstance(WBS_03_03_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054181_160044_221588"
+	conceptInstance(WBS_03_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054189_577071_221596"
+	conceptInstance(WBS_03_04_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054183_336142_221590"
+	conceptInstance(WBS_03_04_01_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054201_97798_221609"
+	conceptInstance(WBS_03_04_01_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054187_390087_221594"
+	conceptInstance(WBS_03_04_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054188_977273_221595"
+	conceptInstance(WBS_03_04_02_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054196_517055_221603"
+	conceptInstance(WBS_03_04_02_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054182_114389_221589"
+	conceptInstance(WBS_03_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054193_249464_221601"
+	conceptInstance(WBS_03_05_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054184_306482_221591"
+	conceptInstance(WBS_03_05_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054174_735127_221580"
+	conceptInstance(WBS_03_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054194_379412_221602"
+	conceptInstance(WBS_03_06_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054198_414182_221606"
+	conceptInstance(WBS_03_06_01_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054199_950412_221607"
+	conceptInstance(WBS_03_06_01_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054193_979658_221600"
+	conceptInstance(WBS_03_06_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054197_540860_221604"
+	conceptInstance(WBS_03_06_02_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054202_319782_221610"
+	conceptInstance(WBS_03_06_02_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054175_716087_221581"
+	conceptInstance(WBS_03_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054191_457275_221598"
+	conceptInstance(WBS_03_07_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054185_275132_221592"
+	conceptInstance(WBS_03_07_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054178_152177_221585"
+	conceptInstance(WBS_03_08 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054190_16118_221597"
+	conceptInstance(WBS_03_08_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054192_109671_221599"
+	conceptInstance(WBS_03_08_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054180_983915_221587"
+	conceptInstance(WBS_03_09 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054206_685487_221614"
+	conceptInstance(WBS_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054207_157149_221615"
+	conceptInstance(WBS_04_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054205_602407_221613"
+	conceptInstance(WBS_04_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054217_183042_221625"
+	conceptInstance(WBS_04_02_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054213_666116_221621"
+	conceptInstance(WBS_04_02_01_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054212_70084_221620"
+	conceptInstance(WBS_04_02_01_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054226_491697_221631"
+	conceptInstance(WBS_04_02_01_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054214_551669_221622"
+	conceptInstance(WBS_04_02_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054222_638949_221628"
+	conceptInstance(WBS_04_02_02_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054209_496808_221617"
+	conceptInstance(WBS_04_02_02_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054215_853866_221623"
+	conceptInstance(WBS_04_02_02_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054229_816066_221634"
+	conceptInstance(WBS_04_02_02_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054227_43102_221632"
+	conceptInstance(WBS_04_02_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054208_420794_221616"
+	conceptInstance(WBS_04_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054223_76410_221629"
+	conceptInstance(WBS_04_03_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054228_577811_221633"
+	conceptInstance(WBS_04_03_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054211_180826_221619"
+	conceptInstance(WBS_04_03_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054221_919512_221627"
+	conceptInstance(WBS_04_03_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054219_139169_221626"
+	conceptInstance(WBS_04_03_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054204_308361_221612"
+	conceptInstance(WBS_04_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054225_234856_221630"
+	conceptInstance(WBS_04_05_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054216_623664_221624"
+	conceptInstance(WBS_04_05_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054210_437475_221618"
+	conceptInstance(WBS_04_05_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054237_73365_221642"
+	conceptInstance(WBS_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054241_736651_221646"
+	conceptInstance(WBS_05_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054239_679179_221644"
+	conceptInstance(WBS_05_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054234_837624_221639"
+	conceptInstance(WBS_05_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054231_163109_221636"
+	conceptInstance(WBS_05_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054266_36253_221667"
+	conceptInstance(WBS_05_04_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054253_158739_221656"
+	conceptInstance(WBS_05_04_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054269_28949_221670"
+	conceptInstance(WBS_05_04_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054277_516371_221678"
+	conceptInstance(WBS_05_04_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054271_860176_221672"
+	conceptInstance(WBS_05_04_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054275_283234_221676"
+	conceptInstance(WBS_05_04_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054250_229365_221654"
+	conceptInstance(WBS_05_04_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054251_964069_221655"
+	conceptInstance(WBS_05_04_08 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054272_304417_221673"
+	conceptInstance(WBS_05_04_09 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054248_572256_221652"
+	conceptInstance(WBS_05_04_10 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054258_887833_221661"
+	conceptInstance(WBS_05_04_11 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054276_248827_221677"
+	conceptInstance(WBS_05_04_12 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054233_805754_221638"
+	conceptInstance(WBS_05_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054263_389970_221664"
+	conceptInstance(WBS_05_05_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054244_328939_221648"
+	conceptInstance(WBS_05_05_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054238_801568_221643"
+	conceptInstance(WBS_05_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054247_359205_221651"
+	conceptInstance(WBS_05_06_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054265_709261_221666"
+	conceptInstance(WBS_05_06_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054249_170894_221653"
+	conceptInstance(WBS_05_06_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054243_705434_221647"
+	conceptInstance(WBS_05_06_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054245_421818_221649"
+	conceptInstance(WBS_05_06_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054260_697081_221662"
+	conceptInstance(WBS_05_06_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054274_208370_221675"
+	conceptInstance(WBS_05_06_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054254_823967_221657"
+	conceptInstance(WBS_05_07_to_05_19 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054230_6021_221635"
+	conceptInstance(WBS_05_20 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054246_389005_221650"
+	conceptInstance(WBS_05_20_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054264_566499_221665"
+	conceptInstance(WBS_05_20_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054257_259148_221660"
+	conceptInstance(WBS_05_20_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054261_608543_221663"
+	conceptInstance(WBS_05_20_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054268_334145_221669"
+	conceptInstance(WBS_05_20_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054270_928577_221671"
+	conceptInstance(WBS_05_20_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054273_799859_221674"
+	conceptInstance(WBS_05_20_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054255_455570_221658"
+	conceptInstance(WBS_05_20_08 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054267_661218_221668"
+	conceptInstance(WBS_05_20_09 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054256_599693_221659"
+	conceptInstance(WBS_05_20_10 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054278_60104_221679"
+	conceptInstance(WBS_05_21_to_05_29 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054232_470689_221637"
+	conceptInstance(WBS_05_30 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054235_48591_221640"
+	conceptInstance(WBS_05_31 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054240_576153_221645"
+	conceptInstance(WBS_05_32 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054236_573389_221641"
+	conceptInstance(WBS_05_33 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054282_964662_221684"
+	conceptInstance(WBS_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931538079_281801_299221"
+	reifiedRelationshipInstance(WBS_06_wBS_06_01 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_01)=WBS_06
+
+	range(WBS_06_wBS_06_01)=WBS_06_01
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931543332_813396_299247"
+	reifiedRelationshipInstance(WBS_06_wBS_06_02 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_02)=WBS_06
+
+	range(WBS_06_wBS_06_02)=WBS_06_02
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931545301_79627_299273"
+	reifiedRelationshipInstance(WBS_06_wBS_06_03 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_03)=WBS_06
+
+	range(WBS_06_wBS_06_03)=WBS_06_03
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931548451_645896_299299"
+	reifiedRelationshipInstance(WBS_06_wBS_06_04 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_04)=WBS_06
+
+	range(WBS_06_wBS_06_04)=WBS_06_04
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931552884_318126_299325"
+	reifiedRelationshipInstance(WBS_06_wBS_06_05 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_05)=WBS_06
+
+	range(WBS_06_wBS_06_05)=WBS_06_05
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931555032_151269_299351"
+	reifiedRelationshipInstance(WBS_06_wBS_06_06 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_06)=WBS_06
+
+	range(WBS_06_wBS_06_06)=WBS_06_06
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931557046_511300_299377"
+	reifiedRelationshipInstance(WBS_06_wBS_06_07 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_07)=WBS_06
+
+	range(WBS_06_wBS_06_07)=WBS_06_07
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931559983_679093_299403"
+	reifiedRelationshipInstance(WBS_06_wBS_06_08 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_08)=WBS_06
+
+	range(WBS_06_wBS_06_08)=WBS_06_08
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931563662_62967_299429"
+	reifiedRelationshipInstance(WBS_06_wBS_06_09 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_09)=WBS_06
+
+	range(WBS_06_wBS_06_09)=WBS_06_09
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931567127_902654_299455"
+	reifiedRelationshipInstance(WBS_06_wBS_06_10 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_10)=WBS_06
+
+	range(WBS_06_wBS_06_10)=WBS_06_10
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931570412_615747_299481"
+	reifiedRelationshipInstance(WBS_06_wBS_06_11 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_11)=WBS_06
+
+	range(WBS_06_wBS_06_11)=WBS_06_11
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931573347_755751_299507"
+	reifiedRelationshipInstance(WBS_06_wBS_06_12 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_12)=WBS_06
+
+	range(WBS_06_wBS_06_12)=WBS_06_12
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931579052_81592_299533"
+	reifiedRelationshipInstance(WBS_06_wBS_06_13 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_13)=WBS_06
+
+	range(WBS_06_wBS_06_13)=WBS_06_13
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931582315_128503_299559"
+	reifiedRelationshipInstance(WBS_06_wBS_06_14 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_14)=WBS_06
+
+	range(WBS_06_wBS_06_14)=WBS_06_14
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931585476_987805_299585"
+	reifiedRelationshipInstance(WBS_06_wBS_06_15 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_15)=WBS_06
+
+	range(WBS_06_wBS_06_15)=WBS_06_15
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493931587895_512874_299611"
+	reifiedRelationshipInstance(WBS_06_wBS_06_16 is-a project:Authorizes)
+
+	domain(WBS_06_wBS_06_16)=WBS_06
+
+	range(WBS_06_wBS_06_16)=WBS_06_16
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054290_619770_221692"
+	conceptInstance(WBS_06_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054291_342104_221693"
+	conceptInstance(WBS_06_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054301_444222_221704"
+	conceptInstance(WBS_06_02_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054296_905557_221699"
+	conceptInstance(WBS_06_02_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054285_454809_221687"
+	conceptInstance(WBS_06_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054279_158607_221680"
+	conceptInstance(WBS_06_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054305_25881_221708"
+	conceptInstance(WBS_06_04_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054306_982053_221709"
+	conceptInstance(WBS_06_04_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054310_779632_221713"
+	conceptInstance(WBS_06_04_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054312_562227_221716"
+	conceptInstance(WBS_06_04_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054315_627633_221719"
+	conceptInstance(WBS_06_04_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054317_272449_221721"
+	conceptInstance(WBS_06_04_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054295_340481_221697"
+	conceptInstance(WBS_06_04_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054307_100533_221710"
+	conceptInstance(WBS_06_04_08 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054292_605489_221694"
+	conceptInstance(WBS_06_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054321_607478_221724"
+	conceptInstance(WBS_06_05_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054309_921783_221712"
+	conceptInstance(WBS_06_05_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054322_991705_221725"
+	conceptInstance(WBS_06_05_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054319_221903_221722"
+	conceptInstance(WBS_06_05_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054298_813129_221701"
+	conceptInstance(WBS_06_05_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054308_551804_221711"
+	conceptInstance(WBS_06_05_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054286_941742_221688"
+	conceptInstance(WBS_06_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054302_720615_221705"
+	conceptInstance(WBS_06_06_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054300_193914_221703"
+	conceptInstance(WBS_06_06_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054320_698482_221723"
+	conceptInstance(WBS_06_06_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054314_97858_221718"
+	conceptInstance(WBS_06_06_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054295_401664_221698"
+	conceptInstance(WBS_06_06_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054303_80647_221706"
+	conceptInstance(WBS_06_06_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054316_439671_221720"
+	conceptInstance(WBS_06_06_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054304_282689_221707"
+	conceptInstance(WBS_06_06_08 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054313_31631_221717"
+	conceptInstance(WBS_06_06_09 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054288_846619_221690"
+	conceptInstance(WBS_06_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054323_674776_221726"
+	conceptInstance(WBS_06_07_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054311_982629_221715"
+	conceptInstance(WBS_06_07_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054299_729497_221702"
+	conceptInstance(WBS_06_07_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054297_532985_221700"
+	conceptInstance(WBS_06_07_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054311_858281_221714"
+	conceptInstance(WBS_06_07_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054341_948359_221742"
+	conceptInstance(WBS_06_07_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054354_297145_221753"
+	conceptInstance(WBS_06_07_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054351_104831_221751"
+	conceptInstance(WBS_06_07_08 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054355_34865_221754"
+	conceptInstance(WBS_06_07_09 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054280_336828_221681"
+	conceptInstance(WBS_06_08 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054344_331244_221745"
+	conceptInstance(WBS_06_08_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054328_992615_221731"
+	conceptInstance(WBS_06_08_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054331_398175_221733"
+	conceptInstance(WBS_06_08_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054349_886482_221749"
+	conceptInstance(WBS_06_08_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054350_522328_221750"
+	conceptInstance(WBS_06_08_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054334_720898_221736"
+	conceptInstance(WBS_06_08_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054293_52847_221695"
+	conceptInstance(WBS_06_09 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054342_99254_221743"
+	conceptInstance(WBS_06_09_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054353_901110_221752"
+	conceptInstance(WBS_06_09_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054324_586866_221727"
+	conceptInstance(WBS_06_09_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054325_849993_221728"
+	conceptInstance(WBS_06_09_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054348_291419_221748"
+	conceptInstance(WBS_06_09_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054337_168451_221739"
+	conceptInstance(WBS_06_09_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054284_569876_221686"
+	conceptInstance(WBS_06_10 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054343_857113_221744"
+	conceptInstance(WBS_06_10_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054336_188919_221738"
+	conceptInstance(WBS_06_10_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054347_542705_221747"
+	conceptInstance(WBS_06_10_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054332_526068_221734"
+	conceptInstance(WBS_06_10_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054330_809141_221732"
+	conceptInstance(WBS_06_10_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054338_314400_221740"
+	conceptInstance(WBS_06_10_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054326_79157_221729"
+	conceptInstance(WBS_06_10_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054294_239598_221696"
+	conceptInstance(WBS_06_11 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054335_667736_221737"
+	conceptInstance(WBS_06_11_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054359_970725_221756"
+	conceptInstance(WBS_06_11_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054327_337659_221730"
+	conceptInstance(WBS_06_11_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054340_771372_221741"
+	conceptInstance(WBS_06_11_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054333_475314_221735"
+	conceptInstance(WBS_06_11_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054361_58681_221757"
+	conceptInstance(WBS_06_11_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054281_5561_221682"
+	conceptInstance(WBS_06_12 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054357_778233_221755"
+	conceptInstance(WBS_06_12_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054345_690821_221746"
+	conceptInstance(WBS_06_12_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054380_340224_221772"
+	conceptInstance(WBS_06_12_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054364_41890_221759"
+	conceptInstance(WBS_06_12_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054362_995651_221758"
+	conceptInstance(WBS_06_12_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054378_167850_221771"
+	conceptInstance(WBS_06_12_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054376_510089_221769"
+	conceptInstance(WBS_06_12_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054370_187648_221763"
+	conceptInstance(WBS_06_12_08 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054381_380028_221773"
+	conceptInstance(WBS_06_12_09 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054282_234794_221683"
+	conceptInstance(WBS_06_13 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054287_473586_221689"
+	conceptInstance(WBS_06_14 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054367_56413_221761"
+	conceptInstance(WBS_06_14_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054368_767452_221762"
+	conceptInstance(WBS_06_14_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054365_456305_221760"
+	conceptInstance(WBS_06_14_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054377_356272_221770"
+	conceptInstance(WBS_06_14_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054374_447408_221767"
+	conceptInstance(WBS_06_14_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054289_145898_221691"
+	conceptInstance(WBS_06_15 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054373_995613_221766"
+	conceptInstance(WBS_06_15_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054371_773075_221764"
+	conceptInstance(WBS_06_15_01_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054375_423702_221768"
+	conceptInstance(WBS_06_15_01_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054372_915637_221765"
+	conceptInstance(WBS_06_15_01_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054283_671071_221685"
+	conceptInstance(WBS_06_16 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054388_780934_221777"
+	conceptInstance(WBS_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054393_834745_221781"
+	conceptInstance(WBS_07_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054389_248459_221778"
+	conceptInstance(WBS_07_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054407_459311_221792"
+	conceptInstance(WBS_07_02_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054410_701169_221794"
+	conceptInstance(WBS_07_02_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054411_573081_221795"
+	conceptInstance(WBS_07_02_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054382_450257_221774"
+	conceptInstance(WBS_07_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054384_233671_221775"
+	conceptInstance(WBS_07_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054401_726981_221788"
+	conceptInstance(WBS_07_04_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054409_930661_221793"
+	conceptInstance(WBS_07_04_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054391_534981_221780"
+	conceptInstance(WBS_07_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054394_847013_221782"
+	conceptInstance(WBS_07_05_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054399_674408_221786"
+	conceptInstance(WBS_07_05_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054386_493376_221776"
+	conceptInstance(WBS_07_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054402_693425_221789"
+	conceptInstance(WBS_07_06_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054395_916352_221783"
+	conceptInstance(WBS_07_06_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054390_175635_221779"
+	conceptInstance(WBS_07_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054404_707686_221790"
+	conceptInstance(WBS_07_07_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054400_904542_221787"
+	conceptInstance(WBS_07_07_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054396_982214_221784"
+	conceptInstance(WBS_07_07_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054398_787842_221785"
+	conceptInstance(WBS_07_07_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054406_467659_221791"
+	conceptInstance(WBS_07_07_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054412_930563_221796"
+	conceptInstance(WBS_08 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054413_848978_221797"
+	conceptInstance(WBS_08_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054429_268321_221811"
+	conceptInstance(WBS_09A is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054414_908725_221798"
+	conceptInstance(WBS_09A_ is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054441_922163_221822"
+	conceptInstance(WBS_09A_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054424_373172_221807"
+	conceptInstance(WBS_09A_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054430_226651_221812"
+	conceptInstance(WBS_09A_02_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054439_819959_221820"
+	conceptInstance(WBS_09A_02_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054446_354207_221827"
+	conceptInstance(WBS_09A_02_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054423_725673_221806"
+	conceptInstance(WBS_09A_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054438_463563_221819"
+	conceptInstance(WBS_09A_03_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054425_962961_221808"
+	conceptInstance(WBS_09A_03_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054432_730706_221814"
+	conceptInstance(WBS_09A_03_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054452_864181_221832"
+	conceptInstance(WBS_09A_03_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054443_863883_221824"
+	conceptInstance(WBS_09A_03_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054415_829691_221799"
+	conceptInstance(WBS_09A_03_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054435_625823_221817"
+	conceptInstance(WBS_09A_03_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054419_289315_221802"
+	conceptInstance(WBS_09A_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054442_531777_221823"
+	conceptInstance(WBS_09A_04_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054427_541264_221809"
+	conceptInstance(WBS_09A_04_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054440_483465_221821"
+	conceptInstance(WBS_09A_04_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054433_836717_221815"
+	conceptInstance(WBS_09A_04_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054448_910057_221829"
+	conceptInstance(WBS_09B is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054421_611165_221804"
+	conceptInstance(WBS_09B_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054444_284875_221825"
+	conceptInstance(WBS_09B_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054449_714983_221830"
+	conceptInstance(WBS_09B_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054431_887045_221813"
+	conceptInstance(WBS_09B_03_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054422_722760_221805"
+	conceptInstance(WBS_09B_03_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054445_112962_221826"
+	conceptInstance(WBS_09B_03_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054416_850435_221800"
+	conceptInstance(WBS_09B_03_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054418_483082_221801"
+	conceptInstance(WBS_09B_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054436_106496_221818"
+	conceptInstance(WBS_09B_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054434_622676_221816"
+	conceptInstance(WBS_09B_05_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054447_229490_221828"
+	conceptInstance(WBS_09B_05_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054428_357197_221810"
+	conceptInstance(WBS_09B_05_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054420_484512_221803"
+	conceptInstance(WBS_09B_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054451_848436_221831"
+	conceptInstance(WBS_09B_06_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054463_252861_221842"
+	conceptInstance(WBS_10 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054461_565345_221840"
+	conceptInstance(WBS_10_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054453_295762_221833"
+	conceptInstance(WBS_10_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054456_733643_221836"
+	conceptInstance(WBS_10_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054459_670943_221838"
+	conceptInstance(WBS_10_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054457_499587_221837"
+	conceptInstance(WBS_10_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054460_347198_221839"
+	conceptInstance(WBS_10_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054462_313132_221841"
+	conceptInstance(WBS_10_07 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054454_936266_221834"
+	conceptInstance(WBS_10_08 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054465_195896_221844"
+	conceptInstance(WBS_10_09 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054455_216659_221835"
+	conceptInstance(WBS_10_10 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054466_161800_221845"
+	conceptInstance(WBS_10_11 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054464_389613_221843"
+	conceptInstance(WBS_10_12 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054470_61029_221849"
+	conceptInstance(WBS_11 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054469_171712_221848"
+	conceptInstance(WBS_11_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054472_826377_221851"
+	conceptInstance(WBS_11_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054473_26840_221852"
+	conceptInstance(WBS_11_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054471_765753_221850"
+	conceptInstance(WBS_11_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054467_97614_221846"
+	conceptInstance(WBS_11_05 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054468_971930_221847"
+	conceptInstance(WBS_11_06 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054475_894935_221854"
+	conceptInstance(WBS_12 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054478_967473_221856"
+	conceptInstance(WBS_12_01 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054476_169123_221855"
+	conceptInstance(WBS_12_02 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054474_212260_221853"
+	conceptInstance(WBS_12_03 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f21035f_1493918054479_416636_221857"
+	conceptInstance(WBS_12_04 is-a mass-management:MWorkPackage)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924005_899681_51871"
+	conceptInstance(st12259_040_021115 is-a mass-management:MComponent)
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002924007_214578_51876"
+	st12259_040_021115 . mass-management:basicMass = 2.6166186333530586E-4
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002010578_87635_55140"
+	reifiedRelationshipInstance(WBS_06_05_CDS_Subsystem is-a project:Supplies)
+
+	domain(WBS_06_05_CDS_Subsystem)=WBS_06_05
+
+	range(WBS_06_05_CDS_Subsystem)=CDS_Subsystem
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498001821994_432789_55097"
+	reifiedRelationshipInstance(WBS_06_07_Mechanical_Subsystem is-a project:Supplies)
+
+	domain(WBS_06_07_Mechanical_Subsystem)=WBS_06_07
+
+	range(WBS_06_07_Mechanical_Subsystem)=Mechanical_Subsystem
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002188164_157896_55175"
+	reifiedRelationshipInstance(WBS_06_04_Solar_Array is-a project:Supplies)
+
+	domain(WBS_06_04_Solar_Array)=WBS_06_04
+
+	range(WBS_06_04_Solar_Array)=Solar_Array
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498001901291_81248_55113"
+	reifiedRelationshipInstance(WBS_06_08_Shielding is-a project:Supplies)
+
+	domain(WBS_06_08_Shielding)=WBS_06_08
+
+	range(WBS_06_08_Shielding)=Shielding
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002181413_320303_55172"
+	reifiedRelationshipInstance(WBS_06_04_Power_Subsystem is-a project:Supplies)
+
+	domain(WBS_06_04_Power_Subsystem)=WBS_06_04
+
+	range(WBS_06_04_Power_Subsystem)=Power_Subsystem
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498001454491_546405_55026"
+	reifiedRelationshipInstance(WBS_01_IMCEDemo is-a project:Supplies)
+
+	domain(WBS_01_IMCEDemo)=WBS_01
+
+	range(WBS_01_IMCEDemo)=IMCEDemo
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498001630520_935258_55036"
+	reifiedRelationshipInstance(WBS_05_Instrument_Subsystem is-a project:Supplies)
+
+	domain(WBS_05_Instrument_Subsystem)=WBS_05
+
+	range(WBS_05_Instrument_Subsystem)=Instrument_Subsystem
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002193939_249772_55178"
+	reifiedRelationshipInstance(WBS_06_04_Battery is-a project:Supplies)
+
+	domain(WBS_06_04_Battery)=WBS_06_04
+
+	range(WBS_06_04_Battery)=Battery
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498001893686_498063_55107"
+	reifiedRelationshipInstance(WBS_06_08_Avionics_Radiator is-a project:Supplies)
+
+	domain(WBS_06_08_Avionics_Radiator)=WBS_06_08
+
+	range(WBS_06_08_Avionics_Radiator)=Avionics_Radiator
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498001908062_137447_55116"
+	reifiedRelationshipInstance(WBS_06_08_PPU_Radiator is-a project:Supplies)
+
+	domain(WBS_06_08_PPU_Radiator)=WBS_06_08
+
+	range(WBS_06_08_PPU_Radiator)=PPU_Radiator
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498001709729_96496_55090"
+	reifiedRelationshipInstance(WBS_06_08_Thermal_Subsystem is-a project:Supplies)
+
+	domain(WBS_06_08_Thermal_Subsystem)=WBS_06_08
+
+	range(WBS_06_08_Thermal_Subsystem)=Thermal_Subsystem
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002085696_977592_55158"
+	reifiedRelationshipInstance(WBS_06_09_Propulsion_Subsystem is-a project:Supplies)
+
+	domain(WBS_06_09_Propulsion_Subsystem)=WBS_06_09
+
+	range(WBS_06_09_Propulsion_Subsystem)=Propulsion_Subsystem
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498001896416_683192_55110"
+	reifiedRelationshipInstance(WBS_06_08_Louvers is-a project:Supplies)
+
+	domain(WBS_06_08_Louvers)=WBS_06_08
+
+	range(WBS_06_08_Louvers)=Louvers
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002124485_923802_55165"
+	reifiedRelationshipInstance(WBS_06_10_ACS_Subsystem is-a project:Supplies)
+
+	domain(WBS_06_10_ACS_Subsystem)=WBS_06_10
+
+	range(WBS_06_10_ACS_Subsystem)=ACS_Subsystem
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498002058896_835177_55151"
+	reifiedRelationshipInstance(WBS_06_06_Telecom_Subsystem is-a project:Supplies)
+
+	domain(WBS_06_06_Telecom_Subsystem)=WBS_06_06
+
+	range(WBS_06_06_Telecom_Subsystem)=Telecom_Subsystem
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498001500234_517670_55033"
+	reifiedRelationshipInstance(WBS_06_Spacecraft is-a project:Supplies)
+
+	domain(WBS_06_Spacecraft)=WBS_06
+
+	range(WBS_06_Spacecraft)=Spacecraft
+
+
+	@oml:MD_ELEMENT_ID="_18_0_6_f060354_1498001891237_147903_55104"
+	reifiedRelationshipInstance(WBS_06_08_MLI is-a project:Supplies)
+
+	domain(WBS_06_08_MLI)=WBS_06_08
+
+	range(WBS_06_08_MLI)=MLI
+
+}

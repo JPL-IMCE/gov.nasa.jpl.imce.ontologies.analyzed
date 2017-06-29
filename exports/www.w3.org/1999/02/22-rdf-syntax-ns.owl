@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xml:base="http://www.w3.org/1999/02/22-rdf-syntax-ns"
+     xmlns:annotation="http://imce.jpl.nasa.gov/foundation/annotation/annotation#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:runtime="http://imce.jpl.nasa.gov/oml/runtime#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology about="http://www.w3.org/1999/02/22-rdf-syntax-ns">
+        <owl:imports resource="http://www.w3.org/2001/XMLSchema"/>
+        <runtime:OML2EcoreNsURI datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/_1999/_02/_22/rdf</runtime:OML2EcoreNsURI>
+        <runtime:OML2EcoreNsPrefix datatype="http://www.w3.org/2001/XMLSchema#string">rdf</runtime:OML2EcoreNsPrefix>
+        <annotation:isDefinition datatype="http://www.w3.org/2001/XMLSchema#boolean">true</annotation:isDefinition>
+        <annotation:hasRelativeIRI datatype="http://www.w3.org/2001/XMLSchema#string">www.w3.org/1999/02/22-rdf-syntax-ns</annotation:hasRelativeIRI>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+
+    <rdfs:Datatype about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral -->
+
+
+    <rdfs:Datatype about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topObjectProperty -->
+
+
+    <owl:ObjectProperty about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topObjectProperty"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topReifiedObjectProperty -->
+
+
+    <owl:ObjectProperty about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topReifiedObjectProperty">
+        <rdfs:subPropertyOf resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topReifiedObjectPropertySource -->
+
+
+    <owl:ObjectProperty about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topReifiedObjectPropertySource">
+        <rdfs:subPropertyOf resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topObjectProperty"/>
+        <type resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topReifiedObjectPropertyTarget -->
+
+
+    <owl:ObjectProperty about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topReifiedObjectPropertyTarget">
+        <rdfs:subPropertyOf resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topObjectProperty"/>
+        <type resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topReifiedStructuredDataProperty -->
+
+
+    <owl:ObjectProperty about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topReifiedStructuredDataProperty">
+        <rdfs:subPropertyOf resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topReifiedStructuredDataPropertySource -->
+
+
+    <owl:ObjectProperty about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topReifiedStructuredDataPropertySource">
+        <rdfs:subPropertyOf resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topObjectProperty"/>
+        <type resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topReifiedStructuredDataPropertyTarget -->
+
+
+    <owl:ObjectProperty about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topReifiedStructuredDataPropertyTarget">
+        <rdfs:subPropertyOf resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topObjectProperty"/>
+        <type resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topUnreifiedObjectProperty -->
+
+
+    <owl:ObjectProperty about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topUnreifiedObjectProperty">
+        <rdfs:subPropertyOf resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topDataProperty -->
+
+
+    <owl:DatatypeProperty about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#Aspect -->
+
+
+    <owl:Class about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#Aspect">
+        <rdfs:subClassOf resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#Entity -->
+
+
+    <owl:Class about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#Entity">
+        <rdfs:subClassOf resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#ReifiedObjectProperty -->
+
+
+    <owl:Class about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#ReifiedObjectProperty">
+        <rdfs:subClassOf resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#ReifiedStructuredDataProperty -->
+
+
+    <owl:Class about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#ReifiedStructuredDataProperty">
+        <rdfs:subClassOf resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#StructuredDatatype -->
+
+
+    <owl:Class about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#StructuredDatatype">
+        <rdfs:subClassOf resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#Thing -->
+
+
+    <owl:Class about="http://imce.jpl.nasa.gov/backbone/www.w3.org/1999/02/22-rdf-syntax-ns#Thing"/>
+</RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.0.5) https://github.com/owlcs/owlapi/ -->
+
+

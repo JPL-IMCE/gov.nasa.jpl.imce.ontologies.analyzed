@@ -1,0 +1,5647 @@
+open terminology <http://www.nomagic.com/magicdraw/UML/2.5/vocabulary> {
+
+	extends <http://www.w3.org/2001/XMLSchema>
+
+	numericScalarRestriction UnlimitedNatural {
+		minInclusive "0"
+		restrictedRange XMLSchema:int
+	}
+
+	scalarOneOfRestriction AggregationKind {
+		restrictedRange XMLSchema:string
+	}
+
+	oneOf AggregationKind = "composite"
+
+	oneOf AggregationKind = "none"
+
+	oneOf AggregationKind = "shared"
+
+	scalarOneOfRestriction CallConcurrencyKind {
+		restrictedRange XMLSchema:string
+	}
+
+	oneOf CallConcurrencyKind = "concurrent"
+
+	oneOf CallConcurrencyKind = "guarded"
+
+	oneOf CallConcurrencyKind = "sequential"
+
+	scalarOneOfRestriction ConnectorKind {
+		restrictedRange XMLSchema:string
+	}
+
+	oneOf ConnectorKind = "assembly"
+
+	oneOf ConnectorKind = "delegation"
+
+	scalarOneOfRestriction ExpansionKind {
+		restrictedRange XMLSchema:string
+	}
+
+	oneOf ExpansionKind = "iterative"
+
+	oneOf ExpansionKind = "parallel"
+
+	oneOf ExpansionKind = "stream"
+
+	scalarOneOfRestriction InteractionOperatorKind {
+		restrictedRange XMLSchema:string
+	}
+
+	oneOf InteractionOperatorKind = "alt"
+
+	oneOf InteractionOperatorKind = "assert"
+
+	oneOf InteractionOperatorKind = "break"
+
+	oneOf InteractionOperatorKind = "consider"
+
+	oneOf InteractionOperatorKind = "critical"
+
+	oneOf InteractionOperatorKind = "ignore"
+
+	oneOf InteractionOperatorKind = "loop"
+
+	oneOf InteractionOperatorKind = "neg"
+
+	oneOf InteractionOperatorKind = "opt"
+
+	oneOf InteractionOperatorKind = "par"
+
+	oneOf InteractionOperatorKind = "seq"
+
+	oneOf InteractionOperatorKind = "strict"
+
+	scalarOneOfRestriction MessageKind {
+		restrictedRange XMLSchema:string
+	}
+
+	oneOf MessageKind = "complete"
+
+	oneOf MessageKind = "found"
+
+	oneOf MessageKind = "lost"
+
+	oneOf MessageKind = "unknown"
+
+	scalarOneOfRestriction MessageSort {
+		restrictedRange XMLSchema:string
+	}
+
+	oneOf MessageSort = "asynchCall"
+
+	oneOf MessageSort = "asynchSignal"
+
+	oneOf MessageSort = "createMessage"
+
+	oneOf MessageSort = "deleteMessage"
+
+	oneOf MessageSort = "reply"
+
+	oneOf MessageSort = "synchCall"
+
+	scalarOneOfRestriction ObjectNodeOrderingKind {
+		restrictedRange XMLSchema:string
+	}
+
+	oneOf ObjectNodeOrderingKind = "FIFO"
+
+	oneOf ObjectNodeOrderingKind = "LIFO"
+
+	oneOf ObjectNodeOrderingKind = "ordered"
+
+	oneOf ObjectNodeOrderingKind = "unordered"
+
+	scalarOneOfRestriction ParameterDirectionKind {
+		restrictedRange XMLSchema:string
+	}
+
+	oneOf ParameterDirectionKind = "in"
+
+	oneOf ParameterDirectionKind = "inout"
+
+	oneOf ParameterDirectionKind = "out"
+
+	oneOf ParameterDirectionKind = "return"
+
+	scalarOneOfRestriction ParameterEffectKind {
+		restrictedRange XMLSchema:string
+	}
+
+	oneOf ParameterEffectKind = "create"
+
+	oneOf ParameterEffectKind = "delete"
+
+	oneOf ParameterEffectKind = "read"
+
+	oneOf ParameterEffectKind = "update"
+
+	scalarOneOfRestriction PseudostateKind {
+		restrictedRange XMLSchema:string
+	}
+
+	oneOf PseudostateKind = "choice"
+
+	oneOf PseudostateKind = "deepHistory"
+
+	oneOf PseudostateKind = "entryPoint"
+
+	oneOf PseudostateKind = "exitPoint"
+
+	oneOf PseudostateKind = "fork"
+
+	oneOf PseudostateKind = "initial"
+
+	oneOf PseudostateKind = "join"
+
+	oneOf PseudostateKind = "junction"
+
+	oneOf PseudostateKind = "shallowHistory"
+
+	oneOf PseudostateKind = "terminate"
+
+	scalarOneOfRestriction TransitionKind {
+		restrictedRange XMLSchema:string
+	}
+
+	oneOf TransitionKind = "external"
+
+	oneOf TransitionKind = "internal"
+
+	oneOf TransitionKind = "local"
+
+	scalarOneOfRestriction VisibilityKind {
+		restrictedRange XMLSchema:string
+	}
+
+	oneOf VisibilityKind = "package"
+
+	oneOf VisibilityKind = "private"
+
+	oneOf VisibilityKind = "protected"
+
+	oneOf VisibilityKind = "public"
+
+	aspect Abstraction
+
+	aspect AcceptCallAction
+
+	aspect AcceptEventAction
+
+	entityScalarDataProperty AcceptEventAction_isUnmarshall {
+		domain AcceptEventAction
+		range XMLSchema:boolean
+	}
+
+	aspect Action
+
+	entityScalarDataProperty Action_isLocallyReentrant {
+		domain Action
+		range XMLSchema:boolean
+	}
+
+	aspect ActionExecutionSpecification
+
+	aspect ActionInputPin
+
+	aspect Activity
+
+	entityScalarDataProperty Activity_isReadOnly {
+		domain Activity
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty Activity_isSingleExecution {
+		domain Activity
+		range XMLSchema:boolean
+	}
+
+	aspect ActivityEdge
+
+	aspect ActivityFinalNode
+
+	aspect ActivityGroup
+
+	aspect ActivityNode
+
+	aspect ActivityParameterNode
+
+	aspect ActivityPartition
+
+	entityScalarDataProperty ActivityPartition_isDimension {
+		domain ActivityPartition
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty ActivityPartition_isExternal {
+		domain ActivityPartition
+		range XMLSchema:boolean
+	}
+
+	aspect Actor
+
+	aspect AddStructuralFeatureValueAction
+
+	entityScalarDataProperty AddStructuralFeatureValueAction_isReplaceAll {
+		domain AddStructuralFeatureValueAction
+		range XMLSchema:boolean
+	}
+
+	aspect AddVariableValueAction
+
+	entityScalarDataProperty AddVariableValueAction_isReplaceAll {
+		domain AddVariableValueAction
+		range XMLSchema:boolean
+	}
+
+	aspect AnyReceiveEvent
+
+	aspect Artifact
+
+	entityScalarDataProperty Artifact_fileName {
+		domain Artifact
+		range XMLSchema:string
+	}
+
+	aspect Association
+
+	entityScalarDataProperty Association_isDerived {
+		domain Association
+		range XMLSchema:boolean
+	}
+
+	aspect AssociationClass
+
+	aspect Behavior
+
+	entityScalarDataProperty Behavior_isReentrant {
+		domain Behavior
+		range XMLSchema:boolean
+	}
+
+	aspect BehaviorExecutionSpecification
+
+	aspect BehavioralFeature
+
+	entityScalarDataProperty BehavioralFeature_concurrency {
+		domain BehavioralFeature
+		range CallConcurrencyKind
+	}
+
+	entityScalarDataProperty BehavioralFeature_isAbstract {
+		domain BehavioralFeature
+		range XMLSchema:boolean
+	}
+
+	aspect BehavioredClassifier
+
+	aspect BroadcastSignalAction
+
+	aspect CallAction
+
+	entityScalarDataProperty CallAction_isSynchronous {
+		domain CallAction
+		range XMLSchema:boolean
+	}
+
+	aspect CallBehaviorAction
+
+	aspect CallEvent
+
+	aspect CallOperationAction
+
+	aspect CentralBufferNode
+
+	aspect ChangeEvent
+
+	aspect Class
+
+	entityScalarDataProperty Class_isAbstract {
+		domain Class
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty Class_isActive {
+		domain Class
+		range XMLSchema:boolean
+	}
+
+	aspect Classifier
+
+	entityScalarDataProperty Classifier_isAbstract {
+		domain Classifier
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty Classifier_isFinalSpecialization {
+		domain Classifier
+		range XMLSchema:boolean
+	}
+
+	aspect ClassifierTemplateParameter
+
+	entityScalarDataProperty ClassifierTemplateParameter_allowSubstitutable {
+		domain ClassifierTemplateParameter
+		range XMLSchema:boolean
+	}
+
+	aspect Clause
+
+	aspect ClearAssociationAction
+
+	aspect ClearStructuralFeatureAction
+
+	aspect ClearVariableAction
+
+	aspect Collaboration
+
+	aspect CollaborationUse
+
+	aspect CombinedFragment
+
+	entityScalarDataProperty CombinedFragment_interactionOperator {
+		domain CombinedFragment
+		range InteractionOperatorKind
+	}
+
+	aspect Comment
+
+	entityScalarDataProperty Comment_body {
+		domain Comment
+		range XMLSchema:string
+	}
+
+	aspect CommunicationPath
+
+	aspect Component
+
+	entityScalarDataProperty Component_isIndirectlyInstantiated {
+		domain Component
+		range XMLSchema:boolean
+	}
+
+	aspect ComponentRealization
+
+	aspect ConditionalNode
+
+	entityScalarDataProperty ConditionalNode_isAssured {
+		domain ConditionalNode
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty ConditionalNode_isDeterminate {
+		domain ConditionalNode
+		range XMLSchema:boolean
+	}
+
+	aspect ConnectableElement
+
+	aspect ConnectableElementTemplateParameter
+
+	aspect ConnectionPointReference
+
+	aspect Connector
+
+	entityScalarDataProperty Connector_kind {
+		domain Connector
+		range ConnectorKind
+	}
+
+	aspect ConnectorEnd
+
+	aspect ConsiderIgnoreFragment
+
+	aspect Constraint
+
+	aspect Continuation
+
+	entityScalarDataProperty Continuation_setting {
+		domain Continuation
+		range XMLSchema:boolean
+	}
+
+	aspect ControlFlow
+
+	aspect ControlNode
+
+	aspect CreateLinkAction
+
+	aspect CreateLinkObjectAction
+
+	aspect CreateObjectAction
+
+	aspect DataStoreNode
+
+	aspect DataType
+
+	aspect DecisionNode
+
+	aspect Dependency
+
+	aspect DeployedArtifact
+
+	aspect Deployment
+
+	aspect DeploymentSpecification
+
+	entityScalarDataProperty DeploymentSpecification_deploymentLocation {
+		domain DeploymentSpecification
+		range XMLSchema:string
+	}
+
+	entityScalarDataProperty DeploymentSpecification_executionLocation {
+		domain DeploymentSpecification
+		range XMLSchema:string
+	}
+
+	aspect DeploymentTarget
+
+	aspect DestroyLinkAction
+
+	aspect DestroyObjectAction
+
+	entityScalarDataProperty DestroyObjectAction_isDestroyLinks {
+		domain DestroyObjectAction
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty DestroyObjectAction_isDestroyOwnedObjects {
+		domain DestroyObjectAction
+		range XMLSchema:boolean
+	}
+
+	aspect DestructionOccurrenceSpecification
+
+	aspect Device
+
+	aspect Diagram
+
+	aspect DirectedRelationship
+
+	aspect Duration
+
+	aspect DurationConstraint
+
+	entityScalarDataProperty DurationConstraint_firstEvent {
+		domain DurationConstraint
+		range XMLSchema:boolean
+	}
+
+	aspect DurationInterval
+
+	aspect DurationObservation
+
+	entityScalarDataProperty DurationObservation_firstEvent {
+		domain DurationObservation
+		range XMLSchema:boolean
+	}
+
+	aspect Element
+
+	aspect ElementImport
+
+	entityScalarDataProperty ElementImport_alias {
+		domain ElementImport
+		range XMLSchema:string
+	}
+
+	entityScalarDataProperty ElementImport_visibility {
+		domain ElementImport
+		range VisibilityKind
+	}
+
+	aspect ElementValue
+
+	aspect EncapsulatedClassifier
+
+	aspect Enumeration
+
+	aspect EnumerationLiteral
+
+	aspect Event
+
+	aspect ExceptionHandler
+
+	aspect ExecutableNode
+
+	aspect ExecutionEnvironment
+
+	aspect ExecutionOccurrenceSpecification
+
+	aspect ExecutionSpecification
+
+	aspect ExpansionNode
+
+	aspect ExpansionRegion
+
+	entityScalarDataProperty ExpansionRegion_mode {
+		domain ExpansionRegion
+		range ExpansionKind
+	}
+
+	aspect Expression
+
+	entityScalarDataProperty Expression_symbol {
+		domain Expression
+		range XMLSchema:string
+	}
+
+	aspect Extend
+
+	aspect Extension
+
+	entityScalarDataProperty Extension_isRequired {
+		domain Extension
+		range XMLSchema:boolean
+	}
+
+	aspect ExtensionEnd
+
+	entityScalarDataProperty ExtensionEnd_lower {
+		domain ExtensionEnd
+		range XMLSchema:int
+	}
+
+	aspect ExtensionPoint
+
+	aspect Feature
+
+	entityScalarDataProperty Feature_isStatic {
+		domain Feature
+		range XMLSchema:boolean
+	}
+
+	aspect FinalNode
+
+	aspect FinalState
+
+	aspect FlowFinalNode
+
+	aspect ForkNode
+
+	aspect FunctionBehavior
+
+	aspect Gate
+
+	aspect GeneralOrdering
+
+	aspect Generalization
+
+	entityScalarDataProperty Generalization_isSubstitutable {
+		domain Generalization
+		range XMLSchema:boolean
+	}
+
+	aspect GeneralizationSet
+
+	entityScalarDataProperty GeneralizationSet_isCovering {
+		domain GeneralizationSet
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty GeneralizationSet_isDisjoint {
+		domain GeneralizationSet
+		range XMLSchema:boolean
+	}
+
+	aspect Image
+
+	entityScalarDataProperty Image_content {
+		domain Image
+		range XMLSchema:string
+	}
+
+	entityScalarDataProperty Image_format {
+		domain Image
+		range XMLSchema:string
+	}
+
+	entityScalarDataProperty Image_location {
+		domain Image
+		range XMLSchema:string
+	}
+
+	aspect Include
+
+	aspect InformationFlow
+
+	aspect InformationItem
+
+	aspect InitialNode
+
+	aspect InputPin
+
+	aspect InstanceSpecification
+
+	aspect InstanceValue
+
+	aspect Interaction
+
+	aspect InteractionConstraint
+
+	aspect InteractionFragment
+
+	aspect InteractionOperand
+
+	aspect InteractionUse
+
+	aspect Interface
+
+	aspect InterfaceRealization
+
+	aspect InterruptibleActivityRegion
+
+	aspect Interval
+
+	aspect IntervalConstraint
+
+	aspect InvocationAction
+
+	aspect JoinNode
+
+	entityScalarDataProperty JoinNode_isCombineDuplicate {
+		domain JoinNode
+		range XMLSchema:boolean
+	}
+
+	aspect Lifeline
+
+	aspect LinkAction
+
+	aspect LinkEndCreationData
+
+	entityScalarDataProperty LinkEndCreationData_isReplaceAll {
+		domain LinkEndCreationData
+		range XMLSchema:boolean
+	}
+
+	aspect LinkEndData
+
+	aspect LinkEndDestructionData
+
+	entityScalarDataProperty LinkEndDestructionData_isDestroyDuplicates {
+		domain LinkEndDestructionData
+		range XMLSchema:boolean
+	}
+
+	aspect LiteralBoolean
+
+	entityScalarDataProperty LiteralBoolean_value {
+		domain LiteralBoolean
+		range XMLSchema:boolean
+	}
+
+	aspect LiteralInteger
+
+	entityScalarDataProperty LiteralInteger_value {
+		domain LiteralInteger
+		range XMLSchema:int
+	}
+
+	aspect LiteralNull
+
+	aspect LiteralReal
+
+	entityScalarDataProperty LiteralReal_value {
+		domain LiteralReal
+		range XMLSchema:decimal
+	}
+
+	aspect LiteralSpecification
+
+	aspect LiteralString
+
+	entityScalarDataProperty LiteralString_value {
+		domain LiteralString
+		range XMLSchema:string
+	}
+
+	aspect LiteralUnlimitedNatural
+
+	entityScalarDataProperty LiteralUnlimitedNatural_value {
+		domain LiteralUnlimitedNatural
+		range UnlimitedNatural
+	}
+
+	aspect LoopNode
+
+	entityScalarDataProperty LoopNode_isTestedFirst {
+		domain LoopNode
+		range XMLSchema:boolean
+	}
+
+	aspect Manifestation
+
+	aspect MergeNode
+
+	aspect Message
+
+	entityScalarDataProperty Message_messageKind {
+		domain Message
+		range MessageKind
+	}
+
+	entityScalarDataProperty Message_messageSort {
+		domain Message
+		range MessageSort
+	}
+
+	aspect MessageEnd
+
+	aspect MessageEvent
+
+	aspect MessageOccurrenceSpecification
+
+	aspect Model
+
+	entityScalarDataProperty Model_viewpoint {
+		domain Model
+		range XMLSchema:string
+	}
+
+	aspect MultiplicityElement
+
+	entityScalarDataProperty MultiplicityElement_isOrdered {
+		domain MultiplicityElement
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty MultiplicityElement_isUnique {
+		domain MultiplicityElement
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty MultiplicityElement_lower {
+		domain MultiplicityElement
+		range XMLSchema:int
+	}
+
+	entityScalarDataProperty MultiplicityElement_upper {
+		domain MultiplicityElement
+		range UnlimitedNatural
+	}
+
+	aspect NamedElement
+
+	entityScalarDataProperty NamedElement_name {
+		domain NamedElement
+		range XMLSchema:string
+	}
+
+	entityScalarDataProperty NamedElement_qualifiedName {
+		domain NamedElement
+		range XMLSchema:string
+	}
+
+	entityScalarDataProperty NamedElement_visibility {
+		domain NamedElement
+		range VisibilityKind
+	}
+
+	aspect Namespace
+
+	aspect Node
+
+	aspect ObjectFlow
+
+	entityScalarDataProperty ObjectFlow_isMulticast {
+		domain ObjectFlow
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty ObjectFlow_isMultireceive {
+		domain ObjectFlow
+		range XMLSchema:boolean
+	}
+
+	aspect ObjectNode
+
+	entityScalarDataProperty ObjectNode_isControlType {
+		domain ObjectNode
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty ObjectNode_ordering {
+		domain ObjectNode
+		range ObjectNodeOrderingKind
+	}
+
+	aspect Observation
+
+	aspect OccurrenceSpecification
+
+	aspect OpaqueAction
+
+	entityScalarDataProperty OpaqueAction_body {
+		domain OpaqueAction
+		range XMLSchema:string
+	}
+
+	entityScalarDataProperty OpaqueAction_language {
+		domain OpaqueAction
+		range XMLSchema:string
+	}
+
+	aspect OpaqueBehavior
+
+	entityScalarDataProperty OpaqueBehavior_body {
+		domain OpaqueBehavior
+		range XMLSchema:string
+	}
+
+	entityScalarDataProperty OpaqueBehavior_language {
+		domain OpaqueBehavior
+		range XMLSchema:string
+	}
+
+	aspect OpaqueExpression
+
+	entityScalarDataProperty OpaqueExpression_body {
+		domain OpaqueExpression
+		range XMLSchema:string
+	}
+
+	entityScalarDataProperty OpaqueExpression_language {
+		domain OpaqueExpression
+		range XMLSchema:string
+	}
+
+	aspect Operation
+
+	entityScalarDataProperty Operation_isOrdered {
+		domain Operation
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty Operation_isQuery {
+		domain Operation
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty Operation_isUnique {
+		domain Operation
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty Operation_lower {
+		domain Operation
+		range XMLSchema:int
+	}
+
+	entityScalarDataProperty Operation_upper {
+		domain Operation
+		range UnlimitedNatural
+	}
+
+	aspect OperationTemplateParameter
+
+	aspect OutputPin
+
+	aspect Package
+
+	entityScalarDataProperty Package_URI {
+		domain Package
+		range XMLSchema:string
+	}
+
+	aspect PackageImport
+
+	entityScalarDataProperty PackageImport_visibility {
+		domain PackageImport
+		range VisibilityKind
+	}
+
+	aspect PackageMerge
+
+	aspect PackageableElement
+
+	entityScalarDataProperty PackageableElement_visibility {
+		domain PackageableElement
+		range VisibilityKind
+	}
+
+	aspect Parameter
+
+	entityScalarDataProperty Parameter_default {
+		domain Parameter
+		range XMLSchema:string
+	}
+
+	entityScalarDataProperty Parameter_direction {
+		domain Parameter
+		range ParameterDirectionKind
+	}
+
+	entityScalarDataProperty Parameter_effect {
+		domain Parameter
+		range ParameterEffectKind
+	}
+
+	entityScalarDataProperty Parameter_isException {
+		domain Parameter
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty Parameter_isStream {
+		domain Parameter
+		range XMLSchema:boolean
+	}
+
+	aspect ParameterSet
+
+	aspect ParameterableElement
+
+	aspect PartDecomposition
+
+	aspect Pin
+
+	entityScalarDataProperty Pin_isControl {
+		domain Pin
+		range XMLSchema:boolean
+	}
+
+	aspect Port
+
+	entityScalarDataProperty Port_isBehavior {
+		domain Port
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty Port_isConjugated {
+		domain Port
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty Port_isService {
+		domain Port
+		range XMLSchema:boolean
+	}
+
+	aspect PrimitiveType
+
+	aspect Profile
+
+	aspect ProfileApplication
+
+	entityScalarDataProperty ProfileApplication_isStrict {
+		domain ProfileApplication
+		range XMLSchema:boolean
+	}
+
+	aspect Property
+
+	entityScalarDataProperty Property_aggregation {
+		domain Property
+		range AggregationKind
+	}
+
+	entityScalarDataProperty Property_isComposite {
+		domain Property
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty Property_isDerived {
+		domain Property
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty Property_isDerivedUnion {
+		domain Property
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty Property_isID {
+		domain Property
+		range XMLSchema:boolean
+	}
+
+	aspect ProtocolConformance
+
+	aspect ProtocolStateMachine
+
+	aspect ProtocolTransition
+
+	aspect Pseudostate
+
+	entityScalarDataProperty Pseudostate_kind {
+		domain Pseudostate
+		range PseudostateKind
+	}
+
+	aspect QualifierValue
+
+	aspect RaiseExceptionAction
+
+	aspect ReadExtentAction
+
+	aspect ReadIsClassifiedObjectAction
+
+	entityScalarDataProperty ReadIsClassifiedObjectAction_isDirect {
+		domain ReadIsClassifiedObjectAction
+		range XMLSchema:boolean
+	}
+
+	aspect ReadLinkAction
+
+	aspect ReadLinkObjectEndAction
+
+	aspect ReadLinkObjectEndQualifierAction
+
+	aspect ReadSelfAction
+
+	aspect ReadStructuralFeatureAction
+
+	aspect ReadVariableAction
+
+	aspect Realization
+
+	aspect Reception
+
+	aspect ReclassifyObjectAction
+
+	entityScalarDataProperty ReclassifyObjectAction_isReplaceAll {
+		domain ReclassifyObjectAction
+		range XMLSchema:boolean
+	}
+
+	aspect RedefinableElement
+
+	entityScalarDataProperty RedefinableElement_isLeaf {
+		domain RedefinableElement
+		range XMLSchema:boolean
+	}
+
+	aspect RedefinableTemplateSignature
+
+	aspect ReduceAction
+
+	entityScalarDataProperty ReduceAction_isOrdered {
+		domain ReduceAction
+		range XMLSchema:boolean
+	}
+
+	aspect Region
+
+	aspect Relationship
+
+	aspect RemoveStructuralFeatureValueAction
+
+	entityScalarDataProperty RemoveStructuralFeatureValueAction_isRemoveDuplicates {
+		domain RemoveStructuralFeatureValueAction
+		range XMLSchema:boolean
+	}
+
+	aspect RemoveVariableValueAction
+
+	entityScalarDataProperty RemoveVariableValueAction_isRemoveDuplicates {
+		domain RemoveVariableValueAction
+		range XMLSchema:boolean
+	}
+
+	aspect ReplyAction
+
+	aspect SendObjectAction
+
+	aspect SendSignalAction
+
+	aspect SequenceNode
+
+	aspect Signal
+
+	aspect SignalEvent
+
+	aspect Slot
+
+	aspect StartClassifierBehaviorAction
+
+	aspect StartObjectBehaviorAction
+
+	aspect State
+
+	entityScalarDataProperty State_isComposite {
+		domain State
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty State_isOrthogonal {
+		domain State
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty State_isSimple {
+		domain State
+		range XMLSchema:boolean
+	}
+
+	entityScalarDataProperty State_isSubmachineState {
+		domain State
+		range XMLSchema:boolean
+	}
+
+	aspect StateInvariant
+
+	aspect StateMachine
+
+	aspect Stereotype
+
+	aspect StringExpression
+
+	aspect StructuralFeature
+
+	entityScalarDataProperty StructuralFeature_isReadOnly {
+		domain StructuralFeature
+		range XMLSchema:boolean
+	}
+
+	aspect StructuralFeatureAction
+
+	aspect StructuredActivityNode
+
+	entityScalarDataProperty StructuredActivityNode_mustIsolate {
+		domain StructuredActivityNode
+		range XMLSchema:boolean
+	}
+
+	aspect StructuredClassifier
+
+	aspect Substitution
+
+	aspect TemplateBinding
+
+	aspect TemplateParameter
+
+	aspect TemplateParameterSubstitution
+
+	aspect TemplateSignature
+
+	aspect TemplateableElement
+
+	aspect TestIdentityAction
+
+	aspect TimeConstraint
+
+	entityScalarDataProperty TimeConstraint_firstEvent {
+		domain TimeConstraint
+		range XMLSchema:boolean
+	}
+
+	aspect TimeEvent
+
+	entityScalarDataProperty TimeEvent_isRelative {
+		domain TimeEvent
+		range XMLSchema:boolean
+	}
+
+	aspect TimeExpression
+
+	aspect TimeInterval
+
+	aspect TimeObservation
+
+	entityScalarDataProperty TimeObservation_firstEvent {
+		domain TimeObservation
+		range XMLSchema:boolean
+	}
+
+	aspect Transition
+
+	entityScalarDataProperty Transition_kind {
+		domain Transition
+		range TransitionKind
+	}
+
+	aspect Trigger
+
+	aspect Type
+
+	aspect TypedElement
+
+	aspect UnmarshallAction
+
+	aspect Usage
+
+	aspect UseCase
+
+	aspect ValuePin
+
+	aspect ValueSpecification
+
+	aspect ValueSpecificationAction
+
+	aspect Variable
+
+	aspect VariableAction
+
+	aspect Vertex
+
+	aspect WriteLinkAction
+
+	aspect WriteStructuralFeatureAction
+
+	aspect WriteVariableAction
+
+	Abstraction extendsAspect Dependency
+
+	AcceptCallAction extendsAspect AcceptEventAction
+
+	AcceptEventAction extendsAspect Action
+
+	Action extendsAspect ExecutableNode
+
+	ActionExecutionSpecification extendsAspect ExecutionSpecification
+
+	ActionInputPin extendsAspect InputPin
+
+	Activity extendsAspect Behavior
+
+	ActivityEdge extendsAspect RedefinableElement
+
+	ActivityFinalNode extendsAspect FinalNode
+
+	ActivityGroup extendsAspect NamedElement
+
+	ActivityNode extendsAspect RedefinableElement
+
+	ActivityParameterNode extendsAspect ObjectNode
+
+	ActivityPartition extendsAspect ActivityGroup
+
+	Actor extendsAspect BehavioredClassifier
+
+	AddStructuralFeatureValueAction extendsAspect WriteStructuralFeatureAction
+
+	AddVariableValueAction extendsAspect WriteVariableAction
+
+	AnyReceiveEvent extendsAspect MessageEvent
+
+	Artifact extendsAspect Classifier
+
+	Artifact extendsAspect DeployedArtifact
+
+	Association extendsAspect Relationship
+
+	Association extendsAspect Classifier
+
+	AssociationClass extendsAspect Class
+
+	AssociationClass extendsAspect Association
+
+	Behavior extendsAspect Class
+
+	BehaviorExecutionSpecification extendsAspect ExecutionSpecification
+
+	BehavioralFeature extendsAspect Feature
+
+	BehavioralFeature extendsAspect Namespace
+
+	BehavioredClassifier extendsAspect Classifier
+
+	BroadcastSignalAction extendsAspect InvocationAction
+
+	CallAction extendsAspect InvocationAction
+
+	CallBehaviorAction extendsAspect CallAction
+
+	CallEvent extendsAspect MessageEvent
+
+	CallOperationAction extendsAspect CallAction
+
+	CentralBufferNode extendsAspect ObjectNode
+
+	ChangeEvent extendsAspect Event
+
+	Class extendsAspect BehavioredClassifier
+
+	Class extendsAspect EncapsulatedClassifier
+
+	Classifier extendsAspect Namespace
+
+	Classifier extendsAspect Type
+
+	Classifier extendsAspect TemplateableElement
+
+	Classifier extendsAspect RedefinableElement
+
+	ClassifierTemplateParameter extendsAspect TemplateParameter
+
+	Clause extendsAspect Element
+
+	ClearAssociationAction extendsAspect Action
+
+	ClearStructuralFeatureAction extendsAspect StructuralFeatureAction
+
+	ClearVariableAction extendsAspect VariableAction
+
+	Collaboration extendsAspect StructuredClassifier
+
+	Collaboration extendsAspect BehavioredClassifier
+
+	CollaborationUse extendsAspect NamedElement
+
+	CombinedFragment extendsAspect InteractionFragment
+
+	Comment extendsAspect Element
+
+	CommunicationPath extendsAspect Association
+
+	Component extendsAspect Class
+
+	ComponentRealization extendsAspect Realization
+
+	ConditionalNode extendsAspect StructuredActivityNode
+
+	ConnectableElement extendsAspect TypedElement
+
+	ConnectableElement extendsAspect ParameterableElement
+
+	ConnectableElementTemplateParameter extendsAspect TemplateParameter
+
+	ConnectionPointReference extendsAspect Vertex
+
+	Connector extendsAspect Feature
+
+	ConnectorEnd extendsAspect MultiplicityElement
+
+	ConsiderIgnoreFragment extendsAspect CombinedFragment
+
+	Constraint extendsAspect PackageableElement
+
+	Continuation extendsAspect InteractionFragment
+
+	ControlFlow extendsAspect ActivityEdge
+
+	ControlNode extendsAspect ActivityNode
+
+	CreateLinkAction extendsAspect WriteLinkAction
+
+	CreateLinkObjectAction extendsAspect CreateLinkAction
+
+	CreateObjectAction extendsAspect Action
+
+	DataStoreNode extendsAspect CentralBufferNode
+
+	DataType extendsAspect Classifier
+
+	DecisionNode extendsAspect ControlNode
+
+	Dependency extendsAspect DirectedRelationship
+
+	Dependency extendsAspect PackageableElement
+
+	DeployedArtifact extendsAspect NamedElement
+
+	Deployment extendsAspect Dependency
+
+	DeploymentSpecification extendsAspect Artifact
+
+	DeploymentTarget extendsAspect NamedElement
+
+	DestroyLinkAction extendsAspect WriteLinkAction
+
+	DestroyObjectAction extendsAspect Action
+
+	DestructionOccurrenceSpecification extendsAspect MessageOccurrenceSpecification
+
+	Device extendsAspect Node
+
+	Diagram extendsAspect NamedElement
+
+	DirectedRelationship extendsAspect Relationship
+
+	Duration extendsAspect ValueSpecification
+
+	DurationConstraint extendsAspect IntervalConstraint
+
+	DurationInterval extendsAspect Interval
+
+	DurationObservation extendsAspect Observation
+
+	ElementImport extendsAspect DirectedRelationship
+
+	ElementValue extendsAspect ValueSpecification
+
+	EncapsulatedClassifier extendsAspect StructuredClassifier
+
+	Enumeration extendsAspect DataType
+
+	EnumerationLiteral extendsAspect InstanceSpecification
+
+	Event extendsAspect PackageableElement
+
+	ExceptionHandler extendsAspect Element
+
+	ExecutableNode extendsAspect ActivityNode
+
+	ExecutionEnvironment extendsAspect Node
+
+	ExecutionOccurrenceSpecification extendsAspect OccurrenceSpecification
+
+	ExecutionSpecification extendsAspect InteractionFragment
+
+	ExpansionNode extendsAspect ObjectNode
+
+	ExpansionRegion extendsAspect StructuredActivityNode
+
+	Expression extendsAspect ValueSpecification
+
+	Extend extendsAspect NamedElement
+
+	Extend extendsAspect DirectedRelationship
+
+	Extension extendsAspect Association
+
+	ExtensionEnd extendsAspect Property
+
+	ExtensionPoint extendsAspect RedefinableElement
+
+	Feature extendsAspect RedefinableElement
+
+	FinalNode extendsAspect ControlNode
+
+	FinalState extendsAspect State
+
+	FlowFinalNode extendsAspect FinalNode
+
+	ForkNode extendsAspect ControlNode
+
+	FunctionBehavior extendsAspect OpaqueBehavior
+
+	Gate extendsAspect MessageEnd
+
+	GeneralOrdering extendsAspect NamedElement
+
+	Generalization extendsAspect DirectedRelationship
+
+	GeneralizationSet extendsAspect PackageableElement
+
+	Image extendsAspect Element
+
+	Include extendsAspect DirectedRelationship
+
+	Include extendsAspect NamedElement
+
+	InformationFlow extendsAspect DirectedRelationship
+
+	InformationFlow extendsAspect PackageableElement
+
+	InformationItem extendsAspect Classifier
+
+	InitialNode extendsAspect ControlNode
+
+	InputPin extendsAspect Pin
+
+	InstanceSpecification extendsAspect DeploymentTarget
+
+	InstanceSpecification extendsAspect PackageableElement
+
+	InstanceSpecification extendsAspect DeployedArtifact
+
+	InstanceValue extendsAspect ValueSpecification
+
+	Interaction extendsAspect InteractionFragment
+
+	Interaction extendsAspect Behavior
+
+	InteractionConstraint extendsAspect Constraint
+
+	InteractionFragment extendsAspect NamedElement
+
+	InteractionOperand extendsAspect InteractionFragment
+
+	InteractionOperand extendsAspect Namespace
+
+	InteractionUse extendsAspect InteractionFragment
+
+	Interface extendsAspect Classifier
+
+	InterfaceRealization extendsAspect Realization
+
+	InterruptibleActivityRegion extendsAspect ActivityGroup
+
+	Interval extendsAspect ValueSpecification
+
+	IntervalConstraint extendsAspect Constraint
+
+	InvocationAction extendsAspect Action
+
+	JoinNode extendsAspect ControlNode
+
+	Lifeline extendsAspect NamedElement
+
+	LinkAction extendsAspect Action
+
+	LinkEndCreationData extendsAspect LinkEndData
+
+	LinkEndData extendsAspect Element
+
+	LinkEndDestructionData extendsAspect LinkEndData
+
+	LiteralBoolean extendsAspect LiteralSpecification
+
+	LiteralInteger extendsAspect LiteralSpecification
+
+	LiteralNull extendsAspect LiteralSpecification
+
+	LiteralReal extendsAspect LiteralSpecification
+
+	LiteralSpecification extendsAspect ValueSpecification
+
+	LiteralString extendsAspect LiteralSpecification
+
+	LiteralUnlimitedNatural extendsAspect LiteralSpecification
+
+	LoopNode extendsAspect StructuredActivityNode
+
+	Manifestation extendsAspect Abstraction
+
+	MergeNode extendsAspect ControlNode
+
+	Message extendsAspect NamedElement
+
+	MessageEnd extendsAspect NamedElement
+
+	MessageEvent extendsAspect Event
+
+	MessageOccurrenceSpecification extendsAspect MessageEnd
+
+	MessageOccurrenceSpecification extendsAspect OccurrenceSpecification
+
+	Model extendsAspect Package
+
+	MultiplicityElement extendsAspect Element
+
+	NamedElement extendsAspect Element
+
+	Namespace extendsAspect NamedElement
+
+	Node extendsAspect Class
+
+	Node extendsAspect DeploymentTarget
+
+	ObjectFlow extendsAspect ActivityEdge
+
+	ObjectNode extendsAspect TypedElement
+
+	ObjectNode extendsAspect ActivityNode
+
+	Observation extendsAspect PackageableElement
+
+	OccurrenceSpecification extendsAspect InteractionFragment
+
+	OpaqueAction extendsAspect Action
+
+	OpaqueBehavior extendsAspect Behavior
+
+	OpaqueExpression extendsAspect ValueSpecification
+
+	Operation extendsAspect TemplateableElement
+
+	Operation extendsAspect ParameterableElement
+
+	Operation extendsAspect BehavioralFeature
+
+	OperationTemplateParameter extendsAspect TemplateParameter
+
+	OutputPin extendsAspect Pin
+
+	Package extendsAspect PackageableElement
+
+	Package extendsAspect TemplateableElement
+
+	Package extendsAspect Namespace
+
+	PackageImport extendsAspect DirectedRelationship
+
+	PackageMerge extendsAspect DirectedRelationship
+
+	PackageableElement extendsAspect ParameterableElement
+
+	PackageableElement extendsAspect NamedElement
+
+	Parameter extendsAspect MultiplicityElement
+
+	Parameter extendsAspect ConnectableElement
+
+	ParameterSet extendsAspect NamedElement
+
+	ParameterableElement extendsAspect Element
+
+	PartDecomposition extendsAspect InteractionUse
+
+	Pin extendsAspect ObjectNode
+
+	Pin extendsAspect MultiplicityElement
+
+	Port extendsAspect Property
+
+	PrimitiveType extendsAspect DataType
+
+	Profile extendsAspect Package
+
+	ProfileApplication extendsAspect DirectedRelationship
+
+	Property extendsAspect ConnectableElement
+
+	Property extendsAspect DeploymentTarget
+
+	Property extendsAspect StructuralFeature
+
+	ProtocolConformance extendsAspect DirectedRelationship
+
+	ProtocolStateMachine extendsAspect StateMachine
+
+	ProtocolTransition extendsAspect Transition
+
+	Pseudostate extendsAspect Vertex
+
+	QualifierValue extendsAspect Element
+
+	RaiseExceptionAction extendsAspect Action
+
+	ReadExtentAction extendsAspect Action
+
+	ReadIsClassifiedObjectAction extendsAspect Action
+
+	ReadLinkAction extendsAspect LinkAction
+
+	ReadLinkObjectEndAction extendsAspect Action
+
+	ReadLinkObjectEndQualifierAction extendsAspect Action
+
+	ReadSelfAction extendsAspect Action
+
+	ReadStructuralFeatureAction extendsAspect StructuralFeatureAction
+
+	ReadVariableAction extendsAspect VariableAction
+
+	Realization extendsAspect Abstraction
+
+	Reception extendsAspect BehavioralFeature
+
+	ReclassifyObjectAction extendsAspect Action
+
+	RedefinableElement extendsAspect NamedElement
+
+	RedefinableTemplateSignature extendsAspect RedefinableElement
+
+	RedefinableTemplateSignature extendsAspect TemplateSignature
+
+	ReduceAction extendsAspect Action
+
+	Region extendsAspect Namespace
+
+	Region extendsAspect RedefinableElement
+
+	Relationship extendsAspect Element
+
+	RemoveStructuralFeatureValueAction extendsAspect WriteStructuralFeatureAction
+
+	RemoveVariableValueAction extendsAspect WriteVariableAction
+
+	ReplyAction extendsAspect Action
+
+	SendObjectAction extendsAspect InvocationAction
+
+	SendSignalAction extendsAspect InvocationAction
+
+	SequenceNode extendsAspect StructuredActivityNode
+
+	Signal extendsAspect Classifier
+
+	SignalEvent extendsAspect MessageEvent
+
+	Slot extendsAspect Element
+
+	StartClassifierBehaviorAction extendsAspect Action
+
+	StartObjectBehaviorAction extendsAspect CallAction
+
+	State extendsAspect RedefinableElement
+
+	State extendsAspect Namespace
+
+	State extendsAspect Vertex
+
+	StateInvariant extendsAspect InteractionFragment
+
+	StateMachine extendsAspect Behavior
+
+	Stereotype extendsAspect Class
+
+	StringExpression extendsAspect TemplateableElement
+
+	StringExpression extendsAspect Expression
+
+	StructuralFeature extendsAspect MultiplicityElement
+
+	StructuralFeature extendsAspect TypedElement
+
+	StructuralFeature extendsAspect Feature
+
+	StructuralFeatureAction extendsAspect Action
+
+	StructuredActivityNode extendsAspect Namespace
+
+	StructuredActivityNode extendsAspect ActivityGroup
+
+	StructuredActivityNode extendsAspect Action
+
+	StructuredClassifier extendsAspect Classifier
+
+	Substitution extendsAspect Realization
+
+	TemplateBinding extendsAspect DirectedRelationship
+
+	TemplateParameter extendsAspect Element
+
+	TemplateParameterSubstitution extendsAspect Element
+
+	TemplateSignature extendsAspect Element
+
+	TemplateableElement extendsAspect Element
+
+	TestIdentityAction extendsAspect Action
+
+	TimeConstraint extendsAspect IntervalConstraint
+
+	TimeEvent extendsAspect Event
+
+	TimeExpression extendsAspect ValueSpecification
+
+	TimeInterval extendsAspect Interval
+
+	TimeObservation extendsAspect Observation
+
+	Transition extendsAspect Namespace
+
+	Transition extendsAspect RedefinableElement
+
+	Trigger extendsAspect NamedElement
+
+	Type extendsAspect PackageableElement
+
+	TypedElement extendsAspect NamedElement
+
+	UnmarshallAction extendsAspect Action
+
+	Usage extendsAspect Dependency
+
+	UseCase extendsAspect BehavioredClassifier
+
+	ValuePin extendsAspect InputPin
+
+	ValueSpecification extendsAspect TypedElement
+
+	ValueSpecification extendsAspect PackageableElement
+
+	ValueSpecificationAction extendsAspect Action
+
+	Variable extendsAspect ConnectableElement
+
+	Variable extendsAspect MultiplicityElement
+
+	VariableAction extendsAspect Action
+
+	Vertex extendsAspect NamedElement
+
+	WriteLinkAction extendsAspect LinkAction
+
+	WriteStructuralFeatureAction extendsAspect StructuralFeatureAction
+
+	WriteVariableAction extendsAspect VariableAction
+
+	reifiedRelationship A_action_actionExecutionSpecification {
+		essential
+		unreified = action_of_actionExecutionSpecification
+		inverse = actionExecutionSpecification_of_action
+		source = ActionExecutionSpecification
+		target = Action }
+
+	reifiedRelationship A_action_interaction {
+		functional
+		inverseFunctional
+		unreified = action_of_interaction
+		inverse = interaction_of_action
+		source = Interaction
+		target = Action }
+
+	reifiedRelationship A_actualGate_interactionUse {
+		functional
+		inverseFunctional
+		unreified = actualGate_of_interactionUse
+		inverse = interactionUse_of_actualGate
+		source = InteractionUse
+		target = Gate }
+
+	reifiedRelationship A_actual_templateParameterSubstitution {
+		essential
+		unreified = actual_of_templateParameterSubstitution
+		inverse = templateParameterSubstitution_of_actual
+		source = TemplateParameterSubstitution
+		target = ParameterableElement }
+
+	reifiedRelationship A_addition_include {
+		essential
+		unreified = addition_of_include
+		inverse = include_of_addition
+		source = Include
+		target = UseCase }
+
+	reifiedRelationship A_annotatedElement_comment {
+		unreified = annotatedElement_of_comment
+		inverse = comment_of_annotatedElement
+		source = Comment
+		target = Element }
+
+	reifiedRelationship A_appliedProfile_profileApplication {
+		essential
+		unreified = appliedProfile_of_profileApplication
+		inverse = profileApplication_of_appliedProfile
+		source = ProfileApplication
+		target = Profile }
+
+	reifiedRelationship A_argument_interactionUse {
+		functional
+		inverseFunctional
+		unreified = argument_of_interactionUse
+		inverse = interactionUse_of_argument
+		source = InteractionUse
+		target = ValueSpecification }
+
+	reifiedRelationship A_argument_invocationAction {
+		functional
+		inverseFunctional
+		unreified = argument_of_invocationAction
+		inverse = invocationAction_of_argument
+		source = InvocationAction
+		target = InputPin }
+
+	reifiedRelationship A_argument_message {
+		functional
+		inverseFunctional
+		unreified = argument_of_message
+		inverse = message_of_argument
+		source = Message
+		target = ValueSpecification }
+
+	reifiedRelationship A_association_clearAssociationAction {
+		essential
+		unreified = association_of_clearAssociationAction
+		inverse = clearAssociationAction_of_association
+		source = ClearAssociationAction
+		target = Association }
+
+	reifiedRelationship A_attribute_classifier {
+		inverseFunctional
+		unreified = attribute_of_classifier
+		inverse = classifier_of_attribute
+		source = Classifier
+		target = Property }
+
+	reifiedRelationship A_before_toAfter {
+		essential
+		unreified = before_of_toAfter
+		inverse = toAfter_of_before
+		source = GeneralOrdering
+		target = OccurrenceSpecification }
+
+	reifiedRelationship A_behavior_behaviorExecutionSpecification {
+		functional
+		unreified = behavior_of_behaviorExecutionSpecification
+		inverse = behaviorExecutionSpecification_of_behavior
+		source = BehaviorExecutionSpecification
+		target = Behavior }
+
+	reifiedRelationship A_behavior_callBehaviorAction {
+		essential
+		unreified = behavior_of_callBehaviorAction
+		inverse = callBehaviorAction_of_behavior
+		source = CallBehaviorAction
+		target = Behavior }
+
+	reifiedRelationship A_behavior_opaqueExpression {
+		functional
+		unreified = behavior_of_opaqueExpression
+		inverse = opaqueExpression_of_behavior
+		source = OpaqueExpression
+		target = Behavior }
+
+	reifiedRelationship A_bodyCondition_bodyContext {
+		functional
+		inverseFunctional
+		unreified = bodyCondition_of_bodyContext
+		inverse = bodyContext_of_bodyCondition
+		source = Operation
+		target = Constraint }
+
+	reifiedRelationship A_bodyOutput_clause {
+		unreified = bodyOutput_of_clause
+		inverse = clause_of_bodyOutput
+		source = Clause
+		target = OutputPin }
+
+	reifiedRelationship A_bodyOutput_loopNode {
+		unreified = bodyOutput_of_loopNode
+		inverse = loopNode_of_bodyOutput
+		source = LoopNode
+		target = OutputPin }
+
+	reifiedRelationship A_bodyPart_loopNode {
+		inverseFunctional
+		unreified = bodyPart_of_loopNode
+		inverse = loopNode_of_bodyPart
+		source = LoopNode
+		target = ExecutableNode }
+
+	reifiedRelationship A_body_clause {
+		inverseFunctional
+		unreified = body_of_clause
+		inverse = clause_of_body
+		source = Clause
+		target = ExecutableNode }
+
+	reifiedRelationship A_cfragmentGate_combinedFragment {
+		functional
+		inverseFunctional
+		unreified = cfragmentGate_of_combinedFragment
+		inverse = combinedFragment_of_cfragmentGate
+		source = CombinedFragment
+		target = Gate }
+
+	reifiedRelationship A_changeExpression_changeEvent {
+		functional
+		inverseFunctional
+		unreified = changeExpression_of_changeEvent
+		inverse = changeEvent_of_changeExpression
+		source = ChangeEvent
+		target = ValueSpecification }
+
+	reifiedRelationship A_classifierBehavior_behavioredClassifier {
+		functional
+		inverseFunctional
+		unreified = classifierBehavior_of_behavioredClassifier
+		inverse = behavioredClassifier_of_classifierBehavior
+		source = BehavioredClassifier
+		target = Behavior }
+
+	reifiedRelationship A_classifier_createObjectAction {
+		essential
+		unreified = classifier_of_createObjectAction
+		inverse = createObjectAction_of_classifier
+		source = CreateObjectAction
+		target = Classifier }
+
+	reifiedRelationship A_classifier_enumerationLiteral {
+		essential
+		unreified = classifier_of_enumerationLiteral
+		inverse = enumerationLiteral_of_classifier
+		source = EnumerationLiteral
+		target = Enumeration }
+
+	reifiedRelationship A_classifier_instanceSpecification {
+		unreified = classifier_of_instanceSpecification
+		inverse = instanceSpecification_of_classifier
+		source = InstanceSpecification
+		target = Classifier }
+
+	reifiedRelationship A_classifier_readExtentAction {
+		essential
+		unreified = classifier_of_readExtentAction
+		inverse = readExtentAction_of_classifier
+		source = ReadExtentAction
+		target = Classifier }
+
+	reifiedRelationship A_classifier_readIsClassifiedObjectAction {
+		essential
+		unreified = classifier_of_readIsClassifiedObjectAction
+		inverse = readIsClassifiedObjectAction_of_classifier
+		source = ReadIsClassifiedObjectAction
+		target = Classifier }
+
+	reifiedRelationship A_classifier_templateParameter_parameteredElement {
+		functional
+		inverseEssential
+		unreified = templateParameter_of_parameteredElement
+		inverse = parameteredElement_of_templateParameter
+		source = Classifier
+		target = ClassifierTemplateParameter }
+
+	reifiedRelationship A_clause_conditionalNode {
+		functional
+		inverseEssential
+		unreified = clause_of_conditionalNode
+		inverse = conditionalNode_of_clause
+		source = ConditionalNode
+		target = Clause }
+
+	reifiedRelationship A_clientDependency_client {
+		unreified = clientDependency_of_client
+		inverse = client_of_clientDependency
+		source = NamedElement
+		target = Dependency }
+
+	reifiedRelationship A_collaborationRole_collaboration {
+		unreified = collaborationRole_of_collaboration
+		inverse = collaboration_of_collaborationRole
+		source = Collaboration
+		target = ConnectableElement }
+
+	reifiedRelationship A_collaborationUse_classifier {
+		functional
+		inverseFunctional
+		unreified = collaborationUse_of_classifier
+		inverse = classifier_of_collaborationUse
+		source = Classifier
+		target = CollaborationUse }
+
+	reifiedRelationship A_collection_reduceAction {
+		functional
+		inverseFunctional
+		unreified = collection_of_reduceAction
+		inverse = reduceAction_of_collection
+		source = ReduceAction
+		target = InputPin }
+
+	reifiedRelationship A_condition_extend {
+		functional
+		inverseFunctional
+		unreified = condition_of_extend
+		inverse = extend_of_condition
+		source = Extend
+		target = Constraint }
+
+	reifiedRelationship A_condition_parameterSet {
+		functional
+		inverseFunctional
+		unreified = condition_of_parameterSet
+		inverse = parameterSet_of_condition
+		source = ParameterSet
+		target = Constraint }
+
+	reifiedRelationship A_configuration_deployment {
+		functional
+		inverseFunctional
+		unreified = configuration_of_deployment
+		inverse = deployment_of_configuration
+		source = Deployment
+		target = DeploymentSpecification }
+
+	reifiedRelationship A_conformance_specificMachine {
+		functional
+		inverseEssential
+		unreified = conformance_of_specificMachine
+		inverse = specificMachine_of_conformance
+		source = ProtocolStateMachine
+		target = ProtocolConformance }
+
+	reifiedRelationship A_connectableElement_templateParameter_parameteredElement {
+		functional
+		inverseEssential
+		unreified = templateParameter_of_parameteredElement
+		inverse = parameteredElement_of_templateParameter
+		source = ConnectableElement
+		target = ConnectableElementTemplateParameter }
+
+	reifiedRelationship A_connectionPoint_state {
+		functional
+		inverseFunctional
+		unreified = connectionPoint_of_state
+		inverse = state_of_connectionPoint
+		source = State
+		target = Pseudostate }
+
+	reifiedRelationship A_connectionPoint_stateMachine {
+		functional
+		inverseFunctional
+		unreified = connectionPoint_of_stateMachine
+		inverse = stateMachine_of_connectionPoint
+		source = StateMachine
+		target = Pseudostate }
+
+	reifiedRelationship A_connection_state {
+		functional
+		inverseFunctional
+		unreified = connection_of_state
+		inverse = state_of_connection
+		source = State
+		target = ConnectionPointReference }
+
+	reifiedRelationship A_connector_message {
+		functional
+		unreified = connector_of_message
+		inverse = message_of_connector
+		source = Message
+		target = Connector }
+
+	reifiedRelationship A_constrainedElement_constraint {
+		unreified = constrainedElement_of_constraint
+		inverse = constraint_of_constrainedElement
+		source = Constraint
+		target = Element }
+
+	reifiedRelationship A_constrainingClassifier_classifierTemplateParameter {
+		unreified = constrainingClassifier_of_classifierTemplateParameter
+		inverse = classifierTemplateParameter_of_constrainingClassifier
+		source = ClassifierTemplateParameter
+		target = Classifier }
+
+	reifiedRelationship A_containedEdge_inGroup {
+		unreified = containedEdge_of_inGroup
+		inverse = inGroup_of_containedEdge
+		source = ActivityGroup
+		target = ActivityEdge }
+
+	reifiedRelationship A_containedNode_inGroup {
+		unreified = containedNode_of_inGroup
+		inverse = inGroup_of_containedNode
+		source = ActivityGroup
+		target = ActivityNode }
+
+	reifiedRelationship A_context_action {
+		functional
+		unreified = context_of_action
+		inverse = action_of_context
+		source = Action
+		target = Classifier }
+
+	reifiedRelationship A_context_behavior {
+		functional
+		unreified = context_of_behavior
+		inverse = behavior_of_context
+		source = Behavior
+		target = BehavioredClassifier }
+
+	reifiedRelationship A_contract_connector {
+		unreified = contract_of_connector
+		inverse = connector_of_contract
+		source = Connector
+		target = Behavior }
+
+	reifiedRelationship A_contract_interfaceRealization {
+		essential
+		unreified = contract_of_interfaceRealization
+		inverse = interfaceRealization_of_contract
+		source = InterfaceRealization
+		target = Interface }
+
+	reifiedRelationship A_contract_substitution {
+		essential
+		unreified = contract_of_substitution
+		inverse = substitution_of_contract
+		source = Substitution
+		target = Classifier }
+
+	reifiedRelationship A_conveyed_conveyingFlow {
+		unreified = conveyed_of_informationFlow
+		inverse = informationFlow_of_conveyed
+		source = InformationFlow
+		target = Classifier }
+
+	reifiedRelationship A_covered_coveredBy {
+		unreified = covered_of_coveredBy
+		inverse = coveredBy_of_covered
+		source = InteractionFragment
+		target = Lifeline }
+
+	reifiedRelationship A_covered_events {
+		essential
+		unreified = covered_of_occurrenceSpecification
+		inverse = occurrenceSpecification_of_covered
+		source = OccurrenceSpecification
+		target = Lifeline }
+
+	reifiedRelationship A_covered_stateInvariant {
+		essential
+		unreified = covered_of_stateInvariant
+		inverse = stateInvariant_of_covered
+		source = StateInvariant
+		target = Lifeline }
+
+	reifiedRelationship A_decider_clause {
+		inverseFunctional
+		essential
+		unreified = decider_of_clause
+		inverse = clause_of_decider
+		source = Clause
+		target = OutputPin }
+
+	reifiedRelationship A_decider_loopNode {
+		inverseFunctional
+		essential
+		unreified = decider_of_loopNode
+		inverse = loopNode_of_decider
+		source = LoopNode
+		target = OutputPin }
+
+	reifiedRelationship A_decisionInputFlow_decisionNode {
+		functional
+		inverseFunctional
+		unreified = decisionInputFlow_of_decisionNode
+		inverse = decisionNode_of_decisionInputFlow
+		source = DecisionNode
+		target = ObjectFlow }
+
+	reifiedRelationship A_decisionInput_decisionNode {
+		functional
+		unreified = decisionInput_of_decisionNode
+		inverse = decisionNode_of_decisionInput
+		source = DecisionNode
+		target = Behavior }
+
+	reifiedRelationship A_decomposedAs_lifeline {
+		functional
+		inverseEssential
+		unreified = decomposedAs_of_lifeline
+		inverse = lifeline_of_decomposedAs
+		source = Lifeline
+		target = PartDecomposition }
+
+	reifiedRelationship A_defaultValue_owningParameter {
+		functional
+		inverseFunctional
+		unreified = defaultValue_of_owningParameter
+		inverse = owningParameter_of_defaultValue
+		source = Parameter
+		target = ValueSpecification }
+
+	reifiedRelationship A_defaultValue_owningProperty {
+		functional
+		inverseFunctional
+		unreified = defaultValue_of_owningProperty
+		inverse = owningProperty_of_defaultValue
+		source = Property
+		target = ValueSpecification }
+
+	reifiedRelationship A_default_templateParameter {
+		functional
+		unreified = default_of_templateParameter
+		inverse = templateParameter_of_default
+		source = TemplateParameter
+		target = ParameterableElement }
+
+	reifiedRelationship A_deferrableTrigger_state {
+		functional
+		inverseFunctional
+		unreified = deferrableTrigger_of_state
+		inverse = state_of_deferrableTrigger
+		source = State
+		target = Trigger }
+
+	reifiedRelationship A_definingEnd_connectorEnd {
+		functional
+		unreified = definingEnd_of_connectorEnd
+		inverse = connectorEnd_of_definingEnd
+		source = ConnectorEnd
+		target = Property }
+
+	reifiedRelationship A_definingFeature_slot {
+		essential
+		unreified = definingFeature_of_slot
+		inverse = slot_of_definingFeature
+		source = Slot
+		target = StructuralFeature }
+
+	reifiedRelationship A_deployedArtifact_deploymentForArtifact {
+		unreified = deployedArtifact_of_deployment
+		inverse = deployment_of_deployedArtifact
+		source = Deployment
+		target = DeployedArtifact }
+
+	reifiedRelationship A_deployedElement_deploymentTarget {
+		unreified = deployedElement_of_deploymentTarget
+		inverse = deploymentTarget_of_deployedElement
+		source = DeploymentTarget
+		target = PackageableElement }
+
+	reifiedRelationship A_deployment_location {
+		functional
+		inverseEssential
+		unreified = deployment_of_location
+		inverse = location_of_deployment
+		source = DeploymentTarget
+		target = Deployment }
+
+	reifiedRelationship A_destroyAt_linkEndDestructionData {
+		functional
+		inverseFunctional
+		unreified = destroyAt_of_linkEndDestructionData
+		inverse = linkEndDestructionData_of_destroyAt
+		source = LinkEndDestructionData
+		target = InputPin }
+
+	reifiedRelationship A_doActivity_state {
+		functional
+		inverseFunctional
+		unreified = doActivity_of_state
+		inverse = state_of_doActivity
+		source = State
+		target = Behavior }
+
+	reifiedRelationship A_edge_activity {
+		functional
+		inverseFunctional
+		unreified = edge_of_activity
+		inverse = activity_of_edge
+		source = Activity
+		target = ActivityEdge }
+
+	reifiedRelationship A_edge_inPartition {
+		unreified = edge_of_inPartition
+		inverse = inPartition_of_edge
+		source = ActivityPartition
+		target = ActivityEdge }
+
+	reifiedRelationship A_edge_inStructuredNode {
+		functional
+		inverseFunctional
+		unreified = edge_of_inStructuredNode
+		inverse = inStructuredNode_of_edge
+		source = StructuredActivityNode
+		target = ActivityEdge }
+
+	reifiedRelationship A_effect_transition {
+		functional
+		inverseFunctional
+		unreified = effect_of_transition
+		inverse = transition_of_effect
+		source = Transition
+		target = Behavior }
+
+	reifiedRelationship A_elementImport_importingNamespace {
+		functional
+		inverseEssential
+		unreified = elementImport_of_importingNamespace
+		inverse = importingNamespace_of_elementImport
+		source = Namespace
+		target = ElementImport }
+
+	reifiedRelationship A_endData_createLinkAction {
+		functional
+		inverseEssential
+		unreified = endData_of_createLinkAction
+		inverse = createLinkAction_of_endData
+		source = CreateLinkAction
+		target = LinkEndCreationData }
+
+	reifiedRelationship A_endData_destroyLinkAction {
+		functional
+		inverseEssential
+		unreified = endData_of_destroyLinkAction
+		inverse = destroyLinkAction_of_endData
+		source = DestroyLinkAction
+		target = LinkEndDestructionData }
+
+	reifiedRelationship A_endData_linkAction {
+		functional
+		inverseEssential
+		unreified = endData_of_linkAction
+		inverse = linkAction_of_endData
+		source = LinkAction
+		target = LinkEndData }
+
+	reifiedRelationship A_endType_association {
+		unreified = endType_of_association
+		inverse = association_of_endType
+		source = Association
+		target = Type }
+
+	reifiedRelationship A_end_connector {
+		functional
+		inverseEssential
+		unreified = end_of_connector
+		inverse = connector_of_end
+		source = Connector
+		target = ConnectorEnd }
+
+	reifiedRelationship A_end_linkEndData {
+		essential
+		unreified = end_of_linkEndData
+		inverse = linkEndData_of_end
+		source = LinkEndData
+		target = Property }
+
+	reifiedRelationship A_end_readLinkObjectEndAction {
+		essential
+		unreified = end_of_readLinkObjectEndAction
+		inverse = readLinkObjectEndAction_of_end
+		source = ReadLinkObjectEndAction
+		target = Property }
+
+	reifiedRelationship A_end_role {
+		inverseEssential
+		unreified = end_of_role
+		inverse = role_of_end
+		source = ConnectableElement
+		target = ConnectorEnd }
+
+	reifiedRelationship A_entry_connectionPointReference {
+		unreified = entry_of_connectionPointReference
+		inverse = connectionPointReference_of_entry
+		source = ConnectionPointReference
+		target = Pseudostate }
+
+	reifiedRelationship A_entry_state {
+		functional
+		inverseFunctional
+		unreified = entry_of_state
+		inverse = state_of_entry
+		source = State
+		target = Behavior }
+
+	reifiedRelationship A_event_durationObservation {
+		unreified = event_of_durationObservation
+		inverse = durationObservation_of_event
+		source = DurationObservation
+		target = NamedElement }
+
+	reifiedRelationship A_event_timeObservation {
+		essential
+		unreified = event_of_timeObservation
+		inverse = timeObservation_of_event
+		source = TimeObservation
+		target = NamedElement }
+
+	reifiedRelationship A_event_trigger {
+		essential
+		unreified = event_of_trigger
+		inverse = trigger_of_event
+		source = Trigger
+		target = Event }
+
+	reifiedRelationship A_exceptionInput_exceptionHandler {
+		essential
+		unreified = exceptionInput_of_exceptionHandler
+		inverse = exceptionHandler_of_exceptionInput
+		source = ExceptionHandler
+		target = ObjectNode }
+
+	reifiedRelationship A_exceptionType_exceptionHandler {
+		unreified = exceptionType_of_exceptionHandler
+		inverse = exceptionHandler_of_exceptionType
+		source = ExceptionHandler
+		target = Classifier }
+
+	reifiedRelationship A_exception_raiseExceptionAction {
+		functional
+		inverseFunctional
+		unreified = exception_of_raiseExceptionAction
+		inverse = raiseExceptionAction_of_exception
+		source = RaiseExceptionAction
+		target = InputPin }
+
+	reifiedRelationship A_executableNode_sequenceNode {
+		functional
+		inverseFunctional
+		unreified = executableNode_of_sequenceNode
+		inverse = sequenceNode_of_executableNode
+		source = SequenceNode
+		target = ExecutableNode }
+
+	reifiedRelationship A_execution_executionOccurrenceSpecification {
+		unreified = execution_of_executionOccurrenceSpecification
+		inverse = executionOccurrenceSpecification_of_execution
+		source = ExecutionOccurrenceSpecification
+		target = ExecutionSpecification }
+
+	reifiedRelationship A_exit_connectionPointReference {
+		unreified = exit_of_connectionPointReference
+		inverse = connectionPointReference_of_exit
+		source = ConnectionPointReference
+		target = Pseudostate }
+
+	reifiedRelationship A_exit_state {
+		functional
+		inverseFunctional
+		unreified = exit_of_state
+		inverse = state_of_exit
+		source = State
+		target = Behavior }
+
+	reifiedRelationship A_expr_duration {
+		functional
+		inverseFunctional
+		unreified = expr_of_duration
+		inverse = duration_of_expr
+		source = Duration
+		target = ValueSpecification }
+
+	reifiedRelationship A_expr_timeExpression {
+		functional
+		inverseFunctional
+		unreified = expr_of_timeExpression
+		inverse = timeExpression_of_expr
+		source = TimeExpression
+		target = ValueSpecification }
+
+	reifiedRelationship A_extend_extension {
+		functional
+		inverseEssential
+		unreified = extend_of_extension
+		inverse = extension_of_extend
+		source = UseCase
+		target = Extend }
+
+	reifiedRelationship A_extendedCase_extend {
+		essential
+		unreified = extendedCase_of_extend
+		inverse = extend_of_extendedCase
+		source = Extend
+		target = UseCase }
+
+	reifiedRelationship A_extendedRegion_region {
+		functional
+		unreified = extendedRegion_of_region
+		inverse = region_of_extendedRegion
+		source = Region
+		target = Region }
+
+	reifiedRelationship A_extendedSignature_redefinableTemplateSignature {
+		unreified = extendedSignature_of_redefinableTemplateSignature
+		inverse = redefinableTemplateSignature_of_extendedSignature
+		source = RedefinableTemplateSignature
+		target = RedefinableTemplateSignature }
+
+	reifiedRelationship A_extendedStateMachine_stateMachine {
+		unreified = extendedStateMachine_of_stateMachine
+		inverse = stateMachine_of_extendedStateMachine
+		source = StateMachine
+		target = StateMachine }
+
+	reifiedRelationship A_extensionLocation_extension {
+		unreified = extensionLocation_of_extension
+		inverse = extension_of_extensionLocation
+		source = Extend
+		target = ExtensionPoint }
+
+	reifiedRelationship A_extensionPoint_useCase {
+		functional
+		inverseEssential
+		unreified = extensionPoint_of_useCase
+		inverse = useCase_of_extensionPoint
+		source = UseCase
+		target = ExtensionPoint }
+
+	reifiedRelationship A_extension_metaclass {
+		inverseEssential
+		unreified = extension_of_metaclass
+		inverse = metaclass_of_extension
+		source = Class
+		target = Extension }
+
+	reifiedRelationship A_feature_featuringClassifier {
+		inverseFunctional
+		unreified = feature_of_featuringClassifier
+		inverse = featuringClassifier_of_feature
+		source = Classifier
+		target = Feature }
+
+	reifiedRelationship A_finish_executionSpecification {
+		essential
+		unreified = finish_of_executionSpecification
+		inverse = executionSpecification_of_finish
+		source = ExecutionSpecification
+		target = OccurrenceSpecification }
+
+	reifiedRelationship A_first_testIdentityAction {
+		functional
+		inverseFunctional
+		unreified = first_of_testIdentityAction
+		inverse = testIdentityAction_of_first
+		source = TestIdentityAction
+		target = InputPin }
+
+	reifiedRelationship A_formalGate_interaction {
+		functional
+		inverseFunctional
+		unreified = formalGate_of_interaction
+		inverse = interaction_of_formalGate
+		source = Interaction
+		target = Gate }
+
+	reifiedRelationship A_formal_templateParameterSubstitution {
+		essential
+		unreified = formal_of_templateParameterSubstitution
+		inverse = templateParameterSubstitution_of_formal
+		source = TemplateParameterSubstitution
+		target = TemplateParameter }
+
+	reifiedRelationship A_fragment_enclosingInteraction {
+		functional
+		inverseFunctional
+		unreified = fragment_of_enclosingInteraction
+		inverse = enclosingInteraction_of_fragment
+		source = Interaction
+		target = InteractionFragment }
+
+	reifiedRelationship A_fragment_enclosingOperand {
+		functional
+		inverseFunctional
+		unreified = fragment_of_enclosingOperand
+		inverse = enclosingOperand_of_fragment
+		source = InteractionOperand
+		target = InteractionFragment }
+
+	reifiedRelationship A_fromAction_actionInputPin {
+		functional
+		inverseFunctional
+		unreified = fromAction_of_actionInputPin
+		inverse = actionInputPin_of_fromAction
+		source = ActionInputPin
+		target = Action }
+
+	reifiedRelationship A_generalMachine_protocolConformance {
+		essential
+		unreified = generalMachine_of_protocolConformance
+		inverse = protocolConformance_of_generalMachine
+		source = ProtocolConformance
+		target = ProtocolStateMachine }
+
+	reifiedRelationship A_generalOrdering_interactionFragment {
+		functional
+		inverseFunctional
+		unreified = generalOrdering_of_interactionFragment
+		inverse = interactionFragment_of_generalOrdering
+		source = InteractionFragment
+		target = GeneralOrdering }
+
+	reifiedRelationship A_general_classifier {
+		unreified = general_of_classifier
+		inverse = classifier_of_general
+		source = Classifier
+		target = Classifier }
+
+	reifiedRelationship A_general_generalization {
+		essential
+		unreified = general_of_generalization
+		inverse = generalization_of_general
+		source = Generalization
+		target = Classifier }
+
+	reifiedRelationship A_generalizationSet_generalization {
+		unreified = generalizationSet_of_generalization
+		inverse = generalization_of_generalizationSet
+		source = Generalization
+		target = GeneralizationSet }
+
+	reifiedRelationship A_generalization_specific {
+		functional
+		inverseEssential
+		unreified = generalization_of_specific
+		inverse = specific_of_generalization
+		source = Classifier
+		target = Generalization }
+
+	reifiedRelationship A_group_inActivity {
+		functional
+		inverseFunctional
+		unreified = group_of_inActivity
+		inverse = inActivity_of_group
+		source = Activity
+		target = ActivityGroup }
+
+	reifiedRelationship A_guard_activityEdge {
+		functional
+		inverseFunctional
+		unreified = guard_of_activityEdge
+		inverse = activityEdge_of_guard
+		source = ActivityEdge
+		target = ValueSpecification }
+
+	reifiedRelationship A_guard_interactionOperand {
+		functional
+		inverseEssential
+		unreified = guard_of_interactionOperand
+		inverse = interactionOperand_of_guard
+		source = InteractionOperand
+		target = InteractionConstraint }
+
+	reifiedRelationship A_guard_transition {
+		functional
+		inverseFunctional
+		unreified = guard_of_transition
+		inverse = transition_of_guard
+		source = Transition
+		target = Constraint }
+
+	reifiedRelationship A_handlerBody_exceptionHandler {
+		essential
+		unreified = handlerBody_of_exceptionHandler
+		inverse = exceptionHandler_of_handlerBody
+		source = ExceptionHandler
+		target = ExecutableNode }
+
+	reifiedRelationship A_handler_protectedNode {
+		functional
+		inverseEssential
+		unreified = handler_of_protectedNode
+		inverse = protectedNode_of_handler
+		source = ExecutableNode
+		target = ExceptionHandler }
+
+	reifiedRelationship A_icon_stereotype {
+		functional
+		inverseFunctional
+		unreified = icon_of_stereotype
+		inverse = stereotype_of_icon
+		source = Stereotype
+		target = Image }
+
+	reifiedRelationship A_importedElement_import {
+		essential
+		unreified = importedElement_of_elementImport
+		inverse = elementImport_of_importedElement
+		source = ElementImport
+		target = PackageableElement }
+
+	reifiedRelationship A_importedMember_namespace {
+		unreified = importedMember_of_namespace
+		inverse = namespace_of_importedMember
+		source = Namespace
+		target = PackageableElement }
+
+	reifiedRelationship A_importedPackage_packageImport {
+		essential
+		unreified = importedPackage_of_packageImport
+		inverse = packageImport_of_importedPackage
+		source = PackageImport
+		target = Package }
+
+	reifiedRelationship A_inInterruptibleRegion_node {
+		unreified = inInterruptibleRegion_of_node
+		inverse = node_of_inInterruptibleRegion
+		source = ActivityNode
+		target = InterruptibleActivityRegion }
+
+	reifiedRelationship A_inPartition_node {
+		unreified = inPartition_of_node
+		inverse = node_of_inPartition
+		source = ActivityNode
+		target = ActivityPartition }
+
+	reifiedRelationship A_inState_objectNode {
+		unreified = inState_of_objectNode
+		inverse = objectNode_of_inState
+		source = ObjectNode
+		target = State }
+
+	reifiedRelationship A_include_includingCase {
+		functional
+		inverseEssential
+		unreified = include_of_includingCase
+		inverse = includingCase_of_include
+		source = UseCase
+		target = Include }
+
+	reifiedRelationship A_incoming_target_node {
+		inverseEssential
+		unreified = incoming_of_target
+		inverse = target_of_incoming
+		source = ActivityNode
+		target = ActivityEdge }
+
+	reifiedRelationship A_incoming_target_vertex {
+		inverseEssential
+		unreified = incoming_of_target
+		inverse = target_of_incoming
+		source = Vertex
+		target = Transition }
+
+	reifiedRelationship A_informationSource_informationFlow {
+		unreified = informationSource_of_informationFlow
+		inverse = informationFlow_of_informationSource
+		source = InformationFlow
+		target = NamedElement }
+
+	reifiedRelationship A_informationTarget_informationFlow {
+		unreified = informationTarget_of_informationFlow
+		inverse = informationFlow_of_informationTarget
+		source = InformationFlow
+		target = NamedElement }
+
+	reifiedRelationship A_inheritedMember_inheritingClassifier {
+		unreified = inheritedMember_of_classifier
+		inverse = classifier_of_inheritedMember
+		source = Classifier
+		target = NamedElement }
+
+	reifiedRelationship A_inheritedParameter_redefinableTemplateSignature {
+		unreified = inheritedParameter_of_redefinableTemplateSignature
+		inverse = redefinableTemplateSignature_of_inheritedParameter
+		source = RedefinableTemplateSignature
+		target = TemplateParameter }
+
+	reifiedRelationship A_inputElement_regionAsInput {
+		inverseFunctional
+		unreified = inputElement_of_regionAsInput
+		inverse = regionAsInput_of_inputElement
+		source = ExpansionRegion
+		target = ExpansionNode }
+
+	reifiedRelationship A_inputValue_linkAction {
+		functional
+		inverseFunctional
+		unreified = inputValue_of_linkAction
+		inverse = linkAction_of_inputValue
+		source = LinkAction
+		target = InputPin }
+
+	reifiedRelationship A_inputValue_opaqueAction {
+		functional
+		inverseFunctional
+		unreified = inputValue_of_opaqueAction
+		inverse = opaqueAction_of_inputValue
+		source = OpaqueAction
+		target = InputPin }
+
+	reifiedRelationship A_input_action {
+		functional
+		inverseFunctional
+		unreified = input_of_action
+		inverse = action_of_input
+		source = Action
+		target = InputPin }
+
+	reifiedRelationship A_insertAt_addStructuralFeatureValueAction {
+		functional
+		inverseFunctional
+		unreified = insertAt_of_addStructuralFeatureValueAction
+		inverse = addStructuralFeatureValueAction_of_insertAt
+		source = AddStructuralFeatureValueAction
+		target = InputPin }
+
+	reifiedRelationship A_insertAt_addVariableValueAction {
+		functional
+		inverseFunctional
+		unreified = insertAt_of_addVariableValueAction
+		inverse = addVariableValueAction_of_insertAt
+		source = AddVariableValueAction
+		target = InputPin }
+
+	reifiedRelationship A_insertAt_linkEndCreationData {
+		functional
+		inverseFunctional
+		unreified = insertAt_of_linkEndCreationData
+		inverse = linkEndCreationData_of_insertAt
+		source = LinkEndCreationData
+		target = InputPin }
+
+	reifiedRelationship A_instance_instanceValue {
+		essential
+		unreified = instance_of_instanceValue
+		inverse = instanceValue_of_instance
+		source = InstanceValue
+		target = InstanceSpecification }
+
+	reifiedRelationship A_interfaceRealization_implementingClassifier {
+		functional
+		inverseEssential
+		unreified = interfaceRealization_of_implementingClassifier
+		inverse = implementingClassifier_of_interfaceRealization
+		source = BehavioredClassifier
+		target = InterfaceRealization }
+
+	reifiedRelationship A_interruptingEdge_interrupts {
+		inverseFunctional
+		unreified = interruptingEdge_of_interrupts
+		inverse = interrupts_of_interruptingEdge
+		source = InterruptibleActivityRegion
+		target = ActivityEdge }
+
+	reifiedRelationship A_invariant_stateInvariant {
+		functional
+		inverseFunctional
+		unreified = invariant_of_stateInvariant
+		inverse = stateInvariant_of_invariant
+		source = StateInvariant
+		target = Constraint }
+
+	reifiedRelationship A_joinSpec_joinNode {
+		functional
+		inverseFunctional
+		unreified = joinSpec_of_joinNode
+		inverse = joinNode_of_joinSpec
+		source = JoinNode
+		target = ValueSpecification }
+
+	reifiedRelationship A_lifeline_interaction {
+		functional
+		inverseEssential
+		unreified = lifeline_of_interaction
+		inverse = interaction_of_lifeline
+		source = Interaction
+		target = Lifeline }
+
+	reifiedRelationship A_localPostcondition_action {
+		functional
+		inverseFunctional
+		unreified = localPostcondition_of_action
+		inverse = action_of_localPostcondition
+		source = Action
+		target = Constraint }
+
+	reifiedRelationship A_localPrecondition_action {
+		functional
+		inverseFunctional
+		unreified = localPrecondition_of_action
+		inverse = action_of_localPrecondition
+		source = Action
+		target = Constraint }
+
+	reifiedRelationship A_loopVariableInput_loopNode {
+		functional
+		inverseFunctional
+		unreified = loopVariableInput_of_loopNode
+		inverse = loopNode_of_loopVariableInput
+		source = LoopNode
+		target = InputPin }
+
+	reifiedRelationship A_loopVariable_loopNode {
+		functional
+		inverseFunctional
+		unreified = loopVariable_of_loopNode
+		inverse = loopNode_of_loopVariable
+		source = LoopNode
+		target = OutputPin }
+
+	reifiedRelationship A_lowerValue_owningLower {
+		functional
+		inverseFunctional
+		unreified = lowerValue_of_owningLower
+		inverse = owningLower_of_lowerValue
+		source = MultiplicityElement
+		target = ValueSpecification }
+
+	reifiedRelationship A_manifestation_artifact {
+		functional
+		inverseEssential
+		unreified = manifestation_of_artifact
+		inverse = artifact_of_manifestation
+		source = Artifact
+		target = Manifestation }
+
+	reifiedRelationship A_mapping_abstraction {
+		functional
+		inverseFunctional
+		unreified = mapping_of_abstraction
+		inverse = abstraction_of_mapping
+		source = Abstraction
+		target = OpaqueExpression }
+
+	reifiedRelationship A_max_durationInterval {
+		essential
+		unreified = max_of_durationInterval
+		inverse = durationInterval_of_max
+		source = DurationInterval
+		target = Duration }
+
+	reifiedRelationship A_max_interval {
+		essential
+		unreified = max_of_interval
+		inverse = interval_of_max
+		source = Interval
+		target = ValueSpecification }
+
+	reifiedRelationship A_max_timeInterval {
+		essential
+		unreified = max_of_timeInterval
+		inverse = timeInterval_of_max
+		source = TimeInterval
+		target = TimeExpression }
+
+	reifiedRelationship A_maxint_interactionConstraint {
+		functional
+		inverseFunctional
+		unreified = maxint_of_interactionConstraint
+		inverse = interactionConstraint_of_maxint
+		source = InteractionConstraint
+		target = ValueSpecification }
+
+	reifiedRelationship A_memberEnd_association {
+		inverseFunctional
+		unreified = memberEnd_of_association
+		inverse = association_of_memberEnd
+		source = Association
+		target = Property }
+
+	reifiedRelationship A_member_memberNamespace {
+		unreified = member_of_namespace
+		inverse = namespace_of_member
+		source = Namespace
+		target = NamedElement }
+
+	reifiedRelationship A_mergedPackage_packageMerge {
+		essential
+		unreified = mergedPackage_of_packageMerge
+		inverse = packageMerge_of_mergedPackage
+		source = PackageMerge
+		target = Package }
+
+	reifiedRelationship A_message_considerIgnoreFragment {
+		unreified = message_of_considerIgnoreFragment
+		inverse = considerIgnoreFragment_of_message
+		source = ConsiderIgnoreFragment
+		target = NamedElement }
+
+	reifiedRelationship A_message_interaction {
+		functional
+		inverseEssential
+		unreified = message_of_interaction
+		inverse = interaction_of_message
+		source = Interaction
+		target = Message }
+
+	reifiedRelationship A_message_messageEnd {
+		unreified = message_of_messageEnd
+		inverse = messageEnd_of_message
+		source = MessageEnd
+		target = Message }
+
+	reifiedRelationship A_metaclassReference_profile {
+		functional
+		inverseFunctional
+		unreified = metaclassReference_of_profile
+		inverse = profile_of_metaclassReference
+		source = Profile
+		target = ElementImport }
+
+	reifiedRelationship A_metamodelReference_profile {
+		functional
+		inverseFunctional
+		unreified = metamodelReference_of_profile
+		inverse = profile_of_metamodelReference
+		source = Profile
+		target = PackageImport }
+
+	reifiedRelationship A_method_specification {
+		inverseFunctional
+		unreified = method_of_specification
+		inverse = specification_of_method
+		source = BehavioralFeature
+		target = Behavior }
+
+	reifiedRelationship A_min_durationInterval {
+		essential
+		unreified = min_of_durationInterval
+		inverse = durationInterval_of_min
+		source = DurationInterval
+		target = Duration }
+
+	reifiedRelationship A_min_interval {
+		essential
+		unreified = min_of_interval
+		inverse = interval_of_min
+		source = Interval
+		target = ValueSpecification }
+
+	reifiedRelationship A_min_timeInterval {
+		essential
+		unreified = min_of_timeInterval
+		inverse = timeInterval_of_min
+		source = TimeInterval
+		target = TimeExpression }
+
+	reifiedRelationship A_minint_interactionConstraint {
+		functional
+		inverseFunctional
+		unreified = minint_of_interactionConstraint
+		inverse = interactionConstraint_of_minint
+		source = InteractionConstraint
+		target = ValueSpecification }
+
+	reifiedRelationship A_nameExpression_namedElement {
+		functional
+		inverseFunctional
+		unreified = nameExpression_of_namedElement
+		inverse = namedElement_of_nameExpression
+		source = NamedElement
+		target = StringExpression }
+
+	reifiedRelationship A_navigableOwnedEnd_association {
+		inverseFunctional
+		unreified = navigableOwnedEnd_of_association
+		inverse = association_of_navigableOwnedEnd
+		source = Association
+		target = Property }
+
+	reifiedRelationship A_nestedArtifact_artifact {
+		functional
+		inverseFunctional
+		unreified = nestedArtifact_of_artifact
+		inverse = artifact_of_nestedArtifact
+		source = Artifact
+		target = Artifact }
+
+	reifiedRelationship A_nestedClassifier_interface {
+		functional
+		inverseFunctional
+		unreified = nestedClassifier_of_interface
+		inverse = interface_of_nestedClassifier
+		source = Interface
+		target = Classifier }
+
+	reifiedRelationship A_nestedClassifier_nestingClass {
+		functional
+		inverseFunctional
+		unreified = nestedClassifier_of_UMLClass
+		inverse = UMLClass_of_nestedClassifier
+		source = Class
+		target = Classifier }
+
+	reifiedRelationship A_nestedNode_node {
+		functional
+		inverseFunctional
+		unreified = nestedNode_of_node
+		inverse = node_of_nestedNode
+		source = Node
+		target = Node }
+
+	reifiedRelationship A_nestedPackage_nestingPackage {
+		functional
+		inverseFunctional
+		unreified = nestedPackage_of_nestingPackage
+		inverse = nestingPackage_of_nestedPackage
+		source = Package
+		target = Package }
+
+	reifiedRelationship A_newClassifier_reclassifyObjectAction {
+		unreified = newClassifier_of_reclassifyObjectAction
+		inverse = reclassifyObjectAction_of_newClassifier
+		source = ReclassifyObjectAction
+		target = Classifier }
+
+	reifiedRelationship A_node_activity {
+		functional
+		inverseFunctional
+		unreified = node_of_activity
+		inverse = activity_of_node
+		source = Activity
+		target = ActivityNode }
+
+	reifiedRelationship A_node_inStructuredNode {
+		functional
+		inverseFunctional
+		unreified = node_of_inStructuredNode
+		inverse = inStructuredNode_of_node
+		source = StructuredActivityNode
+		target = ActivityNode }
+
+	reifiedRelationship A_object_clearAssociationAction {
+		functional
+		inverseFunctional
+		unreified = object_of_clearAssociationAction
+		inverse = clearAssociationAction_of_object
+		source = ClearAssociationAction
+		target = InputPin }
+
+	reifiedRelationship A_object_readIsClassifiedObjectAction {
+		functional
+		inverseFunctional
+		unreified = object_of_readIsClassifiedObjectAction
+		inverse = readIsClassifiedObjectAction_of_object
+		source = ReadIsClassifiedObjectAction
+		target = InputPin }
+
+	reifiedRelationship A_object_readLinkObjectEndAction {
+		functional
+		inverseFunctional
+		unreified = object_of_readLinkObjectEndAction
+		inverse = readLinkObjectEndAction_of_object
+		source = ReadLinkObjectEndAction
+		target = InputPin }
+
+	reifiedRelationship A_object_readLinkObjectEndQualifierAction {
+		functional
+		inverseFunctional
+		unreified = object_of_readLinkObjectEndQualifierAction
+		inverse = readLinkObjectEndQualifierAction_of_object
+		source = ReadLinkObjectEndQualifierAction
+		target = InputPin }
+
+	reifiedRelationship A_object_reclassifyObjectAction {
+		functional
+		inverseFunctional
+		unreified = object_of_reclassifyObjectAction
+		inverse = reclassifyObjectAction_of_object
+		source = ReclassifyObjectAction
+		target = InputPin }
+
+	reifiedRelationship A_object_startClassifierBehaviorAction {
+		functional
+		inverseFunctional
+		unreified = object_of_startClassifierBehaviorAction
+		inverse = startClassifierBehaviorAction_of_object
+		source = StartClassifierBehaviorAction
+		target = InputPin }
+
+	reifiedRelationship A_object_startObjectBehaviorAction {
+		functional
+		inverseFunctional
+		unreified = object_of_startObjectBehaviorAction
+		inverse = startObjectBehaviorAction_of_object
+		source = StartObjectBehaviorAction
+		target = InputPin }
+
+	reifiedRelationship A_object_structuralFeatureAction {
+		functional
+		inverseFunctional
+		unreified = object_of_structuralFeatureAction
+		inverse = structuralFeatureAction_of_object
+		source = StructuralFeatureAction
+		target = InputPin }
+
+	reifiedRelationship A_object_unmarshallAction {
+		functional
+		inverseFunctional
+		unreified = object_of_unmarshallAction
+		inverse = unmarshallAction_of_object
+		source = UnmarshallAction
+		target = InputPin }
+
+	reifiedRelationship A_observation_duration {
+		inverseFunctional
+		unreified = observation_of_duration
+		inverse = duration_of_observation
+		source = Duration
+		target = Observation }
+
+	reifiedRelationship A_observation_timeExpression {
+		inverseFunctional
+		unreified = observation_of_timeExpression
+		inverse = timeExpression_of_observation
+		source = TimeExpression
+		target = Observation }
+
+	reifiedRelationship A_oldClassifier_reclassifyObjectAction {
+		unreified = oldClassifier_of_reclassifyObjectAction
+		inverse = reclassifyObjectAction_of_oldClassifier
+		source = ReclassifyObjectAction
+		target = Classifier }
+
+	reifiedRelationship A_onPort_invocationAction {
+		functional
+		unreified = onPort_of_invocationAction
+		inverse = invocationAction_of_onPort
+		source = InvocationAction
+		target = Port }
+
+	reifiedRelationship A_operand_combinedFragment {
+		functional
+		inverseFunctional
+		unreified = operand_of_combinedFragment
+		inverse = combinedFragment_of_operand
+		source = CombinedFragment
+		target = InteractionOperand }
+
+	reifiedRelationship A_operand_expression {
+		functional
+		inverseFunctional
+		unreified = operand_of_expression
+		inverse = expression_of_operand
+		source = Expression
+		target = ValueSpecification }
+
+	reifiedRelationship A_operation_callEvent {
+		essential
+		unreified = operation_of_callEvent
+		inverse = callEvent_of_operation
+		source = CallEvent
+		target = Operation }
+
+	reifiedRelationship A_operation_callOperationAction {
+		essential
+		unreified = operation_of_callOperationAction
+		inverse = callOperationAction_of_operation
+		source = CallOperationAction
+		target = Operation }
+
+	reifiedRelationship A_operation_templateParameter_parameteredElement {
+		functional
+		inverseEssential
+		unreified = templateParameter_of_parameteredElement
+		inverse = parameteredElement_of_templateParameter
+		source = Operation
+		target = OperationTemplateParameter }
+
+	reifiedRelationship A_opposite_property {
+		functional
+		inverseFunctional
+		unreified = opposite_of_property
+		inverse = property_of_opposite
+		source = Property
+		target = Property }
+
+	reifiedRelationship A_outgoing_source_node {
+		inverseEssential
+		unreified = outgoing_of_source
+		inverse = source_of_outgoing
+		source = ActivityNode
+		target = ActivityEdge }
+
+	reifiedRelationship A_outgoing_source_vertex {
+		inverseEssential
+		unreified = outgoing_of_source
+		inverse = source_of_outgoing
+		source = Vertex
+		target = Transition }
+
+	reifiedRelationship A_outputElement_regionAsOutput {
+		inverseFunctional
+		unreified = outputElement_of_regionAsOutput
+		inverse = regionAsOutput_of_outputElement
+		source = ExpansionRegion
+		target = ExpansionNode }
+
+	reifiedRelationship A_outputValue_opaqueAction {
+		functional
+		inverseFunctional
+		unreified = outputValue_of_opaqueAction
+		inverse = opaqueAction_of_outputValue
+		source = OpaqueAction
+		target = OutputPin }
+
+	reifiedRelationship A_output_action {
+		functional
+		inverseFunctional
+		unreified = output_of_action
+		inverse = action_of_output
+		source = Action
+		target = OutputPin }
+
+	reifiedRelationship A_ownedActual_owningTemplateParameterSubstitution {
+		functional
+		inverseFunctional
+		unreified = ownedActual_of_templateParameterSubstitution
+		inverse = templateParameterSubstitution_of_ownedActual
+		source = TemplateParameterSubstitution
+		target = ParameterableElement }
+
+	reifiedRelationship A_ownedAttribute_artifact {
+		functional
+		inverseFunctional
+		unreified = ownedAttribute_of_artifact
+		inverse = artifact_of_ownedAttribute
+		source = Artifact
+		target = Property }
+
+	reifiedRelationship A_ownedAttribute_class {
+		functional
+		inverseFunctional
+		unreified = ownedAttribute_of_UMLClass
+		inverse = UMLClass_of_ownedAttribute
+		source = Class
+		target = Property }
+
+	reifiedRelationship A_ownedAttribute_datatype {
+		functional
+		inverseFunctional
+		unreified = ownedAttribute_of_datatype
+		inverse = datatype_of_ownedAttribute
+		source = DataType
+		target = Property }
+
+	reifiedRelationship A_ownedAttribute_interface {
+		functional
+		inverseFunctional
+		unreified = ownedAttribute_of_interface
+		inverse = interface_of_ownedAttribute
+		source = Interface
+		target = Property }
+
+	reifiedRelationship A_ownedAttribute_owningSignal {
+		functional
+		inverseFunctional
+		unreified = ownedAttribute_of_owningSignal
+		inverse = owningSignal_of_ownedAttribute
+		source = Signal
+		target = Property }
+
+	reifiedRelationship A_ownedAttribute_structuredClassifier {
+		functional
+		inverseFunctional
+		unreified = ownedAttribute_of_structuredClassifier
+		inverse = structuredClassifier_of_ownedAttribute
+		source = StructuredClassifier
+		target = Property }
+
+	reifiedRelationship A_ownedBehavior_behavioredClassifier {
+		functional
+		inverseFunctional
+		unreified = ownedBehavior_of_behavioredClassifier
+		inverse = behavioredClassifier_of_ownedBehavior
+		source = BehavioredClassifier
+		target = Behavior }
+
+	reifiedRelationship A_ownedComment_owningElement {
+		functional
+		inverseFunctional
+		unreified = ownedComment_of_owningElement
+		inverse = owningElement_of_ownedComment
+		source = Element
+		target = Comment }
+
+	reifiedRelationship A_ownedConnector_structuredClassifier {
+		functional
+		inverseFunctional
+		unreified = ownedConnector_of_structuredClassifier
+		inverse = structuredClassifier_of_ownedConnector
+		source = StructuredClassifier
+		target = Connector }
+
+	reifiedRelationship A_ownedDefault_templateParameter {
+		functional
+		inverseFunctional
+		unreified = ownedDefault_of_templateParameter
+		inverse = templateParameter_of_ownedDefault
+		source = TemplateParameter
+		target = ParameterableElement }
+
+	reifiedRelationship A_ownedElement_owner {
+		functional
+		inverseFunctional
+		unreified = ownedElement_of_owner
+		inverse = owner_of_ownedElement
+		source = Element
+		target = Element }
+
+	reifiedRelationship A_ownedEnd_extension {
+		functional
+		inverseEssential
+		unreified = ownedEnd_of_extension
+		inverse = extension_of_ownedEnd
+		source = Extension
+		target = ExtensionEnd }
+
+	reifiedRelationship A_ownedEnd_owningAssociation {
+		functional
+		inverseFunctional
+		unreified = ownedEnd_of_owningAssociation
+		inverse = owningAssociation_of_ownedEnd
+		source = Association
+		target = Property }
+
+	reifiedRelationship A_ownedLiteral_enumeration {
+		functional
+		inverseEssential
+		unreified = ownedLiteral_of_enumeration
+		inverse = enumeration_of_ownedLiteral
+		source = Enumeration
+		target = EnumerationLiteral }
+
+	reifiedRelationship A_ownedMember_namespace {
+		functional
+		inverseFunctional
+		unreified = ownedMember_of_namespace
+		inverse = namespace_of_ownedMember
+		source = Namespace
+		target = NamedElement }
+
+	reifiedRelationship A_ownedOperation_artifact {
+		functional
+		inverseFunctional
+		unreified = ownedOperation_of_artifact
+		inverse = artifact_of_ownedOperation
+		source = Artifact
+		target = Operation }
+
+	reifiedRelationship A_ownedOperation_class {
+		functional
+		inverseFunctional
+		unreified = ownedOperation_of_UMLClass
+		inverse = UMLClass_of_ownedOperation
+		source = Class
+		target = Operation }
+
+	reifiedRelationship A_ownedOperation_datatype {
+		functional
+		inverseFunctional
+		unreified = ownedOperation_of_datatype
+		inverse = datatype_of_ownedOperation
+		source = DataType
+		target = Operation }
+
+	reifiedRelationship A_ownedOperation_interface {
+		functional
+		inverseFunctional
+		unreified = ownedOperation_of_interface
+		inverse = interface_of_ownedOperation
+		source = Interface
+		target = Operation }
+
+	reifiedRelationship A_ownedParameterSet_behavior {
+		functional
+		inverseFunctional
+		unreified = ownedParameterSet_of_behavior
+		inverse = behavior_of_ownedParameterSet
+		source = Behavior
+		target = ParameterSet }
+
+	reifiedRelationship A_ownedParameterSet_behavioralFeature {
+		functional
+		inverseFunctional
+		unreified = ownedParameterSet_of_behavioralFeature
+		inverse = behavioralFeature_of_ownedParameterSet
+		source = BehavioralFeature
+		target = ParameterSet }
+
+	reifiedRelationship A_ownedParameter_behavior {
+		functional
+		inverseFunctional
+		unreified = ownedParameter_of_behavior
+		inverse = behavior_of_ownedParameter
+		source = Behavior
+		target = Parameter }
+
+	reifiedRelationship A_ownedParameter_operation {
+		functional
+		inverseFunctional
+		unreified = ownedParameter_of_operation
+		inverse = operation_of_ownedParameter
+		source = Operation
+		target = Parameter }
+
+	reifiedRelationship A_ownedParameter_ownerFormalParam {
+		functional
+		inverseFunctional
+		unreified = ownedParameter_of_ownerFormalParam
+		inverse = ownerFormalParam_of_ownedParameter
+		source = BehavioralFeature
+		target = Parameter }
+
+	reifiedRelationship A_ownedParameter_signature {
+		functional
+		inverseEssential
+		unreified = ownedParameter_of_signature
+		inverse = signature_of_ownedParameter
+		source = TemplateSignature
+		target = TemplateParameter }
+
+	reifiedRelationship A_ownedParameteredElement_owningTemplateParameter {
+		functional
+		inverseFunctional
+		unreified = ownedParameteredElement_of_owningTemplateParameter
+		inverse = owningTemplateParameter_of_ownedParameteredElement
+		source = TemplateParameter
+		target = ParameterableElement }
+
+	reifiedRelationship A_ownedPort_encapsulatedClassifier {
+		functional
+		inverseFunctional
+		unreified = ownedPort_of_encapsulatedClassifier
+		inverse = encapsulatedClassifier_of_ownedPort
+		source = EncapsulatedClassifier
+		target = Port }
+
+	reifiedRelationship A_ownedReception_class {
+		functional
+		inverseFunctional
+		unreified = ownedReception_of_class
+		inverse = class_of_ownedReception
+		source = Class
+		target = Reception }
+
+	reifiedRelationship A_ownedReception_interface {
+		functional
+		inverseFunctional
+		unreified = ownedReception_of_interface
+		inverse = interface_of_ownedReception
+		source = Interface
+		target = Reception }
+
+	reifiedRelationship A_ownedRule_context {
+		functional
+		inverseFunctional
+		unreified = ownedRule_of_context
+		inverse = context_of_ownedRule
+		source = Namespace
+		target = Constraint }
+
+	reifiedRelationship A_ownedStereotype_owningPackage {
+		functional
+		inverseEssential
+		unreified = ownedStereotype_of_package
+		inverse = package_of_ownedStereotype
+		source = Package
+		target = Stereotype }
+
+	reifiedRelationship A_ownedTemplateSignature_classifier {
+		functional
+		inverseEssential
+		unreified = ownedTemplateSignature_of_classifier
+		inverse = classifier_of_ownedTemplateSignature
+		source = Classifier
+		target = RedefinableTemplateSignature }
+
+	reifiedRelationship A_ownedTemplateSignature_template {
+		functional
+		inverseEssential
+		unreified = ownedTemplateSignature_of_template
+		inverse = template_of_ownedTemplateSignature
+		source = TemplateableElement
+		target = TemplateSignature }
+
+	reifiedRelationship A_ownedType_package {
+		functional
+		inverseFunctional
+		unreified = ownedType_of_package
+		inverse = package_of_ownedType
+		source = Package
+		target = Type }
+
+	reifiedRelationship A_ownedUseCase_classifier {
+		functional
+		inverseFunctional
+		unreified = ownedUseCase_of_classifier
+		inverse = classifier_of_ownedUseCase
+		source = Classifier
+		target = UseCase }
+
+	reifiedRelationship A_packageImport_importingNamespace {
+		functional
+		inverseEssential
+		unreified = packageImport_of_importingNamespace
+		inverse = importingNamespace_of_packageImport
+		source = Namespace
+		target = PackageImport }
+
+	reifiedRelationship A_packageMerge_receivingPackage {
+		functional
+		inverseEssential
+		unreified = packageMerge_of_receivingPackage
+		inverse = receivingPackage_of_packageMerge
+		source = Package
+		target = PackageMerge }
+
+	reifiedRelationship A_packagedElement_component {
+		functional
+		inverseFunctional
+		unreified = packagedElement_of_component
+		inverse = component_of_packagedElement
+		source = Component
+		target = PackageableElement }
+
+	reifiedRelationship A_packagedElement_owningPackage {
+		functional
+		inverseFunctional
+		unreified = packagedElement_of_owningPackage
+		inverse = owningPackage_of_packagedElement
+		source = Package
+		target = PackageableElement }
+
+	reifiedRelationship A_parameterSet_parameter {
+		unreified = parameterSet_of_parameter
+		inverse = parameter_of_parameterSet
+		source = Parameter
+		target = ParameterSet }
+
+	reifiedRelationship A_parameterSubstitution_templateBinding {
+		functional
+		inverseEssential
+		unreified = parameterSubstitution_of_templateBinding
+		inverse = templateBinding_of_parameterSubstitution
+		source = TemplateBinding
+		target = TemplateParameterSubstitution }
+
+	reifiedRelationship A_parameter_activityParameterNode {
+		essential
+		unreified = parameter_of_activityParameterNode
+		inverse = activityParameterNode_of_parameter
+		source = ActivityParameterNode
+		target = Parameter }
+
+	reifiedRelationship A_parameter_templateSignature {
+		unreified = parameter_of_templateSignature
+		inverse = templateSignature_of_parameter
+		source = TemplateSignature
+		target = TemplateParameter }
+
+	reifiedRelationship A_parameteredElement_templateParameter {
+		inverseFunctional
+		essential
+		unreified = parameteredElement_of_templateParameter
+		inverse = templateParameter_of_parameteredElement
+		source = TemplateParameter
+		target = ParameterableElement }
+
+	reifiedRelationship A_partWithPort_connectorEnd {
+		functional
+		unreified = partWithPort_of_connectorEnd
+		inverse = connectorEnd_of_partWithPort
+		source = ConnectorEnd
+		target = Property }
+
+	reifiedRelationship A_part_structuredClassifier {
+		inverseFunctional
+		unreified = part_of_structuredClassifier
+		inverse = structuredClassifier_of_part
+		source = StructuredClassifier
+		target = Property }
+
+	reifiedRelationship A_partition_activity {
+		inverseFunctional
+		unreified = partition_of_activity
+		inverse = activity_of_partition
+		source = Activity
+		target = ActivityPartition }
+
+	reifiedRelationship A_port_trigger {
+		unreified = port_of_trigger
+		inverse = trigger_of_port
+		source = Trigger
+		target = Port }
+
+	reifiedRelationship A_postCondition_owningTransition {
+		functional
+		inverseFunctional
+		unreified = postCondition_of_owningTransition
+		inverse = owningTransition_of_postCondition
+		source = ProtocolTransition
+		target = Constraint }
+
+	reifiedRelationship A_postcondition_behavior {
+		functional
+		inverseFunctional
+		unreified = postcondition_of_behavior
+		inverse = behavior_of_postcondition
+		source = Behavior
+		target = Constraint }
+
+	reifiedRelationship A_postcondition_postContext {
+		functional
+		inverseFunctional
+		unreified = postcondition_of_postContext
+		inverse = postContext_of_postcondition
+		source = Operation
+		target = Constraint }
+
+	reifiedRelationship A_powertypeExtent_powertype {
+		inverseFunctional
+		unreified = powertypeExtent_of_powertype
+		inverse = powertype_of_powertypeExtent
+		source = Classifier
+		target = GeneralizationSet }
+
+	reifiedRelationship A_preCondition_protocolTransition {
+		functional
+		inverseFunctional
+		unreified = preCondition_of_protocolTransition
+		inverse = protocolTransition_of_preCondition
+		source = ProtocolTransition
+		target = Constraint }
+
+	reifiedRelationship A_precondition_behavior {
+		functional
+		inverseFunctional
+		unreified = precondition_of_behavior
+		inverse = behavior_of_precondition
+		source = Behavior
+		target = Constraint }
+
+	reifiedRelationship A_precondition_preContext {
+		functional
+		inverseFunctional
+		unreified = precondition_of_preContext
+		inverse = preContext_of_precondition
+		source = Operation
+		target = Constraint }
+
+	reifiedRelationship A_predecessorClause_successorClause {
+		unreified = predecessorClause_of_successorClause
+		inverse = successorClause_of_predecessorClause
+		source = Clause
+		target = Clause }
+
+	reifiedRelationship A_profileApplication_applyingPackage {
+		functional
+		inverseEssential
+		unreified = profileApplication_of_applyingPackage
+		inverse = applyingPackage_of_profileApplication
+		source = Package
+		target = ProfileApplication }
+
+	reifiedRelationship A_profile_stereotype {
+		essential
+		unreified = profile_of_stereotype
+		inverse = stereotype_of_profile
+		source = Stereotype
+		target = Profile }
+
+	reifiedRelationship A_protocol_interface {
+		functional
+		inverseFunctional
+		unreified = protocol_of_interface
+		inverse = interface_of_protocol
+		source = Interface
+		target = ProtocolStateMachine }
+
+	reifiedRelationship A_protocol_port {
+		functional
+		unreified = protocol_of_port
+		inverse = port_of_protocol
+		source = Port
+		target = ProtocolStateMachine }
+
+	reifiedRelationship A_provided_component {
+		unreified = provided_of_component
+		inverse = component_of_provided
+		source = Component
+		target = Interface }
+
+	reifiedRelationship A_provided_port {
+		unreified = provided_of_port
+		inverse = port_of_provided
+		source = Port
+		target = Interface }
+
+	reifiedRelationship A_qualifier_associationEnd {
+		functional
+		inverseFunctional
+		unreified = qualifier_of_associationEnd
+		inverse = associationEnd_of_qualifier
+		source = Property
+		target = Property }
+
+	reifiedRelationship A_qualifier_linkEndData {
+		functional
+		inverseEssential
+		unreified = qualifier_of_linkEndData
+		inverse = linkEndData_of_qualifier
+		source = LinkEndData
+		target = QualifierValue }
+
+	reifiedRelationship A_qualifier_qualifierValue {
+		essential
+		unreified = qualifier_of_qualifierValue
+		inverse = qualifierValue_of_qualifier
+		source = QualifierValue
+		target = Property }
+
+	reifiedRelationship A_qualifier_readLinkObjectEndQualifierAction {
+		essential
+		unreified = qualifier_of_readLinkObjectEndQualifierAction
+		inverse = readLinkObjectEndQualifierAction_of_qualifier
+		source = ReadLinkObjectEndQualifierAction
+		target = Property }
+
+	reifiedRelationship A_raisedException_behavioralFeature {
+		unreified = raisedException_of_behavioralFeature
+		inverse = behavioralFeature_of_raisedException
+		source = BehavioralFeature
+		target = Type }
+
+	reifiedRelationship A_raisedException_operation {
+		unreified = raisedException_of_operation
+		inverse = operation_of_raisedException
+		source = Operation
+		target = Type }
+
+	reifiedRelationship A_realization_abstraction_component {
+		functional
+		inverseFunctional
+		unreified = realization_of_abstraction2
+		inverse = abstraction2_of_realization
+		source = Component
+		target = ComponentRealization }
+
+	reifiedRelationship A_realization_abstraction_flow {
+		unreified = realization_of_abstraction
+		inverse = abstraction_of_realization
+		source = InformationFlow
+		target = Relationship }
+
+	reifiedRelationship A_realizingActivityEdge_informationFlow {
+		unreified = realizingActivityEdge_of_informationFlow
+		inverse = informationFlow_of_realizingActivityEdge
+		source = InformationFlow
+		target = ActivityEdge }
+
+	reifiedRelationship A_realizingClassifier_componentRealization {
+		unreified = realizingClassifier_of_componentRealization
+		inverse = componentRealization_of_realizingClassifier
+		source = ComponentRealization
+		target = Classifier }
+
+	reifiedRelationship A_realizingConnector_informationFlow {
+		unreified = realizingConnector_of_informationFlow
+		inverse = informationFlow_of_realizingConnector
+		source = InformationFlow
+		target = Connector }
+
+	reifiedRelationship A_realizingMessage_informationFlow {
+		unreified = realizingMessage_of_informationFlow
+		inverse = informationFlow_of_realizingMessage
+		source = InformationFlow
+		target = Message }
+
+	reifiedRelationship A_receiveEvent_endMessage {
+		functional
+		inverseFunctional
+		unreified = receiveEvent_of_message
+		inverse = message_of_receiveEvent
+		source = Message
+		target = MessageEnd }
+
+	reifiedRelationship A_redefinedBehavior_behavior {
+		unreified = redefinedBehavior_of_behavior
+		inverse = behavior_of_redefinedBehavior
+		source = Behavior
+		target = Behavior }
+
+	reifiedRelationship A_redefinedClassifier_classifier {
+		unreified = redefinedClassifier_of_classifier
+		inverse = classifier_of_redefinedClassifier
+		source = Classifier
+		target = Classifier }
+
+	reifiedRelationship A_redefinedConnector_connector {
+		unreified = redefinedConnector_of_connector
+		inverse = connector_of_redefinedConnector
+		source = Connector
+		target = Connector }
+
+	reifiedRelationship A_redefinedEdge_activityEdge {
+		unreified = redefinedEdge_of_activityEdge
+		inverse = activityEdge_of_redefinedEdge
+		source = ActivityEdge
+		target = ActivityEdge }
+
+	reifiedRelationship A_redefinedElement_redefinableElement {
+		unreified = redefinedElement_of_redefinableElement
+		inverse = redefinableElement_of_redefinedElement
+		source = RedefinableElement
+		target = RedefinableElement }
+
+	reifiedRelationship A_redefinedInterface_interface {
+		unreified = redefinedInterface_of_interface
+		inverse = interface_of_redefinedInterface
+		source = Interface
+		target = Interface }
+
+	reifiedRelationship A_redefinedNode_activityNode {
+		unreified = redefinedNode_of_activityNode
+		inverse = activityNode_of_redefinedNode
+		source = ActivityNode
+		target = ActivityNode }
+
+	reifiedRelationship A_redefinedOperation_operation {
+		unreified = redefinedOperation_of_operation
+		inverse = operation_of_redefinedOperation
+		source = Operation
+		target = Operation }
+
+	reifiedRelationship A_redefinedPort_port {
+		unreified = redefinedPort_of_port
+		inverse = port_of_redefinedPort
+		source = Port
+		target = Port }
+
+	reifiedRelationship A_redefinedProperty_property {
+		unreified = redefinedProperty_of_property
+		inverse = property_of_redefinedProperty
+		source = Property
+		target = Property }
+
+	reifiedRelationship A_redefinedState_state {
+		functional
+		unreified = redefinedState_of_state
+		inverse = state_of_redefinedState
+		source = State
+		target = State }
+
+	reifiedRelationship A_redefinedTransition_transition {
+		functional
+		unreified = redefinedTransition_of_transition
+		inverse = transition_of_redefinedTransition
+		source = Transition
+		target = Transition }
+
+	reifiedRelationship A_redefinitionContext_redefinableElement {
+		unreified = redefinitionContext_of_redefinableElement
+		inverse = redefinableElement_of_redefinitionContext
+		source = RedefinableElement
+		target = Classifier }
+
+	reifiedRelationship A_redefinitionContext_region {
+		essential
+		unreified = redefinitionContext_of_region
+		inverse = region_of_redefinitionContext
+		source = Region
+		target = Classifier }
+
+	reifiedRelationship A_redefinitionContext_state {
+		essential
+		unreified = redefinitionContext_of_state
+		inverse = state_of_redefinitionContext
+		source = State
+		target = Classifier }
+
+	reifiedRelationship A_redefinitionContext_transition {
+		essential
+		unreified = redefinitionContext_of_transition
+		inverse = transition_of_redefinitionContext
+		source = Transition
+		target = Classifier }
+
+	reifiedRelationship A_reducer_reduceAction {
+		essential
+		unreified = reducer_of_reduceAction
+		inverse = reduceAction_of_reducer
+		source = ReduceAction
+		target = Behavior }
+
+	reifiedRelationship A_referred_protocolTransition {
+		unreified = referred_of_protocolTransition
+		inverse = protocolTransition_of_referred
+		source = ProtocolTransition
+		target = Operation }
+
+	reifiedRelationship A_refersTo_interactionUse {
+		essential
+		unreified = refersTo_of_interactionUse
+		inverse = interactionUse_of_refersTo
+		source = InteractionUse
+		target = Interaction }
+
+	reifiedRelationship A_region_state {
+		functional
+		inverseFunctional
+		unreified = region_of_state
+		inverse = state_of_region
+		source = State
+		target = Region }
+
+	reifiedRelationship A_region_stateMachine {
+		functional
+		inverseFunctional
+		unreified = region_of_stateMachine
+		inverse = stateMachine_of_region
+		source = StateMachine
+		target = Region }
+
+	reifiedRelationship A_relatedElement_relationship {
+		unreified = relatedElement_of_relationship
+		inverse = relationship_of_relatedElement
+		source = Relationship
+		target = Element }
+
+	reifiedRelationship A_removeAt_removeStructuralFeatureValueAction {
+		functional
+		inverseFunctional
+		unreified = removeAt_of_removeStructuralFeatureValueAction
+		inverse = removeStructuralFeatureValueAction_of_removeAt
+		source = RemoveStructuralFeatureValueAction
+		target = InputPin }
+
+	reifiedRelationship A_removeAt_removeVariableValueAction {
+		functional
+		inverseFunctional
+		unreified = removeAt_of_removeVariableValueAction
+		inverse = removeVariableValueAction_of_removeAt
+		source = RemoveVariableValueAction
+		target = InputPin }
+
+	reifiedRelationship A_replyToCall_replyAction {
+		essential
+		unreified = replyToCall_of_replyAction
+		inverse = replyAction_of_replyToCall
+		source = ReplyAction
+		target = Trigger }
+
+	reifiedRelationship A_replyValue_replyAction {
+		functional
+		inverseFunctional
+		unreified = replyValue_of_replyAction
+		inverse = replyAction_of_replyValue
+		source = ReplyAction
+		target = InputPin }
+
+	reifiedRelationship A_representation_classifier {
+		functional
+		inverseFunctional
+		unreified = representation_of_classifier
+		inverse = classifier_of_representation
+		source = Classifier
+		target = CollaborationUse }
+
+	reifiedRelationship A_represented_representation {
+		unreified = represented_of_informationItem
+		inverse = informationItem_of_represented
+		source = InformationItem
+		target = Classifier }
+
+	reifiedRelationship A_represents_activityPartition {
+		functional
+		unreified = represents_of_activityPartition
+		inverse = activityPartition_of_represents
+		source = ActivityPartition
+		target = Element }
+
+	reifiedRelationship A_represents_lifeline {
+		functional
+		unreified = represents_of_lifeline
+		inverse = lifeline_of_represents
+		source = Lifeline
+		target = ConnectableElement }
+
+	reifiedRelationship A_request_sendObjectAction {
+		functional
+		inverseFunctional
+		unreified = request_of_sendObjectAction
+		inverse = sendObjectAction_of_request
+		source = SendObjectAction
+		target = InputPin }
+
+	reifiedRelationship A_required_component {
+		unreified = required_of_component
+		inverse = component_of_required
+		source = Component
+		target = Interface }
+
+	reifiedRelationship A_required_port {
+		unreified = required_of_port
+		inverse = port_of_required
+		source = Port
+		target = Interface }
+
+	reifiedRelationship A_result_acceptEventAction {
+		functional
+		inverseFunctional
+		unreified = result_of_acceptEventAction
+		inverse = acceptEventAction_of_result
+		source = AcceptEventAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_callAction {
+		functional
+		inverseFunctional
+		unreified = result_of_callAction
+		inverse = callAction_of_result
+		source = CallAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_clearStructuralFeatureAction {
+		functional
+		inverseFunctional
+		unreified = result_of_clearStructuralFeatureAction
+		inverse = clearStructuralFeatureAction_of_result
+		source = ClearStructuralFeatureAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_conditionalNode {
+		functional
+		inverseFunctional
+		unreified = result_of_conditionalNode
+		inverse = conditionalNode_of_result
+		source = ConditionalNode
+		target = OutputPin }
+
+	reifiedRelationship A_result_createLinkObjectAction {
+		functional
+		inverseFunctional
+		unreified = result_of_createLinkObjectAction
+		inverse = createLinkObjectAction_of_result
+		source = CreateLinkObjectAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_createObjectAction {
+		functional
+		inverseFunctional
+		unreified = result_of_createObjectAction
+		inverse = createObjectAction_of_result
+		source = CreateObjectAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_loopNode {
+		functional
+		inverseFunctional
+		unreified = result_of_loopNode
+		inverse = loopNode_of_result
+		source = LoopNode
+		target = OutputPin }
+
+	reifiedRelationship A_result_opaqueExpression {
+		functional
+		unreified = result_of_opaqueExpression
+		inverse = opaqueExpression_of_result
+		source = OpaqueExpression
+		target = Parameter }
+
+	reifiedRelationship A_result_readExtentAction {
+		functional
+		inverseFunctional
+		unreified = result_of_readExtentAction
+		inverse = readExtentAction_of_result
+		source = ReadExtentAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_readIsClassifiedObjectAction {
+		functional
+		inverseFunctional
+		unreified = result_of_readIsClassifiedObjectAction
+		inverse = readIsClassifiedObjectAction_of_result
+		source = ReadIsClassifiedObjectAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_readLinkAction {
+		functional
+		inverseFunctional
+		unreified = result_of_readLinkAction
+		inverse = readLinkAction_of_result
+		source = ReadLinkAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_readLinkObjectEndAction {
+		functional
+		inverseFunctional
+		unreified = result_of_readLinkObjectEndAction
+		inverse = readLinkObjectEndAction_of_result
+		source = ReadLinkObjectEndAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_readLinkObjectEndQualifierAction {
+		functional
+		inverseFunctional
+		unreified = result_of_readLinkObjectEndQualifierAction
+		inverse = readLinkObjectEndQualifierAction_of_result
+		source = ReadLinkObjectEndQualifierAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_readSelfAction {
+		functional
+		inverseFunctional
+		unreified = result_of_readSelfAction
+		inverse = readSelfAction_of_result
+		source = ReadSelfAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_readStructuralFeatureAction {
+		functional
+		inverseFunctional
+		unreified = result_of_readStructuralFeatureAction
+		inverse = readStructuralFeatureAction_of_result
+		source = ReadStructuralFeatureAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_readVariableAction {
+		functional
+		inverseFunctional
+		unreified = result_of_readVariableAction
+		inverse = readVariableAction_of_result
+		source = ReadVariableAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_reduceAction {
+		functional
+		inverseFunctional
+		unreified = result_of_reduceAction
+		inverse = reduceAction_of_result
+		source = ReduceAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_testIdentityAction {
+		functional
+		inverseFunctional
+		unreified = result_of_testIdentityAction
+		inverse = testIdentityAction_of_result
+		source = TestIdentityAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_unmarshallAction {
+		functional
+		inverseFunctional
+		unreified = result_of_unmarshallAction
+		inverse = unmarshallAction_of_result
+		source = UnmarshallAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_valueSpecificationAction {
+		functional
+		inverseFunctional
+		unreified = result_of_valueSpecificationAction
+		inverse = valueSpecificationAction_of_result
+		source = ValueSpecificationAction
+		target = OutputPin }
+
+	reifiedRelationship A_result_writeStructuralFeatureAction {
+		functional
+		inverseFunctional
+		unreified = result_of_writeStructuralFeatureAction
+		inverse = writeStructuralFeatureAction_of_result
+		source = WriteStructuralFeatureAction
+		target = OutputPin }
+
+	reifiedRelationship A_returnInformation_acceptCallAction {
+		functional
+		inverseFunctional
+		unreified = returnInformation_of_acceptCallAction
+		inverse = acceptCallAction_of_returnInformation
+		source = AcceptCallAction
+		target = OutputPin }
+
+	reifiedRelationship A_returnInformation_replyAction {
+		functional
+		inverseFunctional
+		unreified = returnInformation_of_replyAction
+		inverse = replyAction_of_returnInformation
+		source = ReplyAction
+		target = InputPin }
+
+	reifiedRelationship A_returnValueRecipient_interactionUse {
+		functional
+		unreified = returnValueRecipient_of_interactionUse
+		inverse = interactionUse_of_returnValueRecipient
+		source = InteractionUse
+		target = Property }
+
+	reifiedRelationship A_returnValue_interactionUse {
+		functional
+		inverseFunctional
+		unreified = returnValue_of_interactionUse
+		inverse = interactionUse_of_returnValue
+		source = InteractionUse
+		target = ValueSpecification }
+
+	reifiedRelationship A_roleBinding_collaborationUse {
+		functional
+		inverseFunctional
+		unreified = roleBinding_of_collaborationUse
+		inverse = collaborationUse_of_roleBinding
+		source = CollaborationUse
+		target = Dependency }
+
+	reifiedRelationship A_role_structuredClassifier {
+		unreified = role_of_structuredClassifier
+		inverse = structuredClassifier_of_role
+		source = StructuredClassifier
+		target = ConnectableElement }
+
+	reifiedRelationship A_second_testIdentityAction {
+		functional
+		inverseFunctional
+		unreified = second_of_testIdentityAction
+		inverse = testIdentityAction_of_second
+		source = TestIdentityAction
+		target = InputPin }
+
+	reifiedRelationship A_selection_objectFlow {
+		functional
+		unreified = selection_of_objectFlow
+		inverse = objectFlow_of_selection
+		source = ObjectFlow
+		target = Behavior }
+
+	reifiedRelationship A_selection_objectNode {
+		functional
+		unreified = selection_of_objectNode
+		inverse = objectNode_of_selection
+		source = ObjectNode
+		target = Behavior }
+
+	reifiedRelationship A_selector_lifeline {
+		functional
+		inverseFunctional
+		unreified = selector_of_lifeline
+		inverse = lifeline_of_selector
+		source = Lifeline
+		target = ValueSpecification }
+
+	reifiedRelationship A_sendEvent_endMessage {
+		functional
+		inverseFunctional
+		unreified = sendEvent_of_message
+		inverse = message_of_sendEvent
+		source = Message
+		target = MessageEnd }
+
+	reifiedRelationship A_setupPart_loopNode {
+		inverseFunctional
+		unreified = setupPart_of_loopNode
+		inverse = loopNode_of_setupPart
+		source = LoopNode
+		target = ExecutableNode }
+
+	reifiedRelationship A_signal_broadcastSignalAction {
+		essential
+		unreified = signal_of_broadcastSignalAction
+		inverse = broadcastSignalAction_of_signal
+		source = BroadcastSignalAction
+		target = Signal }
+
+	reifiedRelationship A_signal_reception {
+		essential
+		unreified = signal_of_reception
+		inverse = reception_of_signal
+		source = Reception
+		target = Signal }
+
+	reifiedRelationship A_signal_sendSignalAction {
+		essential
+		unreified = signal_of_sendSignalAction
+		inverse = sendSignalAction_of_signal
+		source = SendSignalAction
+		target = Signal }
+
+	reifiedRelationship A_signal_signalEvent {
+		essential
+		unreified = signal_of_signalEvent
+		inverse = signalEvent_of_signal
+		source = SignalEvent
+		target = Signal }
+
+	reifiedRelationship A_signature_message {
+		functional
+		unreified = signature_of_message
+		inverse = message_of_signature
+		source = Message
+		target = NamedElement }
+
+	reifiedRelationship A_signature_templateBinding {
+		essential
+		unreified = signature_of_templateBinding
+		inverse = templateBinding_of_signature
+		source = TemplateBinding
+		target = TemplateSignature }
+
+	reifiedRelationship A_slot_owningInstance {
+		functional
+		inverseEssential
+		unreified = slot_of_owningInstance
+		inverse = owningInstance_of_slot
+		source = InstanceSpecification
+		target = Slot }
+
+	reifiedRelationship A_source_directedRelationship {
+		unreified = source_of_directedRelationship
+		inverse = directedRelationship_of_source
+		source = DirectedRelationship
+		target = Element }
+
+	reifiedRelationship A_specification_durationConstraint {
+		functional
+		inverseFunctional
+		unreified = specification_of_durationConstraint
+		inverse = durationConstraint_of_specification
+		source = DurationConstraint
+		target = DurationInterval }
+
+	reifiedRelationship A_specification_intervalConstraint {
+		functional
+		inverseFunctional
+		unreified = specification_of_intervalConstraint
+		inverse = intervalConstraint_of_specification
+		source = IntervalConstraint
+		target = Interval }
+
+	reifiedRelationship A_specification_owningConstraint {
+		functional
+		inverseFunctional
+		unreified = specification_of_owningConstraint
+		inverse = owningConstraint_of_specification
+		source = Constraint
+		target = ValueSpecification }
+
+	reifiedRelationship A_specification_owningInstanceSpec {
+		functional
+		inverseFunctional
+		unreified = specification_of_owningInstanceSpec
+		inverse = owningInstanceSpec_of_specification
+		source = InstanceSpecification
+		target = ValueSpecification }
+
+	reifiedRelationship A_specification_timeConstraint {
+		functional
+		inverseFunctional
+		unreified = specification_of_timeConstraint
+		inverse = timeConstraint_of_specification
+		source = TimeConstraint
+		target = TimeInterval }
+
+	reifiedRelationship A_start_executionSpecification {
+		essential
+		unreified = start_of_executionSpecification
+		inverse = executionSpecification_of_start
+		source = ExecutionSpecification
+		target = OccurrenceSpecification }
+
+	reifiedRelationship A_stateInvariant_owningState {
+		functional
+		inverseFunctional
+		unreified = stateInvariant_of_owningState
+		inverse = owningState_of_stateInvariant
+		source = State
+		target = Constraint }
+
+	reifiedRelationship A_structuralFeature_structuralFeatureAction {
+		essential
+		unreified = structuralFeature_of_structuralFeatureAction
+		inverse = structuralFeatureAction_of_structuralFeature
+		source = StructuralFeatureAction
+		target = StructuralFeature }
+
+	reifiedRelationship A_structuredNodeInput_structuredActivityNode {
+		functional
+		inverseFunctional
+		unreified = structuredNodeInput_of_structuredActivityNode
+		inverse = structuredActivityNode_of_structuredNodeInput
+		source = StructuredActivityNode
+		target = InputPin }
+
+	reifiedRelationship A_structuredNodeOutput_structuredActivityNode {
+		functional
+		inverseFunctional
+		unreified = structuredNodeOutput_of_structuredActivityNode
+		inverse = structuredActivityNode_of_structuredNodeOutput
+		source = StructuredActivityNode
+		target = OutputPin }
+
+	reifiedRelationship A_structuredNode_activity {
+		functional
+		inverseFunctional
+		unreified = structuredNode_of_activity
+		inverse = activity_of_structuredNode
+		source = Activity
+		target = StructuredActivityNode }
+
+	reifiedRelationship A_subExpression_owningExpression {
+		functional
+		inverseFunctional
+		unreified = subExpression_of_owningExpression
+		inverse = owningExpression_of_subExpression
+		source = StringExpression
+		target = StringExpression }
+
+	reifiedRelationship A_subgroup_superGroup {
+		functional
+		inverseFunctional
+		unreified = subgroup_of_superGroup
+		inverse = superGroup_of_subgroup
+		source = ActivityGroup
+		target = ActivityGroup }
+
+	reifiedRelationship A_subject_useCase {
+		unreified = subject_of_useCase
+		inverse = useCase_of_subject
+		source = UseCase
+		target = Classifier }
+
+	reifiedRelationship A_submachineState_submachine {
+		inverseFunctional
+		unreified = submachineState_of_submachine
+		inverse = submachine_of_submachineState
+		source = StateMachine
+		target = State }
+
+	reifiedRelationship A_subpartition_superPartition {
+		functional
+		inverseFunctional
+		unreified = subpartition_of_superPartition
+		inverse = superPartition_of_subpartition
+		source = ActivityPartition
+		target = ActivityPartition }
+
+	reifiedRelationship A_subsettedProperty_property {
+		unreified = subsettedProperty_of_property
+		inverse = property_of_subsettedProperty
+		source = Property
+		target = Property }
+
+	reifiedRelationship A_substitution_substitutingClassifier {
+		functional
+		inverseEssential
+		unreified = substitution_of_substitutingClassifier
+		inverse = substitutingClassifier_of_substitution
+		source = Classifier
+		target = Substitution }
+
+	reifiedRelationship A_subvertex_container {
+		functional
+		inverseFunctional
+		unreified = subvertex_of_container
+		inverse = container_of_subvertex
+		source = Region
+		target = Vertex }
+
+	reifiedRelationship A_superClass_class {
+		unreified = superClass_of_class
+		inverse = class_of_superClass
+		source = Class
+		target = Class }
+
+	reifiedRelationship A_supplier_supplierDependency {
+		unreified = supplier_of_supplierDependency
+		inverse = supplierDependency_of_supplier
+		source = Dependency
+		target = NamedElement }
+
+	reifiedRelationship A_target_callOperationAction {
+		functional
+		inverseFunctional
+		unreified = target_of_callOperationAction
+		inverse = callOperationAction_of_target
+		source = CallOperationAction
+		target = InputPin }
+
+	reifiedRelationship A_target_destroyObjectAction {
+		functional
+		inverseFunctional
+		unreified = target_of_destroyObjectAction
+		inverse = destroyObjectAction_of_target
+		source = DestroyObjectAction
+		target = InputPin }
+
+	reifiedRelationship A_target_directedRelationship {
+		unreified = target_of_directedRelationship
+		inverse = directedRelationship_of_target
+		source = DirectedRelationship
+		target = Element }
+
+	reifiedRelationship A_target_sendObjectAction {
+		functional
+		inverseFunctional
+		unreified = target_of_sendObjectAction
+		inverse = sendObjectAction_of_target
+		source = SendObjectAction
+		target = InputPin }
+
+	reifiedRelationship A_target_sendSignalAction {
+		functional
+		inverseFunctional
+		unreified = target_of_sendSignalAction
+		inverse = sendSignalAction_of_target
+		source = SendSignalAction
+		target = InputPin }
+
+	reifiedRelationship A_templateBinding_boundElement {
+		functional
+		inverseEssential
+		unreified = templateBinding_of_boundElement
+		inverse = boundElement_of_templateBinding
+		source = TemplateableElement
+		target = TemplateBinding }
+
+	reifiedRelationship A_test_clause {
+		inverseFunctional
+		unreified = test_of_clause
+		inverse = clause_of_test
+		source = Clause
+		target = ExecutableNode }
+
+	reifiedRelationship A_test_loopNode {
+		inverseFunctional
+		unreified = test_of_loopNode
+		inverse = loopNode_of_test
+		source = LoopNode
+		target = ExecutableNode }
+
+	reifiedRelationship A_toBefore_after {
+		inverseEssential
+		unreified = toBefore_of_after
+		inverse = after_of_toBefore
+		source = OccurrenceSpecification
+		target = GeneralOrdering }
+
+	reifiedRelationship A_transformation_objectFlow {
+		functional
+		unreified = transformation_of_objectFlow
+		inverse = objectFlow_of_transformation
+		source = ObjectFlow
+		target = Behavior }
+
+	reifiedRelationship A_transition_container {
+		functional
+		inverseEssential
+		unreified = transition_of_container
+		inverse = container_of_transition
+		source = Region
+		target = Transition }
+
+	reifiedRelationship A_trigger_acceptEventAction {
+		functional
+		inverseFunctional
+		unreified = trigger_of_acceptEventAction
+		inverse = acceptEventAction_of_trigger
+		source = AcceptEventAction
+		target = Trigger }
+
+	reifiedRelationship A_trigger_transition {
+		functional
+		inverseFunctional
+		unreified = trigger_of_transition
+		inverse = transition_of_trigger
+		source = Transition
+		target = Trigger }
+
+	reifiedRelationship A_type_collaborationUse {
+		essential
+		unreified = type_of_collaborationUse
+		inverse = collaborationUse_of_type
+		source = CollaborationUse
+		target = Collaboration }
+
+	reifiedRelationship A_type_connector {
+		functional
+		unreified = type_of_connector
+		inverse = connector_of_type
+		source = Connector
+		target = Association }
+
+	reifiedRelationship A_type_extensionEnd {
+		essential
+		unreified = type_of_extensionEnd
+		inverse = extensionEnd_of_type
+		source = ExtensionEnd
+		target = Stereotype }
+
+	reifiedRelationship A_type_operation {
+		functional
+		unreified = type_of_operation
+		inverse = operation_of_type
+		source = Operation
+		target = Type }
+
+	reifiedRelationship A_type_typedElement {
+		functional
+		unreified = type_of_typedElement
+		inverse = typedElement_of_type
+		source = TypedElement
+		target = Type }
+
+	reifiedRelationship A_unmarshallType_unmarshallAction {
+		essential
+		unreified = unmarshallType_of_unmarshallAction
+		inverse = unmarshallAction_of_unmarshallType
+		source = UnmarshallAction
+		target = Classifier }
+
+	reifiedRelationship A_upperBound_objectNode {
+		functional
+		inverseFunctional
+		unreified = upperBound_of_objectNode
+		inverse = objectNode_of_upperBound
+		source = ObjectNode
+		target = ValueSpecification }
+
+	reifiedRelationship A_upperValue_owningUpper {
+		functional
+		inverseFunctional
+		unreified = upperValue_of_owningUpper
+		inverse = owningUpper_of_upperValue
+		source = MultiplicityElement
+		target = ValueSpecification }
+
+	reifiedRelationship A_utilizedElement_manifestation {
+		essential
+		unreified = utilizedElement_of_manifestation
+		inverse = manifestation_of_utilizedElement
+		source = Manifestation
+		target = PackageableElement }
+
+	reifiedRelationship A_value_linkEndData {
+		functional
+		inverseFunctional
+		unreified = value_of_linkEndData
+		inverse = linkEndData_of_value
+		source = LinkEndData
+		target = InputPin }
+
+	reifiedRelationship A_value_owningSlot {
+		functional
+		inverseFunctional
+		unreified = value_of_owningSlot
+		inverse = owningSlot_of_value
+		source = Slot
+		target = ValueSpecification }
+
+	reifiedRelationship A_value_qualifierValue {
+		inverseFunctional
+		essential
+		unreified = value_of_qualifierValue
+		inverse = qualifierValue_of_value
+		source = QualifierValue
+		target = InputPin }
+
+	reifiedRelationship A_value_valuePin {
+		functional
+		inverseFunctional
+		unreified = value_of_valuePin
+		inverse = valuePin_of_value
+		source = ValuePin
+		target = ValueSpecification }
+
+	reifiedRelationship A_value_valueSpecificationAction {
+		functional
+		inverseFunctional
+		unreified = value_of_valueSpecificationAction
+		inverse = valueSpecificationAction_of_value
+		source = ValueSpecificationAction
+		target = ValueSpecification }
+
+	reifiedRelationship A_value_writeStructuralFeatureAction {
+		functional
+		inverseFunctional
+		unreified = value_of_writeStructuralFeatureAction
+		inverse = writeStructuralFeatureAction_of_value
+		source = WriteStructuralFeatureAction
+		target = InputPin }
+
+	reifiedRelationship A_value_writeVariableAction {
+		functional
+		inverseFunctional
+		unreified = value_of_writeVariableAction
+		inverse = writeVariableAction_of_value
+		source = WriteVariableAction
+		target = InputPin }
+
+	reifiedRelationship A_variable_activityScope {
+		functional
+		inverseFunctional
+		unreified = variable_of_activityScope
+		inverse = activityScope_of_variable
+		source = Activity
+		target = Variable }
+
+	reifiedRelationship A_variable_scope {
+		functional
+		inverseFunctional
+		unreified = variable_of_scope
+		inverse = scope_of_variable
+		source = StructuredActivityNode
+		target = Variable }
+
+	reifiedRelationship A_variable_variableAction {
+		essential
+		unreified = variable_of_variableAction
+		inverse = variableAction_of_variable
+		source = VariableAction
+		target = Variable }
+
+	reifiedRelationship A_weight_activityEdge {
+		functional
+		inverseFunctional
+		unreified = weight_of_activityEdge
+		inverse = activityEdge_of_weight
+		source = ActivityEdge
+		target = ValueSpecification }
+
+	reifiedRelationship A_when_timeEvent {
+		functional
+		inverseFunctional
+		unreified = when_of_timeEvent
+		inverse = timeEvent_of_when
+		source = TimeEvent
+		target = TimeExpression }
+
+	reifiedRelationship MD_Constraint_Message {
+		functional
+		inverseFunctional
+		unreified = guard_of_message
+		inverse = message_of_guard
+		source = Message
+		target = Constraint }
+
+	reifiedRelationship MD_Diagram_Namespace {
+		functional
+		inverseFunctional
+		unreified = ownedDiagram_of_ownerOfDiagram
+		inverse = ownerOfDiagram_of_ownedDiagram
+		source = Namespace
+		target = Diagram }
+
+	reifiedRelationship MD_Element_Diagram {
+		functional
+		unreified = context_of_diagram
+		inverse = diagram_of_context
+		source = Diagram
+		target = Element }
+
+	reifiedRelationship MD_Element_Element {
+		functional
+		unreified = syncElement_of_element
+		inverse = element_of_syncElement
+		source = Element
+		target = Element }
+
+	reifiedRelationship MD_Element_ElementValue {
+		essential
+		unreified = element_of_elementValue
+		inverse = elementValue_of_element
+		source = ElementValue
+		target = Element }
+
+	reifiedRelationship MD_Event_Behavior {
+		functional
+		inverseFunctional
+		unreified = event_of_behavior
+		inverse = behavior_of_event
+		source = Behavior
+		target = Event }
+
+	reifiedRelationship MD_Gate_Gate {
+		functional
+		unreified = formalGate_of_gate
+		inverse = gate_of_formalGate
+		source = Gate
+		target = Gate }
+
+	reifiedRelationship MD_InstanceSpecification_Element {
+		functional
+		inverseFunctional
+		unreified = appliedStereotypeInstance_of_stereotypedElement
+		inverse = stereotypedElement_of_appliedStereotypeInstance
+		source = Element
+		target = InstanceSpecification }
+
+	reifiedRelationship MD_Message_Message {
+		functional
+		unreified = replyMessage_of_message
+		inverse = message_of_replyMessage
+		source = Message
+		target = Message }
+
+	reifiedRelationship MD_Observation_Behavior {
+		functional
+		inverseFunctional
+		unreified = observation_of_behavior
+		inverse = behavior_of_observation
+		source = Behavior
+		target = Observation }
+
+	reifiedRelationship MD_ValueSpecification_Message {
+		functional
+		inverseFunctional
+		unreified = target_of_message
+		inverse = message_of_target
+		source = Message
+		target = ValueSpecification }
+
+	A_action_interaction extendsRelationship A_ownedElement_owner
+
+	A_actualGate_interactionUse extendsRelationship A_ownedElement_owner
+
+	A_addition_include extendsRelationship A_target_directedRelationship
+
+	A_appliedProfile_profileApplication extendsRelationship A_target_directedRelationship
+
+	A_argument_interactionUse extendsRelationship A_ownedElement_owner
+
+	A_argument_invocationAction extendsRelationship A_input_action
+
+	A_argument_message extendsRelationship A_ownedElement_owner
+
+	A_attribute_classifier extendsRelationship A_feature_featuringClassifier
+
+	A_attribute_classifier extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_bodyCondition_bodyContext extendsRelationship A_ownedRule_context
+
+	A_cfragmentGate_combinedFragment extendsRelationship A_ownedElement_owner
+
+	A_changeExpression_changeEvent extendsRelationship A_ownedElement_owner
+
+	A_classifierBehavior_behavioredClassifier extendsRelationship A_ownedBehavior_behavioredClassifier
+
+	A_classifier_enumerationLiteral extendsRelationship A_classifier_instanceSpecification
+
+	A_classifier_templateParameter_parameteredElement extendsRelationship A_parameteredElement_templateParameter
+
+	A_clause_conditionalNode extendsRelationship A_ownedElement_owner
+
+	A_clientDependency_client extendsRelationship A_source_directedRelationship
+
+	A_collaborationRole_collaboration extendsRelationship A_role_structuredClassifier
+
+	A_collaborationUse_classifier extendsRelationship A_ownedElement_owner
+
+	A_collection_reduceAction extendsRelationship A_input_action
+
+	A_condition_extend extendsRelationship A_ownedElement_owner
+
+	A_condition_parameterSet extendsRelationship A_ownedElement_owner
+
+	A_configuration_deployment extendsRelationship A_ownedElement_owner
+
+	A_conformance_specificMachine extendsRelationship A_ownedElement_owner
+
+	A_conformance_specificMachine extendsRelationship A_source_directedRelationship
+
+	A_connectableElement_templateParameter_parameteredElement extendsRelationship A_parameteredElement_templateParameter
+
+	A_connectionPoint_state extendsRelationship A_ownedMember_namespace
+
+	A_connectionPoint_stateMachine extendsRelationship A_ownedMember_namespace
+
+	A_connection_state extendsRelationship A_ownedMember_namespace
+
+	A_context_behavior extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_contract_interfaceRealization extendsRelationship A_supplier_supplierDependency
+
+	A_contract_substitution extendsRelationship A_supplier_supplierDependency
+
+	A_covered_events extendsRelationship A_covered_coveredBy
+
+	A_covered_stateInvariant extendsRelationship A_covered_coveredBy
+
+	A_defaultValue_owningParameter extendsRelationship A_ownedElement_owner
+
+	A_defaultValue_owningProperty extendsRelationship A_ownedElement_owner
+
+	A_deferrableTrigger_state extendsRelationship A_ownedElement_owner
+
+	A_deployedArtifact_deploymentForArtifact extendsRelationship A_supplier_supplierDependency
+
+	A_deployment_location extendsRelationship A_clientDependency_client
+
+	A_deployment_location extendsRelationship A_ownedElement_owner
+
+	A_doActivity_state extendsRelationship A_ownedElement_owner
+
+	A_edge_activity extendsRelationship A_ownedElement_owner
+
+	A_edge_inPartition extendsRelationship A_containedEdge_inGroup
+
+	A_edge_inStructuredNode extendsRelationship A_containedEdge_inGroup
+
+	A_edge_inStructuredNode extendsRelationship A_ownedElement_owner
+
+	A_effect_transition extendsRelationship A_ownedElement_owner
+
+	A_elementImport_importingNamespace extendsRelationship A_ownedElement_owner
+
+	A_elementImport_importingNamespace extendsRelationship A_source_directedRelationship
+
+	A_endData_createLinkAction extendsRelationship A_endData_linkAction
+
+	A_endData_destroyLinkAction extendsRelationship A_endData_linkAction
+
+	A_endData_linkAction extendsRelationship A_ownedElement_owner
+
+	A_endType_association extendsRelationship A_relatedElement_relationship
+
+	A_end_connector extendsRelationship A_ownedElement_owner
+
+	A_entry_state extendsRelationship A_ownedElement_owner
+
+	A_exception_raiseExceptionAction extendsRelationship A_input_action
+
+	A_executableNode_sequenceNode extendsRelationship A_node_inStructuredNode
+
+	A_exit_state extendsRelationship A_ownedElement_owner
+
+	A_expr_duration extendsRelationship A_ownedElement_owner
+
+	A_expr_timeExpression extendsRelationship A_ownedElement_owner
+
+	A_extend_extension extendsRelationship A_ownedMember_namespace
+
+	A_extend_extension extendsRelationship A_source_directedRelationship
+
+	A_extendedCase_extend extendsRelationship A_target_directedRelationship
+
+	A_extendedRegion_region extendsRelationship A_redefinedElement_redefinableElement
+
+	A_extendedSignature_redefinableTemplateSignature extendsRelationship A_redefinedElement_redefinableElement
+
+	A_extendedStateMachine_stateMachine extendsRelationship A_redefinedBehavior_behavior
+
+	A_extensionPoint_useCase extendsRelationship A_ownedMember_namespace
+
+	A_feature_featuringClassifier extendsRelationship A_member_memberNamespace
+
+	A_first_testIdentityAction extendsRelationship A_input_action
+
+	A_formalGate_interaction extendsRelationship A_ownedMember_namespace
+
+	A_fragment_enclosingInteraction extendsRelationship A_ownedMember_namespace
+
+	A_fragment_enclosingOperand extendsRelationship A_ownedMember_namespace
+
+	A_fromAction_actionInputPin extendsRelationship A_ownedElement_owner
+
+	A_generalMachine_protocolConformance extendsRelationship A_target_directedRelationship
+
+	A_generalOrdering_interactionFragment extendsRelationship A_ownedElement_owner
+
+	A_general_generalization extendsRelationship A_target_directedRelationship
+
+	A_generalization_specific extendsRelationship A_ownedElement_owner
+
+	A_generalization_specific extendsRelationship A_source_directedRelationship
+
+	A_group_inActivity extendsRelationship A_ownedElement_owner
+
+	A_guard_activityEdge extendsRelationship A_ownedElement_owner
+
+	A_guard_interactionOperand extendsRelationship A_ownedElement_owner
+
+	A_guard_transition extendsRelationship A_ownedRule_context
+
+	A_handler_protectedNode extendsRelationship A_ownedElement_owner
+
+	A_icon_stereotype extendsRelationship A_ownedElement_owner
+
+	A_importedElement_import extendsRelationship A_target_directedRelationship
+
+	A_importedMember_namespace extendsRelationship A_member_memberNamespace
+
+	A_importedPackage_packageImport extendsRelationship A_target_directedRelationship
+
+	A_inInterruptibleRegion_node extendsRelationship A_containedNode_inGroup
+
+	A_inPartition_node extendsRelationship A_containedNode_inGroup
+
+	A_include_includingCase extendsRelationship A_ownedMember_namespace
+
+	A_include_includingCase extendsRelationship A_source_directedRelationship
+
+	A_informationSource_informationFlow extendsRelationship A_source_directedRelationship
+
+	A_informationTarget_informationFlow extendsRelationship A_target_directedRelationship
+
+	A_inheritedMember_inheritingClassifier extendsRelationship A_member_memberNamespace
+
+	A_inheritedParameter_redefinableTemplateSignature extendsRelationship A_parameter_templateSignature
+
+	A_inputValue_linkAction extendsRelationship A_input_action
+
+	A_inputValue_opaqueAction extendsRelationship A_input_action
+
+	A_input_action extendsRelationship A_ownedElement_owner
+
+	A_insertAt_addStructuralFeatureValueAction extendsRelationship A_input_action
+
+	A_insertAt_addVariableValueAction extendsRelationship A_input_action
+
+	A_interfaceRealization_implementingClassifier extendsRelationship A_clientDependency_client
+
+	A_interfaceRealization_implementingClassifier extendsRelationship A_ownedElement_owner
+
+	A_invariant_stateInvariant extendsRelationship A_ownedElement_owner
+
+	A_joinSpec_joinNode extendsRelationship A_ownedElement_owner
+
+	A_lifeline_interaction extendsRelationship A_ownedMember_namespace
+
+	A_localPostcondition_action extendsRelationship A_ownedElement_owner
+
+	A_localPrecondition_action extendsRelationship A_ownedElement_owner
+
+	A_loopVariableInput_loopNode extendsRelationship A_structuredNodeInput_structuredActivityNode
+
+	A_loopVariable_loopNode extendsRelationship A_ownedElement_owner
+
+	A_lowerValue_owningLower extendsRelationship A_ownedElement_owner
+
+	A_manifestation_artifact extendsRelationship A_clientDependency_client
+
+	A_manifestation_artifact extendsRelationship A_ownedElement_owner
+
+	A_mapping_abstraction extendsRelationship A_ownedElement_owner
+
+	A_max_durationInterval extendsRelationship A_max_interval
+
+	A_max_timeInterval extendsRelationship A_max_interval
+
+	A_maxint_interactionConstraint extendsRelationship A_ownedElement_owner
+
+	A_memberEnd_association extendsRelationship A_member_memberNamespace
+
+	A_mergedPackage_packageMerge extendsRelationship A_target_directedRelationship
+
+	A_message_interaction extendsRelationship A_ownedMember_namespace
+
+	A_metaclassReference_profile extendsRelationship A_elementImport_importingNamespace
+
+	A_metamodelReference_profile extendsRelationship A_packageImport_importingNamespace
+
+	A_min_durationInterval extendsRelationship A_min_interval
+
+	A_min_timeInterval extendsRelationship A_min_interval
+
+	A_minint_interactionConstraint extendsRelationship A_ownedElement_owner
+
+	A_nameExpression_namedElement extendsRelationship A_ownedElement_owner
+
+	A_navigableOwnedEnd_association extendsRelationship A_ownedEnd_owningAssociation
+
+	A_nestedArtifact_artifact extendsRelationship A_ownedMember_namespace
+
+	A_nestedClassifier_interface extendsRelationship A_ownedMember_namespace
+
+	A_nestedClassifier_interface extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_nestedClassifier_nestingClass extendsRelationship A_ownedMember_namespace
+
+	A_nestedClassifier_nestingClass extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_nestedNode_node extendsRelationship A_ownedMember_namespace
+
+	A_nestedPackage_nestingPackage extendsRelationship A_packagedElement_owningPackage
+
+	A_node_activity extendsRelationship A_ownedElement_owner
+
+	A_node_inStructuredNode extendsRelationship A_containedNode_inGroup
+
+	A_node_inStructuredNode extendsRelationship A_ownedElement_owner
+
+	A_object_clearAssociationAction extendsRelationship A_input_action
+
+	A_object_readIsClassifiedObjectAction extendsRelationship A_input_action
+
+	A_object_readLinkObjectEndAction extendsRelationship A_input_action
+
+	A_object_readLinkObjectEndQualifierAction extendsRelationship A_input_action
+
+	A_object_reclassifyObjectAction extendsRelationship A_input_action
+
+	A_object_startClassifierBehaviorAction extendsRelationship A_input_action
+
+	A_object_startObjectBehaviorAction extendsRelationship A_input_action
+
+	A_object_structuralFeatureAction extendsRelationship A_input_action
+
+	A_object_unmarshallAction extendsRelationship A_input_action
+
+	A_operand_combinedFragment extendsRelationship A_ownedElement_owner
+
+	A_operand_expression extendsRelationship A_ownedElement_owner
+
+	A_operation_templateParameter_parameteredElement extendsRelationship A_parameteredElement_templateParameter
+
+	A_outputValue_opaqueAction extendsRelationship A_output_action
+
+	A_output_action extendsRelationship A_ownedElement_owner
+
+	A_ownedActual_owningTemplateParameterSubstitution extendsRelationship A_actual_templateParameterSubstitution
+
+	A_ownedActual_owningTemplateParameterSubstitution extendsRelationship A_ownedElement_owner
+
+	A_ownedAttribute_artifact extendsRelationship A_attribute_classifier
+
+	A_ownedAttribute_artifact extendsRelationship A_ownedMember_namespace
+
+	A_ownedAttribute_class extendsRelationship A_attribute_classifier
+
+	A_ownedAttribute_class extendsRelationship A_ownedAttribute_structuredClassifier
+
+	A_ownedAttribute_class extendsRelationship A_ownedMember_namespace
+
+	A_ownedAttribute_datatype extendsRelationship A_attribute_classifier
+
+	A_ownedAttribute_datatype extendsRelationship A_ownedMember_namespace
+
+	A_ownedAttribute_interface extendsRelationship A_attribute_classifier
+
+	A_ownedAttribute_interface extendsRelationship A_ownedMember_namespace
+
+	A_ownedAttribute_owningSignal extendsRelationship A_attribute_classifier
+
+	A_ownedAttribute_owningSignal extendsRelationship A_ownedMember_namespace
+
+	A_ownedAttribute_structuredClassifier extendsRelationship A_attribute_classifier
+
+	A_ownedAttribute_structuredClassifier extendsRelationship A_ownedMember_namespace
+
+	A_ownedAttribute_structuredClassifier extendsRelationship A_role_structuredClassifier
+
+	A_ownedBehavior_behavioredClassifier extendsRelationship A_ownedMember_namespace
+
+	A_ownedComment_owningElement extendsRelationship A_ownedElement_owner
+
+	A_ownedConnector_structuredClassifier extendsRelationship A_feature_featuringClassifier
+
+	A_ownedConnector_structuredClassifier extendsRelationship A_ownedMember_namespace
+
+	A_ownedConnector_structuredClassifier extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_ownedDefault_templateParameter extendsRelationship A_default_templateParameter
+
+	A_ownedDefault_templateParameter extendsRelationship A_ownedElement_owner
+
+	A_ownedEnd_extension extendsRelationship A_ownedEnd_owningAssociation
+
+	A_ownedEnd_owningAssociation extendsRelationship A_feature_featuringClassifier
+
+	A_ownedEnd_owningAssociation extendsRelationship A_memberEnd_association
+
+	A_ownedEnd_owningAssociation extendsRelationship A_ownedMember_namespace
+
+	A_ownedEnd_owningAssociation extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_ownedLiteral_enumeration extendsRelationship A_ownedMember_namespace
+
+	A_ownedMember_namespace extendsRelationship A_member_memberNamespace
+
+	A_ownedMember_namespace extendsRelationship A_ownedElement_owner
+
+	A_ownedOperation_artifact extendsRelationship A_feature_featuringClassifier
+
+	A_ownedOperation_artifact extendsRelationship A_ownedMember_namespace
+
+	A_ownedOperation_artifact extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_ownedOperation_class extendsRelationship A_feature_featuringClassifier
+
+	A_ownedOperation_class extendsRelationship A_ownedMember_namespace
+
+	A_ownedOperation_class extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_ownedOperation_datatype extendsRelationship A_feature_featuringClassifier
+
+	A_ownedOperation_datatype extendsRelationship A_ownedMember_namespace
+
+	A_ownedOperation_datatype extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_ownedOperation_interface extendsRelationship A_feature_featuringClassifier
+
+	A_ownedOperation_interface extendsRelationship A_ownedMember_namespace
+
+	A_ownedOperation_interface extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_ownedParameterSet_behavior extendsRelationship A_ownedMember_namespace
+
+	A_ownedParameterSet_behavioralFeature extendsRelationship A_ownedMember_namespace
+
+	A_ownedParameter_behavior extendsRelationship A_ownedMember_namespace
+
+	A_ownedParameter_operation extendsRelationship A_ownedParameter_ownerFormalParam
+
+	A_ownedParameter_ownerFormalParam extendsRelationship A_ownedMember_namespace
+
+	A_ownedParameter_signature extendsRelationship A_ownedElement_owner
+
+	A_ownedParameter_signature extendsRelationship A_parameter_templateSignature
+
+	A_ownedParameteredElement_owningTemplateParameter extendsRelationship A_ownedElement_owner
+
+	A_ownedParameteredElement_owningTemplateParameter extendsRelationship A_parameteredElement_templateParameter
+
+	A_ownedPort_encapsulatedClassifier extendsRelationship A_ownedAttribute_structuredClassifier
+
+	A_ownedReception_class extendsRelationship A_feature_featuringClassifier
+
+	A_ownedReception_class extendsRelationship A_ownedMember_namespace
+
+	A_ownedReception_interface extendsRelationship A_feature_featuringClassifier
+
+	A_ownedReception_interface extendsRelationship A_ownedMember_namespace
+
+	A_ownedRule_context extendsRelationship A_ownedMember_namespace
+
+	A_ownedStereotype_owningPackage extendsRelationship A_packagedElement_owningPackage
+
+	A_ownedTemplateSignature_classifier extendsRelationship A_ownedTemplateSignature_template
+
+	A_ownedTemplateSignature_classifier extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_ownedTemplateSignature_template extendsRelationship A_ownedElement_owner
+
+	A_ownedType_package extendsRelationship A_packagedElement_owningPackage
+
+	A_ownedUseCase_classifier extendsRelationship A_ownedMember_namespace
+
+	A_packageImport_importingNamespace extendsRelationship A_ownedElement_owner
+
+	A_packageImport_importingNamespace extendsRelationship A_source_directedRelationship
+
+	A_packageMerge_receivingPackage extendsRelationship A_ownedElement_owner
+
+	A_packageMerge_receivingPackage extendsRelationship A_source_directedRelationship
+
+	A_packagedElement_component extendsRelationship A_ownedMember_namespace
+
+	A_packagedElement_owningPackage extendsRelationship A_ownedMember_namespace
+
+	A_parameterSubstitution_templateBinding extendsRelationship A_ownedElement_owner
+
+	A_partition_activity extendsRelationship A_group_inActivity
+
+	A_postCondition_owningTransition extendsRelationship A_ownedRule_context
+
+	A_postcondition_behavior extendsRelationship A_ownedRule_context
+
+	A_postcondition_postContext extendsRelationship A_ownedRule_context
+
+	A_preCondition_protocolTransition extendsRelationship A_guard_transition
+
+	A_precondition_behavior extendsRelationship A_ownedRule_context
+
+	A_precondition_preContext extendsRelationship A_ownedRule_context
+
+	A_profileApplication_applyingPackage extendsRelationship A_ownedElement_owner
+
+	A_profileApplication_applyingPackage extendsRelationship A_source_directedRelationship
+
+	A_protocol_interface extendsRelationship A_ownedMember_namespace
+
+	A_qualifier_associationEnd extendsRelationship A_ownedElement_owner
+
+	A_qualifier_linkEndData extendsRelationship A_ownedElement_owner
+
+	A_raisedException_operation extendsRelationship A_raisedException_behavioralFeature
+
+	A_realization_abstraction_component extendsRelationship A_ownedElement_owner
+
+	A_realization_abstraction_component extendsRelationship A_supplier_supplierDependency
+
+	A_realizingClassifier_componentRealization extendsRelationship A_clientDependency_client
+
+	A_receiveEvent_endMessage extendsRelationship A_message_messageEnd
+
+	A_redefinedBehavior_behavior extendsRelationship A_redefinedClassifier_classifier
+
+	A_redefinedClassifier_classifier extendsRelationship A_redefinedElement_redefinableElement
+
+	A_redefinedConnector_connector extendsRelationship A_redefinedElement_redefinableElement
+
+	A_redefinedEdge_activityEdge extendsRelationship A_redefinedElement_redefinableElement
+
+	A_redefinedInterface_interface extendsRelationship A_redefinedClassifier_classifier
+
+	A_redefinedNode_activityNode extendsRelationship A_redefinedElement_redefinableElement
+
+	A_redefinedOperation_operation extendsRelationship A_redefinedElement_redefinableElement
+
+	A_redefinedPort_port extendsRelationship A_redefinedProperty_property
+
+	A_redefinedProperty_property extendsRelationship A_redefinedElement_redefinableElement
+
+	A_redefinedState_state extendsRelationship A_redefinedElement_redefinableElement
+
+	A_redefinedTransition_transition extendsRelationship A_redefinedElement_redefinableElement
+
+	A_redefinitionContext_region extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_redefinitionContext_state extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_redefinitionContext_transition extendsRelationship A_redefinitionContext_redefinableElement
+
+	A_region_state extendsRelationship A_ownedMember_namespace
+
+	A_region_stateMachine extendsRelationship A_ownedMember_namespace
+
+	A_removeAt_removeStructuralFeatureValueAction extendsRelationship A_input_action
+
+	A_removeAt_removeVariableValueAction extendsRelationship A_input_action
+
+	A_replyValue_replyAction extendsRelationship A_input_action
+
+	A_representation_classifier extendsRelationship A_collaborationUse_classifier
+
+	A_request_sendObjectAction extendsRelationship A_argument_invocationAction
+
+	A_result_acceptEventAction extendsRelationship A_output_action
+
+	A_result_callAction extendsRelationship A_output_action
+
+	A_result_clearStructuralFeatureAction extendsRelationship A_output_action
+
+	A_result_conditionalNode extendsRelationship A_structuredNodeOutput_structuredActivityNode
+
+	A_result_createLinkObjectAction extendsRelationship A_output_action
+
+	A_result_createObjectAction extendsRelationship A_output_action
+
+	A_result_loopNode extendsRelationship A_structuredNodeOutput_structuredActivityNode
+
+	A_result_readExtentAction extendsRelationship A_output_action
+
+	A_result_readIsClassifiedObjectAction extendsRelationship A_output_action
+
+	A_result_readLinkAction extendsRelationship A_output_action
+
+	A_result_readLinkObjectEndAction extendsRelationship A_output_action
+
+	A_result_readLinkObjectEndQualifierAction extendsRelationship A_output_action
+
+	A_result_readSelfAction extendsRelationship A_output_action
+
+	A_result_readStructuralFeatureAction extendsRelationship A_output_action
+
+	A_result_readVariableAction extendsRelationship A_output_action
+
+	A_result_reduceAction extendsRelationship A_output_action
+
+	A_result_testIdentityAction extendsRelationship A_output_action
+
+	A_result_unmarshallAction extendsRelationship A_output_action
+
+	A_result_valueSpecificationAction extendsRelationship A_output_action
+
+	A_result_writeStructuralFeatureAction extendsRelationship A_output_action
+
+	A_returnInformation_acceptCallAction extendsRelationship A_output_action
+
+	A_returnInformation_replyAction extendsRelationship A_input_action
+
+	A_returnValue_interactionUse extendsRelationship A_ownedElement_owner
+
+	A_roleBinding_collaborationUse extendsRelationship A_ownedElement_owner
+
+	A_role_structuredClassifier extendsRelationship A_member_memberNamespace
+
+	A_second_testIdentityAction extendsRelationship A_input_action
+
+	A_selector_lifeline extendsRelationship A_ownedElement_owner
+
+	A_sendEvent_endMessage extendsRelationship A_message_messageEnd
+
+	A_signature_templateBinding extendsRelationship A_target_directedRelationship
+
+	A_slot_owningInstance extendsRelationship A_ownedElement_owner
+
+	A_source_directedRelationship extendsRelationship A_relatedElement_relationship
+
+	A_specification_durationConstraint extendsRelationship A_specification_intervalConstraint
+
+	A_specification_intervalConstraint extendsRelationship A_specification_owningConstraint
+
+	A_specification_owningConstraint extendsRelationship A_ownedElement_owner
+
+	A_specification_owningInstanceSpec extendsRelationship A_ownedElement_owner
+
+	A_specification_timeConstraint extendsRelationship A_specification_intervalConstraint
+
+	A_stateInvariant_owningState extendsRelationship A_ownedRule_context
+
+	A_structuredNodeInput_structuredActivityNode extendsRelationship A_input_action
+
+	A_structuredNodeOutput_structuredActivityNode extendsRelationship A_output_action
+
+	A_subExpression_owningExpression extendsRelationship A_ownedElement_owner
+
+	A_subgroup_superGroup extendsRelationship A_ownedElement_owner
+
+	A_subpartition_superPartition extendsRelationship A_subgroup_superGroup
+
+	A_substitution_substitutingClassifier extendsRelationship A_clientDependency_client
+
+	A_substitution_substitutingClassifier extendsRelationship A_ownedElement_owner
+
+	A_subvertex_container extendsRelationship A_ownedMember_namespace
+
+	A_superClass_class extendsRelationship A_general_classifier
+
+	A_supplier_supplierDependency extendsRelationship A_target_directedRelationship
+
+	A_target_callOperationAction extendsRelationship A_input_action
+
+	A_target_destroyObjectAction extendsRelationship A_input_action
+
+	A_target_directedRelationship extendsRelationship A_relatedElement_relationship
+
+	A_target_sendObjectAction extendsRelationship A_input_action
+
+	A_target_sendSignalAction extendsRelationship A_input_action
+
+	A_templateBinding_boundElement extendsRelationship A_ownedElement_owner
+
+	A_templateBinding_boundElement extendsRelationship A_source_directedRelationship
+
+	A_transition_container extendsRelationship A_ownedMember_namespace
+
+	A_trigger_acceptEventAction extendsRelationship A_ownedElement_owner
+
+	A_trigger_transition extendsRelationship A_ownedElement_owner
+
+	A_type_extensionEnd extendsRelationship A_type_typedElement
+
+	A_upperBound_objectNode extendsRelationship A_ownedElement_owner
+
+	A_upperValue_owningUpper extendsRelationship A_ownedElement_owner
+
+	A_utilizedElement_manifestation extendsRelationship A_supplier_supplierDependency
+
+	A_value_owningSlot extendsRelationship A_ownedElement_owner
+
+	A_value_valuePin extendsRelationship A_ownedElement_owner
+
+	A_value_valueSpecificationAction extendsRelationship A_ownedElement_owner
+
+	A_value_writeStructuralFeatureAction extendsRelationship A_input_action
+
+	A_value_writeVariableAction extendsRelationship A_input_action
+
+	A_variable_activityScope extendsRelationship A_ownedMember_namespace
+
+	A_variable_scope extendsRelationship A_ownedMember_namespace
+
+	A_weight_activityEdge extendsRelationship A_ownedElement_owner
+
+	A_when_timeEvent extendsRelationship A_ownedElement_owner
+
+	MD_Constraint_Message extendsRelationship A_ownedElement_owner
+
+	MD_Diagram_Namespace extendsRelationship A_ownedElement_owner
+
+	MD_Diagram_Namespace extendsRelationship A_ownedMember_namespace
+
+	MD_Event_Behavior extendsRelationship A_ownedElement_owner
+
+	MD_InstanceSpecification_Element extendsRelationship A_ownedElement_owner
+
+	MD_Observation_Behavior extendsRelationship A_ownedElement_owner
+
+	MD_ValueSpecification_Message extendsRelationship A_ownedElement_owner
+
+}

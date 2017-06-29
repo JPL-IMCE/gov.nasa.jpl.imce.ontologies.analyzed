@@ -1,0 +1,895 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2001/XMLSchema#"
+     xml:base="http://www.w3.org/2001/XMLSchema"
+     xmlns:annotation="http://imce.jpl.nasa.gov/foundation/annotation/annotation#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:runtime="http://imce.jpl.nasa.gov/oml/runtime#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.w3.org/2001/XMLSchema">
+        <owl:imports rdf:resource="http://imce.jpl.nasa.gov/oml/runtime"/>
+        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <runtime:OML2EcoreNsPrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xsd</runtime:OML2EcoreNsPrefix>
+        <annotation:hasRelativeIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.w3.org/2001/XMLSchema</annotation:hasRelativeIRI>
+        <annotation:isDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</annotation:isDefinition>
+        <runtime:OML2EcoreNsURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/_2001/xmlSchema</runtime:OML2EcoreNsURI>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#NCName -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#NCName">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#name"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[\i\c*&amp;&amp;[\i-[:]][\c-[:]]*]</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#NMTOKEN -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#NMTOKEN">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#token"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\c+</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#anyAtomicType -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#anyAtomicType">
+        <runtime:OML2JavaDatatypeBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">java.lang.String</runtime:OML2JavaDatatypeBinding>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#anyAtomicType</dc:source>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#anyURI -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#anyURI">
+        <runtime:OML2JavaDatatypeBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">java.net.URI</runtime:OML2JavaDatatypeBinding>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#anyURI</dc:source>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#base64Binary -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#base64Binary">
+        <runtime:OML2JavaDatatypeBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">java.lang.String</runtime:OML2JavaDatatypeBinding>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#base64Binary</dc:source>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#boolean -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean">
+        <runtime:OML2JavaDatatypeBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">java.lang.Boolean</runtime:OML2JavaDatatypeBinding>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#boolean</dc:source>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#byte -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#byte">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-128</minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">127</maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTimeStamp -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dayTimeDuration -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dayTimeDuration">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[^YM]*(T.*)?</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#decimal -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#decimal">
+        <runtime:OML2JavaDatatypeBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">java.math.BigDecimal</runtime:OML2JavaDatatypeBinding>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#decimal</dc:source>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#double -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#double">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(\+|\-)?([0-9]+(\.[0-9]*)?|\.[0-9]+)([Ee](\+|\-)?[0-9]+)?|(\+|\-)?INF|NaN</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-?P((([0-9]+Y([0-9]+M)?([0-9]+D)?|([0-9]+M)([0-9]+D)?|([0-9]+D))(T(([0-9]+H)([0-9]+M)?([0-9]+(\.[0-9]+)?S)?|([0-9]+M)([0-9]+(\.[0-9]+)?S)?|([0-9]+(\.[0-9]+)?S)))?)|(T(([0-9]+H)([0-9]+M)?([0-9]+(\.[0-9]+)?S)?|([0-9]+M)([0-9]+(\.[0-9]+)?S)?|([0-9]+(\.[0-9]+)?S))))</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#float -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(\+|\-)?([0-9]+(\.[0-9]*)?|\.[0-9]+)([Ee](\+|\-)?[0-9]+)?|(\+|\-)?INF|NaN</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gDay -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gDay">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">---(0[1-9]|[12][0-9]|3[01])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gMonth -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gMonth">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--(0[1-9]|1[0-2])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gMonthDay -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gMonthDay">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">--(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYearMonth -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYearMonth">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#hexBinary -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#hexBinary">
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#hexBinary</dc:source>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">([0-9a-fA-F]{2})*</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#int -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#int">
+        <runtime:OML2JavaDatatypeBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">java.lang.Integer</runtime:OML2JavaDatatypeBinding>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#int</dc:source>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-2147483648</minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2147483647</maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#integer -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer">
+        <runtime:OML2JavaDatatypeBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">java.math.BigInteger</runtime:OML2JavaDatatypeBinding>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#integer</dc:source>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[\-+]?[0-9]+</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#language -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#language">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#token"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[a-zA-Z]{1,8}(-[a-zA-Z0-9]{1,8})*</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#long -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#long">
+        <runtime:OML2JavaDatatypeBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">java.lang.Long</runtime:OML2JavaDatatypeBinding>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A long is a 6bit integer</dc:description>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#long</dc:source>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-9223372036854775808</minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9223372036854775807</maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#name -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#name">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#token"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\i\c*</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#negativeInteger -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#negativeInteger">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#nonNegativeInteger -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#nonNegativeInteger</dc:source>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#nonPositiveInteger -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonPositiveInteger">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#normalizedString -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#normalizedString">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[^\n\r\t]</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#positiveInteger -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#positiveInteger">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#short -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#short">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-32768</minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32767</maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string">
+        <runtime:OML2JavaDatatypeBinding rdf:datatype="http://www.w3.org/2001/XMLSchema#string">java.lang.String</runtime:OML2JavaDatatypeBinding>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#string</dc:source>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?|(24:00:00(\.0+)?))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#token -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#token">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#normalizedString"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\S[\S[ ]{0,2}]\S</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#unsignedByte -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedByte">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">255</maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#unsignedInt -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedInt">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4294967295</maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#unsignedLong -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedLong">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18446744073709551615</maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#unsignedShort -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedShort">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">65535</maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#yearMonthDuration -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#yearMonthDuration">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <pattern rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[^DT]*</pattern>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topObjectProperty"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topReifiedObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topReifiedObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topReifiedObjectPropertySource -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topReifiedObjectPropertySource">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topReifiedObjectPropertyTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topReifiedObjectPropertyTarget">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topReifiedStructuredDataProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topReifiedStructuredDataProperty">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topReifiedStructuredDataPropertySource -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topReifiedStructuredDataPropertySource">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topReifiedStructuredDataPropertyTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topReifiedStructuredDataPropertyTarget">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topUnreifiedObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topUnreifiedObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topDataProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#Aspect -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#Aspect">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#Entity -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#Entity">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#ReifiedObjectProperty -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#ReifiedObjectProperty">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#ReifiedStructuredDataProperty -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#ReifiedStructuredDataProperty">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#StructuredDatatype -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#StructuredDatatype">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#Thing -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/www.w3.org/2001/XMLSchema#Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.0.5) https://github.com/owlcs/owlapi/ -->
+
+

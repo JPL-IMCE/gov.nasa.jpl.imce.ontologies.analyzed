@@ -1,0 +1,1021 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#"
+     xml:base="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical"
+     xmlns:annotation="http://imce.jpl.nasa.gov/foundation/annotation/annotation#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:MagicDraw="https://imce.jpl.nasa.gov/oml/provenance/MagicDraw#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:runtime="http://imce.jpl.nasa.gov/oml/runtime#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://imce.jpl.nasa.gov/oml/oml#">
+    <owl:Ontology rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical">
+        <owl:imports rdf:resource="http://imce.jpl.nasa.gov/foundation/analysis/analysis"/>
+        <owl:imports rdf:resource="http://imce.jpl.nasa.gov/foundation/annotation/annotation"/>
+        <annotation:hasRelativeIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imce.jpl.nasa.gov/discipline/mechanical/mechanical</annotation:hasRelativeIRI>
+        <annotation:isDesignation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</annotation:isDesignation>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topObjectProperty"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topReifiedObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topReifiedObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topReifiedObjectPropertySource -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topReifiedObjectPropertySource">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topReifiedObjectPropertyTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topReifiedObjectPropertyTarget">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topReifiedStructuredDataProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topReifiedStructuredDataProperty">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topReifiedStructuredDataPropertySource -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topReifiedStructuredDataPropertySource">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topReifiedStructuredDataPropertyTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topReifiedStructuredDataPropertyTarget">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topUnreifiedObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topUnreifiedObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topDataProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Aspect -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Aspect">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#ReifiedObjectProperty -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#ReifiedObjectProperty">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#ReifiedStructuredDataProperty -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#ReifiedStructuredDataProperty">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Thing -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Thing"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ADHCylinder -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ADHCylinder">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Cylinder"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ADHCylinder"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Cylinder"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ed2ead8b-76b4-5987-8c72-6365daa12d57</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Arc -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Arc">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Geometry"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Arc"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Geometry"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c9885592-f881-5c50-b8f9-110396786114</annotation:hasUUID>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Arc"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">79f754f6-0618-5b7c-88eb-0a0fed20c162</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ArcCylinder -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ArcCylinder">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Cylinder"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ArcCylinder"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Cylinder"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f5224b88-fb10-51b5-b7c3-11f5bb862b90</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Assymetric -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Assymetric">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Axis -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Axis">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Block -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Block">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#PrimitiveFeatures"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Block"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#PrimitiveFeatures"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">49219139-c31e-56f7-aaa0-6200d54eb0d9</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Body -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Body">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Feature"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Feature"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">028e2d4b-4971-537d-af84-276b45d63cb0</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BooleanFeature -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BooleanFeature">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CombineBodyFeature"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Intersect"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Subtract"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Unite"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BooleanFeature"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Subtract"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">06c73df1-5bb7-580c-a891-4a36cdd5ecc5</annotation:hasUUID>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BooleanFeature"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Unite"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">704e692a-2497-580d-95d0-3fe79269bdf9</annotation:hasUUID>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BooleanFeature"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3fd520ed-b5e0-59c4-91b7-f0b961e5a574</annotation:hasUUID>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BooleanFeature"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CombineBodyFeature"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc02a80c-d2cf-5a9d-a655-aa1460acf006</annotation:hasUUID>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BooleanFeature"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Intersect"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">36e1897b-9336-506a-9533-92220398cb7e</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Chamfer -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Chamfer">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Chamfer"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d2398686-e6e9-5183-b2a7-2005101c9697</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CircularArray -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CircularArray">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CombineBodyFeature -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CombineBodyFeature">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Component -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Component">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ContainingElement"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#NxObject"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Component"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ContainingElement"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc654048-709b-53f5-a47b-9c81baa4aac1</annotation:hasUUID>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Component"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#NxObject"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7b456136-0b98-545d-bd68-08d3227f7286</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ContainingElement -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ContainingElement">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CountPitch -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CountPitch">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CountSpan -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CountSpan">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CounterBoredHole -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CounterBoredHole">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Hole"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CounterBoredHole"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Hole"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3200f42a-1d68-5a9c-8dad-d981cb5bdfb2</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CrossSection -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#CrossSection">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Curve -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Curve">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Cylinder -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Cylinder">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#PrimitiveFeatures"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Cylinder"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#PrimitiveFeatures"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ca587aca-2f5b-5238-958b-5b40497b45c8</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Direction1 -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Direction1">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#LinearDirection"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Direction1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#LinearDirection"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bc7b3e44-2154-537f-a3a7-7b783b7a4b3e</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Direction2 -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Direction2">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#LinearDirection"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Direction2"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#LinearDirection"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3a6d7da7-88a9-5ad5-a939-709ca9f65455</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#EdgeBlend -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#EdgeBlend">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#EdgeBlend"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7550898a-ac8f-50ae-92bf-55226a0bcc09</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Emboss -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Emboss">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BooleanFeature"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Emboss"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BooleanFeature"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4a6cb0e0-bcc9-51a6-86c7-2e9ec3bbf637</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ExtractedFace -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ExtractedFace">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Extrude -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Extrude">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Extrude"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c222daf1-37e6-5424-a46a-95cb6430c756</annotation:hasUUID>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Extrude"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02227ee3-31c4-56b5-8417-8bd6274dd542</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Feature -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Feature">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Geometry -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Geometry">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Hole -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Hole">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Hole"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d7fe0b54-4a74-52f0-85e4-5b28225eadbd</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Intersect -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Intersect">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Line -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Line">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Geometry"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Line"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Geometry"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d91d9759-12f3-5e95-92a4-fe7ebeb457f1</annotation:hasUUID>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Line"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">53544243-3c60-5bd5-80af-6e7a9393df4f</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#LinearDirection -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#LinearDirection">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#LinkedCounterboredScrew -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#LinkedCounterboredScrew">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#LinkedMirrorBody -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#LinkedMirrorBody">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#MassProperties -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#MassProperties">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#NotPart -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#NotPart">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#NxObject"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#NotPart"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#NxObject"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c04b2bf2-4ad3-5ce6-9758-83c7443f812d</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#NxModel -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#NxModel">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#NxObject -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#NxObject">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#OffsetAngle -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#OffsetAngle">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#PatternFeature -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#PatternFeature">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Feature"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#PatternFeature"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Feature"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31d1ab01-11bf-5b17-99aa-a3463fc4dc56</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#PitchSpan -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#PitchSpan">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Point -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Point">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Geometry"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Point"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Geometry"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7893099b-f191-5276-9361-6389c3b61ba8</annotation:hasUUID>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Point"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4361c3b2-1da5-5cdb-a334-72c4ce8c1a20</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Point3d -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Point3d">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Position -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Position">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#PrimitiveFeatures -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#PrimitiveFeatures">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#PrimitiveFeatures"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8a24aa5b-bdc2-5fc7-86b8-a72276eb1531</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Radiate -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Radiate">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#RectangularArray -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#RectangularArray">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Revolve -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Revolve">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Revolve"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">07efe560-c656-5188-8f96-908e23019299</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ScrewHoleSeries -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ScrewHoleSeries">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Section -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Section">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Aspect"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Section"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a5c50d93-d71d-5a5d-b2f0-3324ab36bb5e</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#SimpleHole -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#SimpleHole">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Hole"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#SimpleHole"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Hole"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1d9ef53f-50d6-5136-b557-f2f8a9d170d2</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#SimpleScrewHole -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#SimpleScrewHole">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Hole"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#SimpleScrewHole"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Hole"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4a13909a-cdcd-5939-b8a4-f2cb1d57a479</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Sketch -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Sketch">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Sketch"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">54b32c47-6c7c-5f44-bcb1-07e12fd16ec3</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Spacing -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Spacing">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Subtract -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Subtract">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Sweep -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Sweep">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Sweep"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#BodyFeature"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">424f8c9a-1ff1-5915-bbea-f41dd43ac92e</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Symmetric -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Symmetric">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TaggedElement">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ThreadedHole -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ThreadedHole">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Hole"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#ThreadedHole"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Hole"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ec1e1c57-80fb-51ca-b215-08c66ad2e169</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Threads -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Threads">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TransformArray -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#TransformArray">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Unite -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Unite">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Vector3d -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mechanical/mechanical#Vector3d">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mechanical/mechanical#StructuredDatatype"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.0.5) https://github.com/owlcs/owlapi/ -->
+
+

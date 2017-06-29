@@ -1,0 +1,170 @@
+{
+  "nodes" : [
+    {
+      "iri" : "http://imce.jpl.nasa.gov/oml/oml",
+      "filename" : "imce.jpl.nasa.gov/oml/oml",
+      "provenance" : "OMLBuiltinModuleProvenance"
+    },
+    {
+      "iri" : "http://imce.jpl.nasa.gov/oml/provenance/MagicDraw",
+      "filename" : "imce.jpl.nasa.gov/oml/provenance/MagicDraw",
+      "provenance" : "OMLBuiltinModuleProvenance"
+    },
+    {
+      "iri" : "http://imce.jpl.nasa.gov/oml/runtime",
+      "filename" : "imce.jpl.nasa.gov/oml/runtime",
+      "provenance" : "OMLBuiltinModuleProvenance"
+    },
+    {
+      "iri" : "http://www.w3.org/2000/01/rdf-schema",
+      "filename" : "www.w3.org/2000/01/rdf-schema",
+      "provenance" : "OMLBuiltinModuleProvenance"
+    },
+    {
+      "iri" : "http://www.w3.org/2001/XMLSchema",
+      "filename" : "www.w3.org/2001/XMLSchema",
+      "provenance" : "OMLBuiltinModuleProvenance"
+    },
+    {
+      "iri" : "http://imce.jpl.nasa.gov/discipline/mass-management/mass-management",
+      "filename" : "imce.jpl.nasa.gov/discipline/mass-management/mass-management",
+      "provenance" : "OMLBundleModuleProvenance"
+    },
+    {
+      "iri" : "http://imce.jpl.nasa.gov/discipline/mechanical/mechanical",
+      "filename" : "imce.jpl.nasa.gov/discipline/mechanical/mechanical",
+      "provenance" : "OMLBundleModuleProvenance"
+    },
+    {
+      "iri" : "http://imce.jpl.nasa.gov/foundation/analysis/analysis",
+      "filename" : "imce.jpl.nasa.gov/foundation/analysis/analysis",
+      "provenance" : "OMLBundleModuleProvenance"
+    },
+    {
+      "iri" : "http://imce.jpl.nasa.gov/foundation/annotation/annotation",
+      "filename" : "imce.jpl.nasa.gov/foundation/annotation/annotation",
+      "provenance" : "OMLBundleModuleProvenance"
+    },
+    {
+      "iri" : "http://imce.jpl.nasa.gov/foundation/base/base",
+      "filename" : "imce.jpl.nasa.gov/foundation/base/base",
+      "provenance" : "OMLBundleModuleProvenance"
+    },
+    {
+      "iri" : "http://imce.jpl.nasa.gov/foundation/mission/mission",
+      "filename" : "imce.jpl.nasa.gov/foundation/mission/mission",
+      "provenance" : "OMLBundleModuleProvenance"
+    },
+    {
+      "iri" : "http://imce.jpl.nasa.gov/foundation/project/project",
+      "filename" : "imce.jpl.nasa.gov/foundation/project/project",
+      "provenance" : "OMLBundleModuleProvenance"
+    },
+    {
+      "iri" : "http://imce.jpl.nasa.gov/foundation/project/project-bundle",
+      "filename" : "imce.jpl.nasa.gov/foundation/project/project-bundle",
+      "provenance" : "OMLBundleModuleProvenance"
+    },
+    {
+      "iri" : "http://purl.org/dc/elements/1.1/",
+      "filename" : "purl.org/dc/elements/1.1",
+      "provenance" : "OMLBundleModuleProvenance"
+    },
+    {
+      "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "filename" : "www.w3.org/1999/02/22-rdf-syntax-ns",
+      "provenance" : "OMLBundleModuleProvenance"
+    },
+    {
+      "iri" : "http://imce.jpl.nasa.gov/projects/MassManagementDemonstration/DIMM",
+      "filename" : "imce.jpl.nasa.gov/projects/MassManagementDemonstration/DIMM",
+      "provenance" : "OMLExtensionModuleProvenance"
+    }
+  ],
+  "edges" : [
+    {
+      "importing" : "http://imce.jpl.nasa.gov/discipline/mass-management/mass-management",
+      "imported" : "http://imce.jpl.nasa.gov/foundation/project/project"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/discipline/mechanical/mechanical",
+      "imported" : "http://imce.jpl.nasa.gov/foundation/analysis/analysis"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/discipline/mechanical/mechanical",
+      "imported" : "http://imce.jpl.nasa.gov/foundation/annotation/annotation"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/foundation/analysis/analysis",
+      "imported" : "http://imce.jpl.nasa.gov/foundation/mission/mission"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/foundation/annotation/annotation",
+      "imported" : "http://imce.jpl.nasa.gov/oml/oml"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/foundation/base/base",
+      "imported" : "http://imce.jpl.nasa.gov/foundation/annotation/annotation"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/foundation/mission/mission",
+      "imported" : "http://imce.jpl.nasa.gov/foundation/base/base"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/foundation/project/project",
+      "imported" : "http://imce.jpl.nasa.gov/discipline/mechanical/mechanical"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/foundation/project/project",
+      "imported" : "http://imce.jpl.nasa.gov/foundation/analysis/analysis"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/foundation/project/project-bundle",
+      "imported" : "http://imce.jpl.nasa.gov/discipline/mass-management/mass-management"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/oml/oml",
+      "imported" : "http://imce.jpl.nasa.gov/oml/provenance/MagicDraw"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/oml/oml",
+      "imported" : "http://imce.jpl.nasa.gov/oml/runtime"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/oml/oml",
+      "imported" : "http://www.w3.org/1999/02/22-rdf-syntax-ns"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/oml/oml",
+      "imported" : "http://www.w3.org/2000/01/rdf-schema"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/oml/provenance/MagicDraw",
+      "imported" : "http://purl.org/dc/elements/1.1/"
+    },
+    {
+      "importing" : "http://imce.jpl.nasa.gov/projects/MassManagementDemonstration/DIMM",
+      "imported" : "http://imce.jpl.nasa.gov/foundation/project/project-bundle"
+    },
+    {
+      "importing" : "http://purl.org/dc/elements/1.1/",
+      "imported" : "http://imce.jpl.nasa.gov/oml/runtime"
+    },
+    {
+      "importing" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "imported" : "http://www.w3.org/2001/XMLSchema"
+    },
+    {
+      "importing" : "http://www.w3.org/2000/01/rdf-schema",
+      "imported" : "http://imce.jpl.nasa.gov/oml/runtime"
+    },
+    {
+      "importing" : "http://www.w3.org/2001/XMLSchema",
+      "imported" : "http://imce.jpl.nasa.gov/oml/runtime"
+    },
+    {
+      "importing" : "http://www.w3.org/2001/XMLSchema",
+      "imported" : "http://purl.org/dc/elements/1.1/"
+    }
+  ]
+}

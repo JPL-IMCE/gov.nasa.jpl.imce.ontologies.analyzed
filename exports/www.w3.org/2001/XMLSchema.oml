@@ -1,0 +1,71 @@
+
+@omlr:OML2EcoreNsURI="http://www.w3.org/_2001/xmlSchema"
+@omlr:OML2EcoreNsPrefix="xsd"
+open terminology <http://www.w3.org/2001/XMLSchema> {
+
+	extends <http://imce.jpl.nasa.gov/oml/runtime>
+	
+	extends <http://purl.org/dc/elements/1.1/>
+
+	@dc:source="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#anyAtomicType"
+	@omlr:OML2JavaDatatypeBinding="java.lang.String"
+	scalar anyAtomicType
+
+	@dc:source="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#anyURI"
+	@omlr:OML2JavaDatatypeBinding="java.net.URI"
+	scalar anyURI
+
+	@dc:source="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#base64Binary"
+	@omlr:OML2JavaDatatypeBinding="java.lang.String"
+	scalar base64Binary
+
+	@dc:source="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#hexBinary"
+	stringScalarRestriction hexBinary {
+		pattern "([0-9a-fA-F]{2})*"
+		restrictedRange anyAtomicType
+	}
+
+	@dc:source="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#boolean"
+	@omlr:OML2JavaDatatypeBinding="java.lang.Boolean"
+	scalar boolean
+
+	@dc:source="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#decimal"
+	@omlr:OML2JavaDatatypeBinding="java.math.BigDecimal"
+	scalar decimal
+
+	@dc:source="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#integer"
+	@omlr:OML2JavaDatatypeBinding="java.math.BigInteger"
+	stringScalarRestriction integer {
+		maxLength 10
+		pattern "[\\\\-+]?[0-9]+"
+		restrictedRange decimal
+	}
+
+	@dc:source="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#long"
+	@dc:description="A long is a 6bit integer"
+	@omlr:OML2JavaDatatypeBinding="java.lang.Long"
+	numericScalarRestriction long {
+		minInclusive "-9223372036854775808"
+		maxInclusive "9223372036854775807"
+		restrictedRange integer
+	}
+
+	@dc:source="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#int"
+	@omlr:OML2JavaDatatypeBinding="java.lang.Integer"
+	numericScalarRestriction int {
+		minInclusive "-2147483648"
+		maxInclusive "2147483647"
+		restrictedRange integer
+	}
+
+	@dc:source="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#nonNegativeInteger"
+	numericScalarRestriction nonNegativeInteger {
+		minInclusive "0"
+		restrictedRange integer
+	}
+
+	@dc:source="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#string"
+	@omlr:OML2JavaDatatypeBinding="java.lang.String"
+	scalar string
+
+}

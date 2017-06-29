@@ -1,0 +1,65 @@
+@omlr:OML2EcoreNsURI="http://imce.jpl.nasa.gov/discipline/mass_management/mass_management"
+@omlr:OML2EcoreNsPrefix="mass_management"
+
+open terminology <http://imce.jpl.nasa.gov/discipline/mass-management/mass-management> {
+
+	extends <http://imce.jpl.nasa.gov/foundation/project/project>
+
+	aspect Element
+
+	entityScalarDataProperty basicMass {
+		domain Element
+		range XMLSchema:decimal
+	}
+
+	entityScalarDataProperty massGrowthAllowance {
+		domain Element
+		// @TODO FIX this: range percentage
+		range XMLSchema:decimal
+	}
+
+	numericScalarRestriction percentage {
+		minInclusive '0'
+		maxInclusive '1'
+		restrictedRange XMLSchema:decimal
+	}
+
+	entityScalarDataProperty predictedMass {
+		domain Element
+		range XMLSchema:decimal
+	}
+
+	entityScalarDataProperty massMargin {
+		domain Element
+		range XMLSchema:decimal
+	}
+
+	entityScalarDataProperty allowableMass {
+		domain Element
+		range XMLSchema:decimal
+	}
+
+	entityScalarDataProperty massReserve {
+		domain Element
+		range XMLSchema:decimal
+	}
+
+	entityScalarDataProperty massLimit {
+		domain Element
+		range XMLSchema:decimal
+	}
+
+	@dc:description="Temporary until the generator handles name conflicts across different namespaces"
+	concept MComponent
+
+	MComponent extendsAspect Element
+
+	MComponent extendsConcept mission:Component
+
+	concept MWorkPackage
+
+	MWorkPackage extendsAspect Element
+
+	MWorkPackage extendsConcept project:WorkPackage
+
+}

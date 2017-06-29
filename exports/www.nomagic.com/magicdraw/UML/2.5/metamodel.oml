@@ -1,0 +1,785 @@
+open terminology <http://www.nomagic.com/magicdraw/UML/2.5/metamodel> {
+
+	extends <http://www.nomagic.com/magicdraw/UML/2.5/vocabulary>
+
+	concept Abstraction
+
+	Abstraction extendsAspect vocabulary:Abstraction
+
+	concept AcceptCallAction
+
+	AcceptCallAction extendsAspect vocabulary:AcceptCallAction
+
+	concept AcceptEventAction
+
+	AcceptEventAction extendsAspect vocabulary:AcceptEventAction
+
+	concept ActionExecutionSpecification
+
+	ActionExecutionSpecification extendsAspect vocabulary:ActionExecutionSpecification
+
+	concept ActionInputPin
+
+	ActionInputPin extendsAspect vocabulary:ActionInputPin
+
+	concept Activity
+
+	Activity extendsAspect vocabulary:Activity
+
+	concept ActivityFinalNode
+
+	ActivityFinalNode extendsAspect vocabulary:ActivityFinalNode
+
+	concept ActivityParameterNode
+
+	ActivityParameterNode extendsAspect vocabulary:ActivityParameterNode
+
+	concept ActivityPartition
+
+	ActivityPartition extendsAspect vocabulary:ActivityPartition
+
+	concept Actor
+
+	Actor extendsAspect vocabulary:Actor
+
+	concept AddStructuralFeatureValueAction
+
+	AddStructuralFeatureValueAction extendsAspect vocabulary:AddStructuralFeatureValueAction
+
+	concept AddVariableValueAction
+
+	AddVariableValueAction extendsAspect vocabulary:AddVariableValueAction
+
+	concept AnyReceiveEvent
+
+	AnyReceiveEvent extendsAspect vocabulary:AnyReceiveEvent
+
+	concept Artifact
+
+	Artifact extendsAspect vocabulary:Artifact
+
+	concept Association
+
+	Association extendsAspect vocabulary:Association
+
+	concept AssociationClass
+
+	AssociationClass extendsAspect vocabulary:AssociationClass
+
+	concept BehaviorExecutionSpecification
+
+	BehaviorExecutionSpecification extendsAspect vocabulary:BehaviorExecutionSpecification
+
+	concept BroadcastSignalAction
+
+	BroadcastSignalAction extendsAspect vocabulary:BroadcastSignalAction
+
+	concept CallBehaviorAction
+
+	CallBehaviorAction extendsAspect vocabulary:CallBehaviorAction
+
+	concept CallEvent
+
+	CallEvent extendsAspect vocabulary:CallEvent
+
+	concept CallOperationAction
+
+	CallOperationAction extendsAspect vocabulary:CallOperationAction
+
+	concept CentralBufferNode
+
+	CentralBufferNode extendsAspect vocabulary:CentralBufferNode
+
+	concept ChangeEvent
+
+	ChangeEvent extendsAspect vocabulary:ChangeEvent
+
+	concept Class
+
+	Class extendsAspect vocabulary:Class
+
+	concept ClassifierTemplateParameter
+
+	ClassifierTemplateParameter extendsAspect vocabulary:ClassifierTemplateParameter
+
+	concept Clause
+
+	Clause extendsAspect vocabulary:Clause
+
+	concept ClearAssociationAction
+
+	ClearAssociationAction extendsAspect vocabulary:ClearAssociationAction
+
+	concept ClearStructuralFeatureAction
+
+	ClearStructuralFeatureAction extendsAspect vocabulary:ClearStructuralFeatureAction
+
+	concept ClearVariableAction
+
+	ClearVariableAction extendsAspect vocabulary:ClearVariableAction
+
+	concept Collaboration
+
+	Collaboration extendsAspect vocabulary:Collaboration
+
+	concept CollaborationUse
+
+	CollaborationUse extendsAspect vocabulary:CollaborationUse
+
+	concept CombinedFragment
+
+	CombinedFragment extendsAspect vocabulary:CombinedFragment
+
+	concept Comment
+
+	Comment extendsAspect vocabulary:Comment
+
+	concept CommunicationPath
+
+	CommunicationPath extendsAspect vocabulary:CommunicationPath
+
+	concept Component
+
+	Component extendsAspect vocabulary:Component
+
+	concept ComponentRealization
+
+	ComponentRealization extendsAspect vocabulary:ComponentRealization
+
+	concept ConditionalNode
+
+	ConditionalNode extendsAspect vocabulary:ConditionalNode
+
+	concept ConnectableElementTemplateParameter
+
+	ConnectableElementTemplateParameter extendsAspect vocabulary:ConnectableElementTemplateParameter
+
+	concept ConnectionPointReference
+
+	ConnectionPointReference extendsAspect vocabulary:ConnectionPointReference
+
+	concept Connector
+
+	Connector extendsAspect vocabulary:Connector
+
+	concept ConnectorEnd
+
+	ConnectorEnd extendsAspect vocabulary:ConnectorEnd
+
+	concept ConsiderIgnoreFragment
+
+	ConsiderIgnoreFragment extendsAspect vocabulary:ConsiderIgnoreFragment
+
+	concept Constraint
+
+	Constraint extendsAspect vocabulary:Constraint
+
+	concept Continuation
+
+	Continuation extendsAspect vocabulary:Continuation
+
+	concept ControlFlow
+
+	ControlFlow extendsAspect vocabulary:ControlFlow
+
+	concept CreateLinkAction
+
+	CreateLinkAction extendsAspect vocabulary:CreateLinkAction
+
+	concept CreateLinkObjectAction
+
+	CreateLinkObjectAction extendsAspect vocabulary:CreateLinkObjectAction
+
+	concept CreateObjectAction
+
+	CreateObjectAction extendsAspect vocabulary:CreateObjectAction
+
+	concept DataStoreNode
+
+	DataStoreNode extendsAspect vocabulary:DataStoreNode
+
+	concept DataType
+
+	DataType extendsAspect vocabulary:DataType
+
+	concept DecisionNode
+
+	DecisionNode extendsAspect vocabulary:DecisionNode
+
+	concept Dependency
+
+	Dependency extendsAspect vocabulary:Dependency
+
+	concept Deployment
+
+	Deployment extendsAspect vocabulary:Deployment
+
+	concept DeploymentSpecification
+
+	DeploymentSpecification extendsAspect vocabulary:DeploymentSpecification
+
+	concept DestroyLinkAction
+
+	DestroyLinkAction extendsAspect vocabulary:DestroyLinkAction
+
+	concept DestroyObjectAction
+
+	DestroyObjectAction extendsAspect vocabulary:DestroyObjectAction
+
+	concept DestructionOccurrenceSpecification
+
+	DestructionOccurrenceSpecification extendsAspect vocabulary:DestructionOccurrenceSpecification
+
+	concept Device
+
+	Device extendsAspect vocabulary:Device
+
+	concept Diagram
+
+	Diagram extendsAspect vocabulary:Diagram
+
+	concept Duration
+
+	Duration extendsAspect vocabulary:Duration
+
+	concept DurationConstraint
+
+	DurationConstraint extendsAspect vocabulary:DurationConstraint
+
+	concept DurationInterval
+
+	DurationInterval extendsAspect vocabulary:DurationInterval
+
+	concept DurationObservation
+
+	DurationObservation extendsAspect vocabulary:DurationObservation
+
+	concept ElementImport
+
+	ElementImport extendsAspect vocabulary:ElementImport
+
+	concept ElementValue
+
+	ElementValue extendsAspect vocabulary:ElementValue
+
+	concept Enumeration
+
+	Enumeration extendsAspect vocabulary:Enumeration
+
+	concept EnumerationLiteral
+
+	EnumerationLiteral extendsAspect vocabulary:EnumerationLiteral
+
+	concept ExceptionHandler
+
+	ExceptionHandler extendsAspect vocabulary:ExceptionHandler
+
+	concept ExecutionEnvironment
+
+	ExecutionEnvironment extendsAspect vocabulary:ExecutionEnvironment
+
+	concept ExecutionOccurrenceSpecification
+
+	ExecutionOccurrenceSpecification extendsAspect vocabulary:ExecutionOccurrenceSpecification
+
+	concept ExpansionNode
+
+	ExpansionNode extendsAspect vocabulary:ExpansionNode
+
+	concept ExpansionRegion
+
+	ExpansionRegion extendsAspect vocabulary:ExpansionRegion
+
+	concept Expression
+
+	Expression extendsAspect vocabulary:Expression
+
+	concept Extend
+
+	Extend extendsAspect vocabulary:Extend
+
+	concept Extension
+
+	Extension extendsAspect vocabulary:Extension
+
+	concept ExtensionEnd
+
+	ExtensionEnd extendsAspect vocabulary:ExtensionEnd
+
+	concept ExtensionPoint
+
+	ExtensionPoint extendsAspect vocabulary:ExtensionPoint
+
+	concept FinalState
+
+	FinalState extendsAspect vocabulary:FinalState
+
+	concept FlowFinalNode
+
+	FlowFinalNode extendsAspect vocabulary:FlowFinalNode
+
+	concept ForkNode
+
+	ForkNode extendsAspect vocabulary:ForkNode
+
+	concept FunctionBehavior
+
+	FunctionBehavior extendsAspect vocabulary:FunctionBehavior
+
+	concept Gate
+
+	Gate extendsAspect vocabulary:Gate
+
+	concept GeneralOrdering
+
+	GeneralOrdering extendsAspect vocabulary:GeneralOrdering
+
+	concept Generalization
+
+	Generalization extendsAspect vocabulary:Generalization
+
+	concept GeneralizationSet
+
+	GeneralizationSet extendsAspect vocabulary:GeneralizationSet
+
+	concept Image
+
+	Image extendsAspect vocabulary:Image
+
+	concept Include
+
+	Include extendsAspect vocabulary:Include
+
+	concept InformationFlow
+
+	InformationFlow extendsAspect vocabulary:InformationFlow
+
+	concept InformationItem
+
+	InformationItem extendsAspect vocabulary:InformationItem
+
+	concept InitialNode
+
+	InitialNode extendsAspect vocabulary:InitialNode
+
+	concept InputPin
+
+	InputPin extendsAspect vocabulary:InputPin
+
+	concept InstanceSpecification
+
+	InstanceSpecification extendsAspect vocabulary:InstanceSpecification
+
+	concept InstanceValue
+
+	InstanceValue extendsAspect vocabulary:InstanceValue
+
+	concept Interaction
+
+	Interaction extendsAspect vocabulary:Interaction
+
+	concept InteractionConstraint
+
+	InteractionConstraint extendsAspect vocabulary:InteractionConstraint
+
+	concept InteractionOperand
+
+	InteractionOperand extendsAspect vocabulary:InteractionOperand
+
+	concept InteractionUse
+
+	InteractionUse extendsAspect vocabulary:InteractionUse
+
+	concept Interface
+
+	Interface extendsAspect vocabulary:Interface
+
+	concept InterfaceRealization
+
+	InterfaceRealization extendsAspect vocabulary:InterfaceRealization
+
+	concept InterruptibleActivityRegion
+
+	InterruptibleActivityRegion extendsAspect vocabulary:InterruptibleActivityRegion
+
+	concept Interval
+
+	Interval extendsAspect vocabulary:Interval
+
+	concept IntervalConstraint
+
+	IntervalConstraint extendsAspect vocabulary:IntervalConstraint
+
+	concept JoinNode
+
+	JoinNode extendsAspect vocabulary:JoinNode
+
+	concept Lifeline
+
+	Lifeline extendsAspect vocabulary:Lifeline
+
+	concept LinkEndCreationData
+
+	LinkEndCreationData extendsAspect vocabulary:LinkEndCreationData
+
+	concept LinkEndData
+
+	LinkEndData extendsAspect vocabulary:LinkEndData
+
+	concept LinkEndDestructionData
+
+	LinkEndDestructionData extendsAspect vocabulary:LinkEndDestructionData
+
+	concept LiteralBoolean
+
+	LiteralBoolean extendsAspect vocabulary:LiteralBoolean
+
+	concept LiteralInteger
+
+	LiteralInteger extendsAspect vocabulary:LiteralInteger
+
+	concept LiteralNull
+
+	LiteralNull extendsAspect vocabulary:LiteralNull
+
+	concept LiteralReal
+
+	LiteralReal extendsAspect vocabulary:LiteralReal
+
+	concept LiteralString
+
+	LiteralString extendsAspect vocabulary:LiteralString
+
+	concept LiteralUnlimitedNatural
+
+	LiteralUnlimitedNatural extendsAspect vocabulary:LiteralUnlimitedNatural
+
+	concept LoopNode
+
+	LoopNode extendsAspect vocabulary:LoopNode
+
+	concept Manifestation
+
+	Manifestation extendsAspect vocabulary:Manifestation
+
+	concept MergeNode
+
+	MergeNode extendsAspect vocabulary:MergeNode
+
+	concept Message
+
+	Message extendsAspect vocabulary:Message
+
+	concept MessageOccurrenceSpecification
+
+	MessageOccurrenceSpecification extendsAspect vocabulary:MessageOccurrenceSpecification
+
+	concept Model
+
+	Model extendsAspect vocabulary:Model
+
+	concept Node
+
+	Node extendsAspect vocabulary:Node
+
+	concept ObjectFlow
+
+	ObjectFlow extendsAspect vocabulary:ObjectFlow
+
+	concept OccurrenceSpecification
+
+	OccurrenceSpecification extendsAspect vocabulary:OccurrenceSpecification
+
+	concept OpaqueAction
+
+	OpaqueAction extendsAspect vocabulary:OpaqueAction
+
+	concept OpaqueBehavior
+
+	OpaqueBehavior extendsAspect vocabulary:OpaqueBehavior
+
+	concept OpaqueExpression
+
+	OpaqueExpression extendsAspect vocabulary:OpaqueExpression
+
+	concept Operation
+
+	Operation extendsAspect vocabulary:Operation
+
+	concept OperationTemplateParameter
+
+	OperationTemplateParameter extendsAspect vocabulary:OperationTemplateParameter
+
+	concept OutputPin
+
+	OutputPin extendsAspect vocabulary:OutputPin
+
+	concept Package
+
+	Package extendsAspect vocabulary:Package
+
+	concept PackageImport
+
+	PackageImport extendsAspect vocabulary:PackageImport
+
+	concept PackageMerge
+
+	PackageMerge extendsAspect vocabulary:PackageMerge
+
+	concept Parameter
+
+	Parameter extendsAspect vocabulary:Parameter
+
+	concept ParameterSet
+
+	ParameterSet extendsAspect vocabulary:ParameterSet
+
+	concept PartDecomposition
+
+	PartDecomposition extendsAspect vocabulary:PartDecomposition
+
+	concept Port
+
+	Port extendsAspect vocabulary:Port
+
+	concept PrimitiveType
+
+	PrimitiveType extendsAspect vocabulary:PrimitiveType
+
+	concept Profile
+
+	Profile extendsAspect vocabulary:Profile
+
+	concept ProfileApplication
+
+	ProfileApplication extendsAspect vocabulary:ProfileApplication
+
+	concept Property
+
+	Property extendsAspect vocabulary:Property
+
+	concept ProtocolConformance
+
+	ProtocolConformance extendsAspect vocabulary:ProtocolConformance
+
+	concept ProtocolStateMachine
+
+	ProtocolStateMachine extendsAspect vocabulary:ProtocolStateMachine
+
+	concept ProtocolTransition
+
+	ProtocolTransition extendsAspect vocabulary:ProtocolTransition
+
+	concept Pseudostate
+
+	Pseudostate extendsAspect vocabulary:Pseudostate
+
+	concept QualifierValue
+
+	QualifierValue extendsAspect vocabulary:QualifierValue
+
+	concept RaiseExceptionAction
+
+	RaiseExceptionAction extendsAspect vocabulary:RaiseExceptionAction
+
+	concept ReadExtentAction
+
+	ReadExtentAction extendsAspect vocabulary:ReadExtentAction
+
+	concept ReadIsClassifiedObjectAction
+
+	ReadIsClassifiedObjectAction extendsAspect vocabulary:ReadIsClassifiedObjectAction
+
+	concept ReadLinkAction
+
+	ReadLinkAction extendsAspect vocabulary:ReadLinkAction
+
+	concept ReadLinkObjectEndAction
+
+	ReadLinkObjectEndAction extendsAspect vocabulary:ReadLinkObjectEndAction
+
+	concept ReadLinkObjectEndQualifierAction
+
+	ReadLinkObjectEndQualifierAction extendsAspect vocabulary:ReadLinkObjectEndQualifierAction
+
+	concept ReadSelfAction
+
+	ReadSelfAction extendsAspect vocabulary:ReadSelfAction
+
+	concept ReadStructuralFeatureAction
+
+	ReadStructuralFeatureAction extendsAspect vocabulary:ReadStructuralFeatureAction
+
+	concept ReadVariableAction
+
+	ReadVariableAction extendsAspect vocabulary:ReadVariableAction
+
+	concept Realization
+
+	Realization extendsAspect vocabulary:Realization
+
+	concept Reception
+
+	Reception extendsAspect vocabulary:Reception
+
+	concept ReclassifyObjectAction
+
+	ReclassifyObjectAction extendsAspect vocabulary:ReclassifyObjectAction
+
+	concept RedefinableTemplateSignature
+
+	RedefinableTemplateSignature extendsAspect vocabulary:RedefinableTemplateSignature
+
+	concept ReduceAction
+
+	ReduceAction extendsAspect vocabulary:ReduceAction
+
+	concept Region
+
+	Region extendsAspect vocabulary:Region
+
+	concept RemoveStructuralFeatureValueAction
+
+	RemoveStructuralFeatureValueAction extendsAspect vocabulary:RemoveStructuralFeatureValueAction
+
+	concept RemoveVariableValueAction
+
+	RemoveVariableValueAction extendsAspect vocabulary:RemoveVariableValueAction
+
+	concept ReplyAction
+
+	ReplyAction extendsAspect vocabulary:ReplyAction
+
+	concept SendObjectAction
+
+	SendObjectAction extendsAspect vocabulary:SendObjectAction
+
+	concept SendSignalAction
+
+	SendSignalAction extendsAspect vocabulary:SendSignalAction
+
+	concept SequenceNode
+
+	SequenceNode extendsAspect vocabulary:SequenceNode
+
+	concept Signal
+
+	Signal extendsAspect vocabulary:Signal
+
+	concept SignalEvent
+
+	SignalEvent extendsAspect vocabulary:SignalEvent
+
+	concept Slot
+
+	Slot extendsAspect vocabulary:Slot
+
+	concept StartClassifierBehaviorAction
+
+	StartClassifierBehaviorAction extendsAspect vocabulary:StartClassifierBehaviorAction
+
+	concept StartObjectBehaviorAction
+
+	StartObjectBehaviorAction extendsAspect vocabulary:StartObjectBehaviorAction
+
+	concept State
+
+	State extendsAspect vocabulary:State
+
+	concept StateInvariant
+
+	StateInvariant extendsAspect vocabulary:StateInvariant
+
+	concept StateMachine
+
+	StateMachine extendsAspect vocabulary:StateMachine
+
+	concept Stereotype
+
+	Stereotype extendsAspect vocabulary:Stereotype
+
+	concept StringExpression
+
+	StringExpression extendsAspect vocabulary:StringExpression
+
+	concept StructuredActivityNode
+
+	StructuredActivityNode extendsAspect vocabulary:StructuredActivityNode
+
+	concept Substitution
+
+	Substitution extendsAspect vocabulary:Substitution
+
+	concept TemplateBinding
+
+	TemplateBinding extendsAspect vocabulary:TemplateBinding
+
+	concept TemplateParameter
+
+	TemplateParameter extendsAspect vocabulary:TemplateParameter
+
+	concept TemplateParameterSubstitution
+
+	TemplateParameterSubstitution extendsAspect vocabulary:TemplateParameterSubstitution
+
+	concept TemplateSignature
+
+	TemplateSignature extendsAspect vocabulary:TemplateSignature
+
+	concept TestIdentityAction
+
+	TestIdentityAction extendsAspect vocabulary:TestIdentityAction
+
+	concept TimeConstraint
+
+	TimeConstraint extendsAspect vocabulary:TimeConstraint
+
+	concept TimeEvent
+
+	TimeEvent extendsAspect vocabulary:TimeEvent
+
+	concept TimeExpression
+
+	TimeExpression extendsAspect vocabulary:TimeExpression
+
+	concept TimeInterval
+
+	TimeInterval extendsAspect vocabulary:TimeInterval
+
+	concept TimeObservation
+
+	TimeObservation extendsAspect vocabulary:TimeObservation
+
+	concept Transition
+
+	Transition extendsAspect vocabulary:Transition
+
+	concept Trigger
+
+	Trigger extendsAspect vocabulary:Trigger
+
+	concept UnmarshallAction
+
+	UnmarshallAction extendsAspect vocabulary:UnmarshallAction
+
+	concept Usage
+
+	Usage extendsAspect vocabulary:Usage
+
+	concept UseCase
+
+	UseCase extendsAspect vocabulary:UseCase
+
+	concept ValuePin
+
+	ValuePin extendsAspect vocabulary:ValuePin
+
+	concept ValueSpecificationAction
+
+	ValueSpecificationAction extendsAspect vocabulary:ValueSpecificationAction
+
+	concept Variable
+
+	Variable extendsAspect vocabulary:Variable
+
+}

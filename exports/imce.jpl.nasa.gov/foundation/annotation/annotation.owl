@@ -1,0 +1,467 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://imce.jpl.nasa.gov/foundation/annotation/annotation#"
+     xml:base="http://imce.jpl.nasa.gov/foundation/annotation/annotation"
+     xmlns:annotation="http://imce.jpl.nasa.gov/foundation/annotation/annotation#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:MagicDraw="https://imce.jpl.nasa.gov/oml/provenance/MagicDraw#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:runtime="http://imce.jpl.nasa.gov/oml/runtime#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://imce.jpl.nasa.gov/oml/oml#">
+    <owl:Ontology rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation">
+        <owl:imports rdf:resource="http://imce.jpl.nasa.gov/oml/oml"/>
+        <hasRelativeIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imce.jpl.nasa.gov/foundation/annotation/annotation</hasRelativeIRI>
+        <runtime:OML2EcoreNsURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://imce.jpl.nasa.gov/foundation/_annotation/_annotation</runtime:OML2EcoreNsURI>
+        <isDesignation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDesignation>
+        <runtime:OML2EcoreNsPrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">annotation</runtime:OML2EcoreNsPrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#bundledOntologyVersionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#bundledOntologyVersionInfo"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#bundlesGroup -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#bundlesGroup"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#category -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#category"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#companionOwnershipRelation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#companionOwnershipRelation"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasContext -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasContext"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasDiagramCustomization -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasDiagramCustomization"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasGraph -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasGraph"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasIRIHashPrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasIRIHashPrefix"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasIRIHashSuffix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasIRIHashSuffix"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasIcon -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasIcon"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasMagicDrawDiagramCustomization -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasMagicDrawDiagramCustomization"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasOTIToolSpecificID -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasOTIToolSpecificID"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasOTIToolSpecificURL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasOTIToolSpecificURL"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasRelativeIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasRelativeIRI"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasRestrictedSourceProperty -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasRestrictedSourceProperty"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasRestrictedTargetProperty -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasRestrictedTargetProperty"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasUUID -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#hasUUID"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#implementationElementId -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#implementationElementId"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#importsBundle -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#importsBundle"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isAbstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isAbstract"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isDeprecated -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isDeprecated"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isDerived -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isDerived"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isEmbedding -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isEmbedding"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isExtension -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isExtension"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isLibrary -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isLibrary"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isMetaclass -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isMetaclass"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isMetaclassSpecificExtension -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isMetaclassSpecificExtension"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isMetamodel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isMetamodel"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isNonNormative -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isNonNormative"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isStereotype -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isStereotype"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isStereotypeMetaclass -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isStereotypeMetaclass"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isStructuredDataType -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isStructuredDataType"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#isView -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#isView"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#noMapping -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#noMapping"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#omgElementId -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#omgElementId"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/foundation/annotation/annotation#xmi2xsdDataTypeMapping -->
+
+
+    <owl:AnnotationProperty rdf:about="http://imce.jpl.nasa.gov/foundation/annotation/annotation#xmi2xsdDataTypeMapping"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topObjectProperty"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topReifiedObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topReifiedObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topReifiedObjectPropertySource -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topReifiedObjectPropertySource">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topReifiedObjectPropertyTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topReifiedObjectPropertyTarget">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topReifiedStructuredDataProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topReifiedStructuredDataProperty">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topReifiedStructuredDataPropertySource -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topReifiedStructuredDataPropertySource">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topReifiedStructuredDataPropertyTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topReifiedStructuredDataPropertyTarget">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topUnreifiedObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topUnreifiedObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topDataProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#Aspect -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#Aspect">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#Entity -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#Entity">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#ReifiedObjectProperty -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#ReifiedObjectProperty">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#ReifiedStructuredDataProperty -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#ReifiedStructuredDataProperty">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#StructuredDatatype -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#StructuredDatatype">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#Thing -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/foundation/annotation/annotation#Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.0.5) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#"
+     xml:base="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management"
+     xmlns:annotation="http://imce.jpl.nasa.gov/foundation/annotation/annotation#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:MagicDraw="https://imce.jpl.nasa.gov/oml/provenance/MagicDraw#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:runtime="http://imce.jpl.nasa.gov/oml/runtime#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oml="http://imce.jpl.nasa.gov/oml/oml#">
+    <owl:Ontology rdf:about="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management">
+        <owl:imports rdf:resource="http://imce.jpl.nasa.gov/foundation/project/project"/>
+        <runtime:OML2EcoreNsURI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://imce.jpl.nasa.gov/discipline/mass_management/mass_management</runtime:OML2EcoreNsURI>
+        <annotation:hasRelativeIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imce.jpl.nasa.gov/discipline/mass-management/mass-management</annotation:hasRelativeIRI>
+        <annotation:isDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</annotation:isDefinition>
+        <runtime:OML2EcoreNsPrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass_management</runtime:OML2EcoreNsPrefix>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#percentage -->
+
+
+    <rdfs:Datatype rdf:about="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#percentage">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topObjectProperty"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topReifiedObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topReifiedObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topReifiedObjectPropertySource -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topReifiedObjectPropertySource">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topReifiedObjectPropertyTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topReifiedObjectPropertyTarget">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topReifiedStructuredDataProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topReifiedStructuredDataProperty">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topReifiedStructuredDataPropertySource -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topReifiedStructuredDataPropertySource">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topReifiedStructuredDataPropertyTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topReifiedStructuredDataPropertyTarget">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topUnreifiedObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topUnreifiedObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topDataProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topDataProperty"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#allowableMass -->
+
+
+    <owl:DatatypeProperty rdf:about="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#allowableMass">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#basicMass -->
+
+
+    <owl:DatatypeProperty rdf:about="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#basicMass">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#massGrowthAllowance -->
+
+
+    <owl:DatatypeProperty rdf:about="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#massGrowthAllowance">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#massLimit -->
+
+
+    <owl:DatatypeProperty rdf:about="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#massLimit">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#massMargin -->
+
+
+    <owl:DatatypeProperty rdf:about="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#massMargin">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#massReserve -->
+
+
+    <owl:DatatypeProperty rdf:about="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#massReserve">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#predictedMass -->
+
+
+    <owl:DatatypeProperty rdf:about="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#predictedMass">
+        <rdfs:subPropertyOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Aspect -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Aspect">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Entity -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Entity">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#ReifiedObjectProperty -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#ReifiedObjectProperty">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#ReifiedStructuredDataProperty -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#ReifiedStructuredDataProperty">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#StructuredDatatype -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#StructuredDatatype">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Thing -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Thing"/>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#Element -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#Element">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Aspect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#MComponent -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#MComponent">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#Element"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/foundation/mission/mission#Component"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temporary until the generator handles name conflicts across different namespaces</dc:description>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#MComponent"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#Element"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ca7be4ae-af55-5cfb-a014-8ce75013928c</annotation:hasUUID>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#MComponent"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/foundation/mission/mission#Component"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5eebff07-081c-5b6f-8172-b4c9cde14f4b</annotation:hasUUID>
+    </owl:Axiom>
+    
+
+
+    <!-- http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#MWorkPackage -->
+
+
+    <owl:Class rdf:about="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#MWorkPackage">
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/backbone/imce.jpl.nasa.gov/discipline/mass-management/mass-management#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#Element"/>
+        <rdfs:subClassOf rdf:resource="http://imce.jpl.nasa.gov/foundation/project/project#WorkPackage"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#MWorkPackage"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#Element"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">681dc148-774b-5351-b0dd-4d0f2768e8b5</annotation:hasUUID>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://imce.jpl.nasa.gov/discipline/mass-management/mass-management#MWorkPackage"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://imce.jpl.nasa.gov/foundation/project/project#WorkPackage"/>
+        <annotation:hasUUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">94836fa5-a5e8-536d-95ae-9ce3167bc10b</annotation:hasUUID>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.0.5) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,5 @@
+closed bundle <http://imce.jpl.nasa.gov/foundation/project/project-bundle> {
+
+	extends <http://imce.jpl.nasa.gov/discipline/mass-management/mass-management>
+
+}
