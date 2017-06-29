@@ -4,7 +4,7 @@ pipeline {
 
 	stage('Get Exported Data') {
 		steps {
-			checkout([$class: 'GitSCM', branches: [[name: 'omlwb/0.7.1.x']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'analysis']], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github-fn.jpl.nasa.gov/IMCE/gov.nasa.jpl.imce.caesar.demo.ontologies']]])
+			checkout([$class: 'GitSCM', branches: [[name: 'omlwb/0.7.1.x']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'analysis']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'imce-ci', url: 'https://github-fn.jpl.nasa.gov/IMCE/gov.nasa.jpl.imce.caesar.demo.ontologies']]])
 			checkout([$class: 'GitSCM', branches: [[name: 'omlwb/0.7.1.x']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'analysis']], submoduleCfg: [], userRemoteConfigs: [[url: 'http://githubcom/JPL-IMCE/gov.nasa.jpl.imce.ontologies.tools']]])
 	 	}
 
